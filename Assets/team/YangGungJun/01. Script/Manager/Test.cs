@@ -1,16 +1,9 @@
 using UnityEngine;
 
-public class Test : MonoBehaviour
+public class Test : Tower
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public override void Shoot()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+       
     }
 }
