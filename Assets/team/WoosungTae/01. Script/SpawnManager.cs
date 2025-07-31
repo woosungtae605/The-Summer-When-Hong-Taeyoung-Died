@@ -9,6 +9,7 @@ public class SpawnManager : MonoBehaviour
     [SerializeField] private Transform spawnPosition;
     private Dictionary<string, Stack<GameObject>> enemyDic = new();
     private Stack<GameObject> bulletStack = new();
+    private List<GameObject> activeEnemy = new(); // 현재 살아있는 에너미 수. 이걸로 살아있는 얘들 중, 가장 가까운 적 찾는거임
 
     public static SpawnManager instance { get; private set; }
     private void Awake()
@@ -62,6 +63,7 @@ public class SpawnManager : MonoBehaviour
                 GameObject enemy = stack.Pop();
                 enemy.transform.position = spawnPosition.position;
                 enemy.SetActive(true);
+                activeEnemy.Add(enemy);
             }
             else
             {
@@ -93,6 +95,7 @@ public class SpawnManager : MonoBehaviour
         {
             gameObject.SetActive(false);
             enemyDic[name].Push(gameObject);
+            activeEnemy.Remove(gameObject);
         }
         else
         {
@@ -103,5 +106,10 @@ public class SpawnManager : MonoBehaviour
     {
         bullet.SetActive(false);
         bulletStack.Push(bullet);
+    }
+
+    public List<GameObject> GetActiveEnemy() // 이걸로 살아있는 애들 중, 가장 가까운 적 찾기
+    {
+        return activeEnemy;
     }
 }
