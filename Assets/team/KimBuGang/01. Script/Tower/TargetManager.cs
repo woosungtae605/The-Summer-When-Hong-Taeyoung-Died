@@ -10,6 +10,6 @@ public class TargetManager : MonoBehaviour
     {
         TowerAttack towerScript = tower.GetComponent<TowerAttack>();
         towers.Add(towerScript);
-        towerScript.target = testTarget;
+        towerScript.target = testTarget; 
     }
 }

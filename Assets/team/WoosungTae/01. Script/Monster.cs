@@ -29,9 +29,8 @@ public class Monster : MonoBehaviour
        
         number = monsterSO.monsterNum;
         hp = monsterSO.hp;
-        
         gold = monsterSO.gold;
-        Debug.Log("½ÇÇàµÊ");
+        
     }
     public int GetNumber()
     {

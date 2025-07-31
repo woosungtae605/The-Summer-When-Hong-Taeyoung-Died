@@ -11,4 +11,6 @@ public abstract class Bullet : MonoBehaviour
         transform.rotation = Quaternion.Euler(0, 0, Lookat);
     }
     public abstract void Ability(GameObject monster);
+   
+   
 }
