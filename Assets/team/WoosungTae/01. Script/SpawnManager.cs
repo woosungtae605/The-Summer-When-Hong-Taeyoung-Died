@@ -4,9 +4,11 @@ using UnityEngine;
 public class SpawnManager : MonoBehaviour
 {
     [SerializeField] private GameObject[] enemies;
+    [SerializeField] private GameObject[] bullets;
     [SerializeField] private int maxSpawn;
     [SerializeField] private Transform spawnPosition;
     private Dictionary<string, Stack<GameObject>> enemyDic = new();
+    private Dictionary<string, Stack<GameObject>> bulletDic = new();
 
     public static SpawnManager instance { get; private set; }
     private void Awake()
@@ -36,6 +38,18 @@ public class SpawnManager : MonoBehaviour
                 stack.Push(aboutEnemy);
             }
             enemyDic.Add(monster.name, stack);
+        }
+
+        foreach(var bullet in bullets)
+        {
+            Stack<GameObject> stack = new Stack<GameObject>();
+            for (int i = 0; i < maxSpawn; i++)
+            {
+                GameObject aboutBullet = Instantiate(bullet, transform);
+                aboutBullet.SetActive(false);
+                stack.Push(aboutBullet);
+            }
+           // bulletDic.Add(,a);
         }
     }
 
