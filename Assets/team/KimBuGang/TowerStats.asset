@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f96c834ed7737fd40a533252013506c3, type: 3}
+  m_Name: TowerStats
+  m_EditorClassIdentifier: 
+  towers:
+  - name: Default
+    tower: {fileID: 4405898564516946075, guid: 53234dd4d2895234ab7f88aac93a3ab7, type: 3}
+    dmg: 0
+    rate: 0
+    range: 0
+  - name: 
+    tower: {fileID: 2636040404408354085, guid: 89e5b2b864fade042b5dc6326750feeb, type: 3}
+    dmg: 0
+    rate: 0
+    range: 0
+  - name: 
+    tower: {fileID: 488889409089806986, guid: 727dafe0ff132a549b9f2738d6757717, type: 3}
+    dmg: 0
+    rate: 0
+    range: 0
