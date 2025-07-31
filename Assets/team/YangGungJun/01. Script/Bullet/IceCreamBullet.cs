@@ -1,15 +1,18 @@
 using UnityEngine;
 
-public class IceCreamBullet : MonoBehaviour
+public class IceCreamBullet : Bullet
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    [SerializeField] string name;
+    [SerializeField] Rigidbody2D rb;
+    private void OnEnable()
     {
-        
+        rb.linearVelocityX = 3;
     }
-
-    // Update is called once per frame
-    void Update()
+    private void OnDisable()
+    {
+        rb.linearVelocityX = 0;
+    }
+    public override void Ability()
     {
         
     }

@@ -3,12 +3,10 @@ using UnityEngine;
 
 public class TestTower : Tower
 {
-    [SerializeField] GameObject Bullet;
-    Bullet bulletAbility;
     private void Awake()
     {
         base.Awake();
-        bulletAbility = Bullet.GetComponent<Bullet>();
+       
     }
     private void Update()
     {
@@ -19,7 +17,7 @@ public class TestTower : Tower
     }
     public override void Shoot()
     {
-        bulletAbility.Ability();
+       
     }
    
 }
