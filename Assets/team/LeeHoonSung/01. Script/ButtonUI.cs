@@ -5,6 +5,8 @@ public class ButtonUI : MonoBehaviour
 {
     int _index = 0;
     
+    public GameObject UiLevelUpdate;
+
     public void OnStartButton()
     {
         ++_index; // 버튼을 누르면 _index가 1이 됨
@@ -14,5 +16,15 @@ public class ButtonUI : MonoBehaviour
     public void OnQuitButton()
     {
         Application.Quit(); // 버튼을 누르면 나가기
+    }
+
+    public void Cancel()
+    {
+        UiLevelUpdate.SetActive(false);
+    }
+
+    public void UITestLevel()
+    {
+        UiLevelUpdate.SetActive(true);
     }
 }

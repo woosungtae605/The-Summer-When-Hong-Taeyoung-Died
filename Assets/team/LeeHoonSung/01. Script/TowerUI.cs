@@ -2,22 +2,29 @@ using TMPro;
 using UnityEngine;
 
 public class TowerUI : MonoBehaviour
-{    
-    public TowerStatSO _towerStartSo;
-    [Header("Ability")]
+{
+    [Header("publicObject")]       
+    //public TowerStatSO _towerStartSo;
+    //public Tower _towerEnum;
+
+    [Header("Ability")]  // 능력치
     public TextMeshProUGUI _name;
     public TextMeshProUGUI _textDamage;
     public TextMeshProUGUI _textGcd;
 
-    [Header("RemoveTower")]
+    [Header("RemoveTower")] // 삭제 될 오브젝트
     GameObject _tower;
 
-    [Header("AbilityUpdate")]
-    public int DamageUpdate = 0;
-    public int RanageUpdate = 0;  
-    
+    [Header("UpdateAbility")]
+    public int _DamageUpdate = 0;
+    public float _RanageUpdate = 0;
+  
     [Header("Maximum Level")]
     public int _maxiumLevel = 10;
+
+    [Header("Cost")]
+    public TextMeshProUGUI _textUpdateCost;
+    public TextMeshProUGUI _textSellCost;
 
     private void Awake()
     {
@@ -26,8 +33,9 @@ public class TowerUI : MonoBehaviour
 
     private void Start()
     {
-       TowerName(_towerStartSo);
-       TowerAbility(_towerStartSo);
+       //TowerName(_towerStartSo);
+       //TowerAbility(_towerStartSo);
+       //CostStart(_towerStartSo);
     }
 
     public void TowerName(TowerStatSO _tower)
@@ -41,9 +49,16 @@ public class TowerUI : MonoBehaviour
         _textGcd.text = _tower.attackSpeed.ToString();
     }
 
-    public void TowerAbilityUpdate(TowerStatSO _tower)
+    public void TowerAbilityUpdate(Tower _tower)
     {
+        _tower.dmg = _DamageUpdate;
+        //_tower.attackspeed = _RanageUpdate;
+    }
 
+    public void CostStart(TowerStatSO _tower)
+    {
+        _textUpdateCost.text = _tower.UpdateCost.ToString();
+        _textSellCost.text = _tower.SellCost.ToString();    
     }
 
 
@@ -69,6 +84,4 @@ public class TowerUI : MonoBehaviour
     {
         _tower.gameObject.SetActive(false);
     }
-
-
 }
