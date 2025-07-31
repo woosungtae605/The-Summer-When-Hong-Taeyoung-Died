@@ -1,14 +1,14 @@
 using System.Collections.Generic;
 using UnityEngine;
-
 public class SpawnManager : MonoBehaviour
 {
     [SerializeField] private GameObject[] enemies;
     [SerializeField] private GameObject[] bullets;
-    [SerializeField] private int maxSpawn;
+    [SerializeField] private int enemyMaxSpawn;
+    [SerializeField] private int bulletMaxSpawn;
     [SerializeField] private Transform spawnPosition;
     private Dictionary<string, Stack<GameObject>> enemyDic = new();
-    private Dictionary<string, Stack<GameObject>> bulletDic = new();
+    private Stack<GameObject> bulletStack = new();
 
     public static SpawnManager instance { get; private set; }
     private void Awake()
@@ -31,7 +31,7 @@ public class SpawnManager : MonoBehaviour
         {
             Monster monster = enemy.GetComponent<Monster>();
             Stack<GameObject> stack = new Stack<GameObject>();
-            for (int i = 0; i < maxSpawn; i++ )
+            for (int i = 0; i < enemyMaxSpawn; i++ )
             {
                 GameObject aboutEnemy = Instantiate(enemy, transform);
                 aboutEnemy.SetActive(false);
@@ -42,14 +42,12 @@ public class SpawnManager : MonoBehaviour
 
         foreach(var bullet in bullets)
         {
-            Stack<GameObject> stack = new Stack<GameObject>();
-            for (int i = 0; i < maxSpawn; i++)
+            for (int i = 0; i < bulletMaxSpawn; i++)
             {
                 GameObject aboutBullet = Instantiate(bullet, transform);
                 aboutBullet.SetActive(false);
-                stack.Push(aboutBullet);
+                bulletStack.Push(aboutBullet);
             }
-           // bulletDic.Add(,a);
         }
     }
 
@@ -76,6 +74,19 @@ public class SpawnManager : MonoBehaviour
         }
     }
 
+    public void SpawnBullet(Transform spawnPosition)
+    {
+        if(bulletStack.Count > 0)
+        {
+            GameObject bullet = bulletStack.Pop();
+            bullet.transform.position = spawnPosition.position;
+            bullet.SetActive(true);
+        }
+        else
+        {
+            Debug.Log("총알이 다 떨어졋음");
+        }
+    }
     public void EnemyReturn(string name, GameObject gameObject) // 에너미 죽었을 때, 다시 넣어주는 메서드. 죽은 얘 이름과, 죽은 애의 게임 오브젝트 넣어주면 됨
     {
         if(enemyDic.ContainsKey(name))
@@ -87,5 +98,10 @@ public class SpawnManager : MonoBehaviour
         {
             Debug.Log("존재하기 않는 에너미 반환");
         }
+    }
+    public void BulletReturn(GameObject bullet)
+    {
+        bullet.SetActive(false);
+        bulletStack.Push(bullet);
     }
 }
