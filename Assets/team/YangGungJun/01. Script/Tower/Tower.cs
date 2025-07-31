@@ -7,12 +7,8 @@ public abstract class Tower : MonoBehaviour
     protected bool isSet = false;
     protected bool ISell = false;
     [SerializeField] private TowerStatSO TowerStatSO;
-    public int dmg { set; get; }
-    public float attackSpeed { set; get; }
-    public int updateCost { set;  get; }
-    public int sellCost { set; get; }
-    public float range { set; get; }
-
+    public int dmg { set; private get; }
+    public float attackSpeed { set; private get; }
     private void Awake()
     {
         Initialize();
@@ -20,8 +16,9 @@ public abstract class Tower : MonoBehaviour
     }
     public void Initialize()
     {
-        dmg = TowerStatSO.dmg;
+
         attackSpeed = TowerStatSO.attackSpeed;
+        Range = transform.GetChild(0).gameObject;
         range = TowerStatSO.Range;
     }
     public void SetDmg(int value)
@@ -45,13 +42,13 @@ public abstract class Tower : MonoBehaviour
         sellCost += value;
     }
     public abstract void Shoot();
-
     IEnumerator Toweraaaaa()//鸥况 积局林扁
     {
         MyState = TowerState.Set;
         yield return new WaitUntil(() => isSet);
+        Range.SetActive(false);
         MyState = TowerState.Idle;
-        while (!ISell)
+        /*while (!ISell)
         {
             /*
                if (EnemyInRange())
@@ -61,8 +58,8 @@ public abstract class Tower : MonoBehaviour
                else
                {
                    MyState = TowerState.Idle;
-               }*/
-        }
+               }
+        }*/
         MyState = TowerState.Sell;
     }
 }
