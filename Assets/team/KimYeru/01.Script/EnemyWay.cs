@@ -2,33 +2,37 @@ using UnityEngine;
 
 public class EnemyWay : MonoBehaviour
 {
-    public float speed = 2f;                  // 이동 속도
-    public Transform[] waypoints;            // 웨이포인트 배열
-    private int currentWaypointIndex = 0;    // 현재 목표 웨이포인트
+    private Monster monster;
+    private Rigidbody2D rb;
 
-    private void Update()
+    [SerializeField] private Transform[] waypoints;
+    private int currentWaypointIndex = 0;
+
+    private void Awake()
     {
-        Move();
+        monster = GetComponent<Monster>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
-    private void Move()
+    private void FixedUpdate()
     {
-        // 현재 목표 웨이포인트
+        MoveWithVelocity();
+    }
+
+    private void MoveWithVelocity()
+    {
+        if (waypoints.Length == 0) return;
+
         Transform target = waypoints[currentWaypointIndex];
+        Vector2 direction = ((Vector2)target.position - (Vector2)transform.position).normalized;
+        rb.linearVelocity = direction * monster.monsterSO.speed;
 
-        // 목표 방향으로 이동
-        transform.position = Vector2.MoveTowards(
-            transform.position, 
-            target.position, 
-            speed * Time.deltaTime
-        );
-
-        // 목표 지점 도착 확인
-        if (Vector2.Distance(transform.position, target.position) < 0.05f)
+        // 목표에 도달했는지 확인
+        if (Vector2.Distance(transform.position, target.position) < 0.1f)
         {
             currentWaypointIndex++;
 
-            // 경로 끝에 도달 시 처리
+            // 다음 웨이포인트로 계속 진행
             if (currentWaypointIndex >= waypoints.Length)
             {
                 ReachGoal();
@@ -38,7 +42,7 @@ public class EnemyWay : MonoBehaviour
 
     private void ReachGoal()
     {
-        Debug.Log("목표 지점 도착");
-        Destroy(gameObject); // 나중에 플레이어 HP 감소 등으로 대체 가능
+        rb.linearVelocity = Vector2.zero;
+        Debug.Log($"{monster.monsterSO.name}도착");
     }
 }
