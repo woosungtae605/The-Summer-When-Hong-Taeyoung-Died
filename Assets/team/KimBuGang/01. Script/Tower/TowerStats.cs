@@ -12,6 +12,7 @@ public class TowerStats : ScriptableObject
         public int dmg;
         public float rate;
         public float range;
+        public float bulletSpeed;
     }
     
     public List<TowerStat> towers = new List<TowerStat>();

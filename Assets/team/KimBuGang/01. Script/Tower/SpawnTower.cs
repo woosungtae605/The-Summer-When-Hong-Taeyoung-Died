@@ -19,10 +19,7 @@ public class SpawnTower : MonoBehaviour
         if (Input.GetMouseButtonUp(0))
             if (currentTower != null)
             {
-                targetManager.AddTower(Instantiate(currentTower.tower,
-                    new Vector3(Camera.main.ScreenToWorldPoint(Input.mousePosition).x,
-                        Camera.main.ScreenToWorldPoint(Input.mousePosition).y, 0),
-                    Quaternion.identity));
+                targetManager.AddTower( currentTower);
                 currentTower = null;
             }
     }
