@@ -7,6 +7,7 @@ public class TowerStats : ScriptableObject
     [System.Serializable]
     public class TowerStat
     {
+        public Sprite icon;
         public string name;
         public GameObject tower;
         public int dmg;
@@ -15,7 +16,7 @@ public class TowerStats : ScriptableObject
         public float bulletSpeed;
         public int upgradeCost;
         public int sellCost;
-        public Color BulletColor;
+        public Color bulletColor;
     }
     
     public List<TowerStat> towers = new List<TowerStat>();
