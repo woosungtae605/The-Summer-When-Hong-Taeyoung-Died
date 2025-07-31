@@ -44,34 +44,14 @@ public class TowerUI : MonoBehaviour
         _name.text = _tower.name; // 타워 이름 So
     }
 
-    public void TowerUpdateDamage(Tower _tower)
-    {
-       _tower.SetDmg(_DamageUpdate);
-    }
-    public void TowerUpdateRanage(Tower _tower)
-    {
-        _tower.SetRange(_RanageUpdate);
-    }
     public void TowerUpdateGCD(Tower _tower)
     {
         _tower.AttackSpeed(_GcdUpdate);
     }
-    public void UpdateCost(Tower _tower)
-    {
-        _tower.SetUpdateCost(_UpdateCostUpdate);
-    }
-    public void TowerSellCost(Tower _tower)
-    {
-        _tower.SetSellcost(_SellCostUpdate);
-    }
-
+    
     public void TowerAbilityUpdate(Tower _tower)
     {
-        _textDamage.text = _towerEn.dmg.ToString();
-        _textRange.text = _towerEn.range.ToString();
-        _textGcd.text = _towerEn.attackSpeed.ToString();
-        _textUpdateCost.text = _towerEn.updateCost.ToString();
-        _textSellCost.text = _towerEn.sellCost.ToString();
+       
     }
 
     public void CostStart(TowerStatSO _tower)
@@ -90,17 +70,19 @@ public class TowerUI : MonoBehaviour
     public void OnUpdateTower()
     {
         if(_firstLevel < _maxiumLevel)
-        {                  
+        {
+            Debug.Log("pushButton");
                 _firstLevel++;
                 _lastLevel++;
                 _textFirstLevel.text = _firstLevel.ToString(); // 레벨이 증가하고 표현
                 _textLastLevel.text = _lastLevel.ToString();   // 레벨이 증가하고 표현
-                TowerAbilityUpdate(_towerEn);
+                // TowerAbilityUpdate(_towerEn);
         }
     }
     
     public void Remove()
     {
+        Debug.Log("RemoveButton");
         _tower.gameObject.SetActive(false); // 판매
         _ui.SetActive(false); // Ui창도 삭제
         CostStart(_towerStartSo); //

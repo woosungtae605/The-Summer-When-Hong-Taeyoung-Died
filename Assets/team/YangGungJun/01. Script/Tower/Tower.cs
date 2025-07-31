@@ -7,9 +7,11 @@ public abstract class Tower : MonoBehaviour
     protected bool isSet = false;
     protected bool ISell = false;
     [SerializeField] private TowerStatSO TowerStatSO;
-    public int dmg { set; private get; }
+    GameObject Range;
+    GameObject AttackTarget;
+
     public float attackSpeed { set; private get; }
-    private void Awake()
+    protected void Awake()
     {
         Initialize();
         StartCoroutine(Toweraaaaa());
@@ -19,27 +21,14 @@ public abstract class Tower : MonoBehaviour
 
         attackSpeed = TowerStatSO.attackSpeed;
         Range = transform.GetChild(0).gameObject;
-        range = TowerStatSO.Range;
     }
-    public void SetDmg(int value)
+    private void Update()
     {
-        dmg += value;
+        AttackTarget = Manager.manager.Spwan.First(transform);
     }
     public void AttackSpeed(float value)
     {
-        attackSpeed += value;
-    }
-    public void SetRange(float value)
-    {
-        range += value;
-    }
-    public void SetUpdateCost(int value)
-    {
-        updateCost += value;
-    }
-    public void SetSellcost(int value)
-    {
-        sellCost += value;
+        attackSpeed = value;
     }
     public abstract void Shoot();
     IEnumerator Toweraaaaa()//鸥况 积局林扁
@@ -48,18 +37,22 @@ public abstract class Tower : MonoBehaviour
         yield return new WaitUntil(() => isSet);
         Range.SetActive(false);
         MyState = TowerState.Idle;
-        /*while (!ISell)
+        while (!ISell)
         {
-            /*
-               if (EnemyInRange())
-               {
-                   MyState = TowerState.Shoot;
-               }
-               else
-               {
-                   MyState = TowerState.Idle;
-               }
-        }*/
+
+            if (AttackTarget != null)
+            {
+                float distance = Vector3.Distance(AttackTarget.transform.position, transform.position);
+                if (distance <= TowerStatSO.Range)
+                    MyState = TowerState.Shoot;
+                else
+                    MyState = TowerState.Idle;
+                yield return null;
+            }
+            else
+                MyState = TowerState.Idle;
+            yield return null;
+        }
         MyState = TowerState.Sell;
     }
 }
