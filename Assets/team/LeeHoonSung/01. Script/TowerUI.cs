@@ -3,9 +3,8 @@ using UnityEngine;
 
 public class TowerUI : MonoBehaviour
 {
-    [Header("publicObject")]       
-    public TowerStatSO _towerStartSo;
-    public Tower _towerEn;
+    [Header("publicObject")]
+    public TowerStats _towerStats;
     public CostManager _costManager;
 
     [Header("Ability")]  // 능력치
@@ -34,30 +33,35 @@ public class TowerUI : MonoBehaviour
 
     private void Start()
     {
-       TowerName(_towerStartSo); // 타워 이름
-        TowerAbilityUpdate(_towerEn); // 타워 능력치
-       CostStart(_towerStartSo); // 타워 Cost 관련
+       TowerName(_towerStats); // 타워 이름
+       //TowerAbilityUpdate(_towerStats); // 타워 능력치
+       CostStart(_towerStats); // 타워 Cost 관련
     }
 
-    public void TowerName(TowerStatSO _tower)
+    public void TowerName(TowerStats _tower)
     {
         _name.text = _tower.name; // 타워 이름 So
     }
 
-    public void TowerUpdateGCD(Tower _tower)
+    public void TowerDamage(TowerAttack _tower)
     {
-        _tower.AttackSpeed(_GcdUpdate);
+        //_textDamage.text = _tower.;
+    }
+
+    public void TowerUpdateGCD(TowerAttack _tower)
+    {
+        //_tower.
     }
     
-    public void TowerAbilityUpdate(Tower _tower)
+    public void TowerAbilityUpdate(TowerAttack _tower)
     {
        
     }
 
-    public void CostStart(TowerStatSO _tower)
+    public void CostStart(TowerStats _tower)
     {
-        _textUpdateCost.text = _tower.UpdateCost.ToString(); // 업데이트 Cost
-        _textSellCost.text = _tower.SellCost.ToString();     // 판매 Cost
+       // _textUpdateCost.text = _tower.upgradeCost.ToString(); // 업데이트 Cost
+        //_textSellCost.text = _tower.sellCost.ToString();     // 판매 Cost
     }
 
     int _firstLevel = 1; // 원래 레벨
@@ -71,7 +75,6 @@ public class TowerUI : MonoBehaviour
     {
         if(_firstLevel < _maxiumLevel)
         {
-            Debug.Log("pushButton");
                 _firstLevel++;
                 _lastLevel++;
                 _textFirstLevel.text = _firstLevel.ToString(); // 레벨이 증가하고 표현
@@ -82,10 +85,9 @@ public class TowerUI : MonoBehaviour
     
     public void Remove()
     {
-        Debug.Log("RemoveButton");
         _tower.gameObject.SetActive(false); // 판매
         _ui.SetActive(false); // Ui창도 삭제
-        CostStart(_towerStartSo); //
+        //CostStart(_towerStartSo); //
     }
 
     
