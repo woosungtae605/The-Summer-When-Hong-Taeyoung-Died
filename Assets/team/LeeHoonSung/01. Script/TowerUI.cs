@@ -4,66 +4,84 @@ using UnityEngine;
 public class TowerUI : MonoBehaviour
 {
     [Header("publicObject")]       
-    //public TowerStatSO _towerStartSo;
-    //public Tower _towerEnum;
+    public TowerStatSO _towerStartSo;
+    public Tower _towerEn;
+    public CostManager _costManager;
 
     [Header("Ability")]  // 능력치
     public TextMeshProUGUI _name;
     public TextMeshProUGUI _textDamage;
+    public TextMeshProUGUI _textRange;
     public TextMeshProUGUI _textGcd;
 
     [Header("RemoveTower")] // 삭제 될 오브젝트
-    GameObject _tower;
+    public GameObject _tower;
+    public GameObject _ui;
 
     [Header("UpdateAbility")]
-    public int _DamageUpdate = 0;
-    public float _RanageUpdate = 0;
-  
+    public int _DamageUpdate = 0; // 데미지 증가 업데이트
+    public float _RanageUpdate = 0; // 사거리 증가 업데이트
+    public float _GcdUpdate = 0;    // 쿨타임 증가 업데이트
+    public int _UpdateCostUpdate = 0;   // 업그레이드 업데이트
+    public int _SellCostUpdate = 0;     // 판매 업데이트
+
     [Header("Maximum Level")]
-    public int _maxiumLevel = 10;
+    public int _maxiumLevel = 10; // 최대 레벨 개수
 
     [Header("Cost")]
-    public TextMeshProUGUI _textUpdateCost;
-    public TextMeshProUGUI _textSellCost;
-
-    private void Awake()
-    {
-        // _tower = 
-    }
+    public TextMeshProUGUI _textUpdateCost; // 업그레이드 Cost
+    public TextMeshProUGUI _textSellCost;   // 판매 Cost
 
     private void Start()
     {
-       //TowerName(_towerStartSo);
-       //TowerAbility(_towerStartSo);
-       //CostStart(_towerStartSo);
+       TowerName(_towerStartSo); // 타워 이름
+        TowerAbilityUpdate(_towerEn); // 타워 능력치
+       CostStart(_towerStartSo); // 타워 Cost 관련
     }
 
     public void TowerName(TowerStatSO _tower)
     {
-        _name.text = _tower.name;
+        _name.text = _tower.name; // 타워 이름 So
     }
 
-    public void TowerAbility(TowerStatSO _tower)
-    {   
-        _textDamage.text = _tower.dmg.ToString();
-        _textGcd.text = _tower.attackSpeed.ToString();
+    public void TowerUpdateDamage(Tower _tower)
+    {
+       _tower.SetDmg(_DamageUpdate);
+    }
+    public void TowerUpdateRanage(Tower _tower)
+    {
+        _tower.SetRange(_RanageUpdate);
+    }
+    public void TowerUpdateGCD(Tower _tower)
+    {
+        _tower.AttackSpeed(_GcdUpdate);
+    }
+    public void UpdateCost(Tower _tower)
+    {
+        _tower.SetUpdateCost(_UpdateCostUpdate);
+    }
+    public void TowerSellCost(Tower _tower)
+    {
+        _tower.SetSellcost(_SellCostUpdate);
     }
 
     public void TowerAbilityUpdate(Tower _tower)
     {
-        _tower.dmg = _DamageUpdate;
-        //_tower.attackspeed = _RanageUpdate;
+        _textDamage.text = _towerEn.dmg.ToString();
+        _textRange.text = _towerEn.range.ToString();
+        _textGcd.text = _towerEn.attackSpeed.ToString();
+        _textUpdateCost.text = _towerEn.updateCost.ToString();
+        _textSellCost.text = _towerEn.sellCost.ToString();
     }
 
     public void CostStart(TowerStatSO _tower)
     {
-        _textUpdateCost.text = _tower.UpdateCost.ToString();
-        _textSellCost.text = _tower.SellCost.ToString();    
+        _textUpdateCost.text = _tower.UpdateCost.ToString(); // 업데이트 Cost
+        _textSellCost.text = _tower.SellCost.ToString();     // 판매 Cost
     }
 
-
-    int _firstLevel = 1;
-    int _lastLevel = 2;
+    int _firstLevel = 1; // 원래 레벨
+    int _lastLevel = 2;  // 증가 레벨
 
     [Header("LevelText")] 
     public TextMeshProUGUI _textFirstLevel;
@@ -71,17 +89,22 @@ public class TowerUI : MonoBehaviour
 
     public void OnUpdateTower()
     {
-        if(_firstLevel < _maxiumLevel )
-        {
-            _firstLevel++;
-            _lastLevel++;
-            _textFirstLevel.text = _firstLevel.ToString();
-            _textLastLevel.text = _lastLevel.ToString();
+        if(_firstLevel < _maxiumLevel)
+        {                  
+                _firstLevel++;
+                _lastLevel++;
+                _textFirstLevel.text = _firstLevel.ToString(); // 레벨이 증가하고 표현
+                _textLastLevel.text = _lastLevel.ToString();   // 레벨이 증가하고 표현
+                TowerAbilityUpdate(_towerEn);
         }
     }
     
     public void Remove()
     {
-        _tower.gameObject.SetActive(false);
+        _tower.gameObject.SetActive(false); // 판매
+        _ui.SetActive(false); // Ui창도 삭제
+        CostStart(_towerStartSo); //
     }
+
+    
 }

@@ -7,8 +7,12 @@ public abstract class Tower : MonoBehaviour
     protected bool isSet = false;
     protected bool ISell = false;
     [SerializeField] private TowerStatSO TowerStatSO;
-    public int dmg { set; private get; }
-    public float attackSpeed { set; private get; }
+    public int dmg { set; get; }
+    public float attackSpeed { set; get; }
+    public int updateCost { set;  get; }
+    public int sellCost { set; get; }
+    public float range { set; get; }
+
     private void Awake()
     {
         Initialize();
@@ -18,14 +22,27 @@ public abstract class Tower : MonoBehaviour
     {
         dmg = TowerStatSO.dmg;
         attackSpeed = TowerStatSO.attackSpeed;
+        range = TowerStatSO.Range;
     }
     public void SetDmg(int value)
     {
-        dmg = value;
+        dmg += value;
     }
     public void AttackSpeed(float value)
     {
-        attackSpeed = value;
+        attackSpeed += value;
+    }
+    public void SetRange(float value)
+    {
+        range += value;
+    }
+    public void SetUpdateCost(int value)
+    {
+        updateCost += value;
+    }
+    public void SetSellcost(int value)
+    {
+        sellCost += value;
     }
     public abstract void Shoot();
 
