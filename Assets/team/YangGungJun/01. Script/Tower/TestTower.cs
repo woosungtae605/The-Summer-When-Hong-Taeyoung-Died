@@ -7,6 +7,7 @@ public class TestTower : Tower
     Bullet bulletAbility;
     private void Awake()
     {
+        base.Awake();
         bulletAbility = Bullet.GetComponent<Bullet>();
     }
     private void Update()
