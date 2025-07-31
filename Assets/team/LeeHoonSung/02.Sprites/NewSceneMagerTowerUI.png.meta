@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      NewSceneMagerTowerUI_0: -7940262400689719380
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
