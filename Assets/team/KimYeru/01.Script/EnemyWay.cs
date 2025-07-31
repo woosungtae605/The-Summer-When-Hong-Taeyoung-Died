@@ -23,7 +23,7 @@ public class EnemyWay : MonoBehaviour
     {
         if (waypoints.Length == 0) return;
 
-        Transform target = waypoints[currentWaypointIndex];
+        Transform target = waypoints[currentWaypointIndex];//타겟
         Vector2 direction = ((Vector2)target.position - (Vector2)transform.position).normalized;
         rb.linearVelocity = direction * monster.monsterSO.speed;
 
@@ -33,7 +33,7 @@ public class EnemyWay : MonoBehaviour
             currentWaypointIndex++;
 
             // 다음 웨이포인트로 계속 진행
-            if (currentWaypointIndex >= waypoints.Length)
+            if (currentWaypointIndex >= waypoints.Length)//도착했는지 확인
             {
                 ReachGoal();
             }
