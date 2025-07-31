@@ -7,11 +7,13 @@ public class SungtaeTest : MonoBehaviour
     {
         if(Keyboard.current.spaceKey.wasPressedThisFrame)
         {
-            SpawnManager.instance.SpawnEnemy(1);
+            SpawnManager.instance.First(transform);
+            Debug.Log(SpawnManager.instance.First(transform));
         }
-        if (Keyboard.current.qKey.wasPressedThisFrame)
+        if(Keyboard.current.qKey.wasPressedThisFrame)
         {
             SpawnManager.instance.SpawnEnemy(2);
         }
+       
     }
 }
