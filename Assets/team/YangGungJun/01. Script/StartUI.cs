@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
 using System.Collections;
+using TMPro;
 
 public class StartUI : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class StartUI : MonoBehaviour
     [SerializeField] private Button startButton;
     [SerializeField] private Button menuButton;
     [SerializeField] private Button exitButton;
+    [Header("게임 제목")]
+    [SerializeField] private TextMeshProUGUI GameName;
 
     [Header("UI 오브젝트")]
     [SerializeField] private GameObject Panel;
@@ -21,12 +24,14 @@ public class StartUI : MonoBehaviour
     [SerializeField] private Vector3 panelOutPosition = new Vector3(-1500f, 0, 0);
     [SerializeField] private Vector3 panelResetPosition = new Vector3(-200f, 0, 0);
 
+    private Vector3 GameTextOriginPos;
     private Vector3 startButtonOriginPos;
     private Vector3 menuButtonOriginPos;
     private Vector3 exitButtonOriginPos;
 
     private void Start()
     {
+        GameTextOriginPos = GameName.transform.position;
         startButtonOriginPos = startButton.transform.position;
         menuButtonOriginPos = menuButton.transform.position;
         exitButtonOriginPos = exitButton.transform.position;
@@ -35,12 +40,14 @@ public class StartUI : MonoBehaviour
 
     private void MoveButtons()
     {
+        GameName.transform.DOMoveX(GameName.transform.position.x + buttonMoveDistance, buttonMoveTime);
         startButton.transform.DOMoveX(startButton.transform.position.x + buttonMoveDistance, buttonMoveTime);
         menuButton.transform.DOMoveX(menuButton.transform.position.x + buttonMoveDistance, buttonMoveTime + 0.3f);
         exitButton.transform.DOMoveX(exitButton.transform.position.x + buttonMoveDistance, buttonMoveTime + 0.5f);
     }
     private void MoveButtonsReset()
     {
+        GameName.transform.position = GameTextOriginPos;
         startButton.transform.position = startButtonOriginPos;
         menuButton.transform.position = menuButtonOriginPos;
         exitButton.transform.position = exitButtonOriginPos;
