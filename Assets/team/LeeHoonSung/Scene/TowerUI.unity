@@ -2167,12 +2167,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df9f2ed06dda46b4296d461fd1be242b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _name: {fileID: 0}
-  _textDamage: {fileID: 0}
-  _textGcd: {fileID: 0}
+  _name: {fileID: 31698192}
+  _textDamage: {fileID: 1725664424}
+  _textGcd: {fileID: 112130582}
   DamageUpdate: 0
   RanageUpdate: 0
-  _maxiumLevel: 0
+  _maxiumLevel: 10
   _textFirstLevel: {fileID: 0}
   _textLastLevel: {fileID: 0}
 --- !u!1 &937534737

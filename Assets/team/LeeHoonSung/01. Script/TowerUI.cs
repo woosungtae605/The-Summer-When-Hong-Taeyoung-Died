@@ -3,8 +3,7 @@ using UnityEngine;
 
 public class TowerUI : MonoBehaviour
 {    
-    TowerStatSO _towerStartSo;
-    Tower _towera;
+    public TowerStatSO _towerStartSo;
     [Header("Ability")]
     public TextMeshProUGUI _name;
     public TextMeshProUGUI _textDamage;
