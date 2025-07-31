@@ -153,7 +153,7 @@ ScriptedImporter:
     layerType: 0
     blendMode: 0
     cells:
-    - name: "\uC2A4\uD504\uB77C\uC774\uD2B8-0003211233213211231321"
+    - name: Distance
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:

@@ -8,7 +8,7 @@ public abstract class Tower : MonoBehaviour
     protected bool ISell = false;
     [SerializeField] private TowerStatSO TowerStatSO;
     GameObject Range;
-    public int dmg { set; private get; }
+
     public float attackSpeed { set; private get; }
     protected void Awake()
     {
@@ -17,20 +17,15 @@ public abstract class Tower : MonoBehaviour
     }
     public void Initialize()
     {
-        dmg = TowerStatSO.dmg;
+
         attackSpeed = TowerStatSO.attackSpeed;
         Range = transform.GetChild(0).gameObject;
-    }
-    public void SetDmg(int value)
-    {
-        dmg = value;
     }
     public void AttackSpeed(float value)
     {
         attackSpeed = value;
     }
     public abstract void Shoot();
-
     IEnumerator Toweraaaaa()//鸥况 积局林扁
     {
         MyState = TowerState.Set;

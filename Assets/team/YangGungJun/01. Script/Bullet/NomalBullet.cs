@@ -4,8 +4,11 @@ public class NomalBullet : Bullet
 {
     [SerializeField] string name;
     [SerializeField] Rigidbody2D rb;
+    [Header("µ¥¹ÌÁö")]
+    [SerializeField] int dmg;
     private void OnEnable()
     {
+        base.OnEnable();
         rb.linearVelocityX = 3;
     }
     private void OnDisable()
@@ -16,7 +19,7 @@ public class NomalBullet : Bullet
     {
         if (collision.gameObject.TryGetComponent<Monster>(out Monster monster))
         {
-           
+            monster.SetHP(dmg);
         }
     }
     public override void Ability()

@@ -12,6 +12,13 @@ public class IceCreamBullet : Bullet
     {
         rb.linearVelocityX = 0;
     }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.TryGetComponent<Monster>(out Monster monster))
+        {
+
+        }
+    }
     public override void Ability()
     {
         

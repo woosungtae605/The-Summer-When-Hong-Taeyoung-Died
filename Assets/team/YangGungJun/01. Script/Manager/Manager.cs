@@ -12,11 +12,14 @@ public class Manager : MonoBehaviour
         }
         else
             Destroy(gameObject);
+
+        Initialize();
     }
     public TowerManager tower { get; private set; }
-
     public void Initialize()
     {
         tower = GetComponentInChildren<TowerManager>();
+        Spwan = GetComponentInChildren<SpawnManager>();
     }
+    public SpawnManager Spwan { get; private set; }
 }

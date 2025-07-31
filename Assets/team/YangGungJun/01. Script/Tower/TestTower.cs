@@ -17,7 +17,7 @@ public class TestTower : Tower
     }
     public override void Shoot()
     {
-       
+        Manager.manager.Spwan.SpawnBullet(transform);
     }
    
 }
