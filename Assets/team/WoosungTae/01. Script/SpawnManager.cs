@@ -7,7 +7,7 @@ public class SpawnManager : MonoBehaviour
     [SerializeField] private int enemyMaxSpawn;
     [SerializeField] private int bulletMaxSpawn;
     [SerializeField] private Transform spawnPosition;
-    private Dictionary<string, Stack<GameObject>> enemyDic = new();
+    private Dictionary<int, Stack<GameObject>> enemyDic = new();
     private Stack<GameObject> bulletStack = new();
     private List<GameObject> activeEnemy = new(); // 현재 살아있는 에너미 수. 이걸로 살아있는 얘들 중, 가장 가까운 적 찾는거임
 
@@ -22,23 +22,25 @@ public class SpawnManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
-
+    }
+    private void Start()
+    {
         Initialize();
     }
-
     private void Initialize() //초기 에너미 딕셔너리에 넣어주는 메서드
     {
         foreach(var enemy in enemies)
         {
-            Monster monster = enemy.GetComponent<Monster>();
             Stack<GameObject> stack = new Stack<GameObject>();
             for (int i = 0; i < enemyMaxSpawn; i++ )
             {
                 GameObject aboutEnemy = Instantiate(enemy, transform);
-                aboutEnemy.SetActive(false);
                 stack.Push(aboutEnemy);
+                aboutEnemy.SetActive(false);
             }
-            enemyDic.Add(monster.name, stack);
+            Monster monster = enemy.GetComponent<Monster>();
+            Debug.Log(monster.GetNumber());
+            enemyDic.Add(monster.GetNumber(), stack);
         }
 
         foreach(var bullet in bullets)
@@ -52,7 +54,7 @@ public class SpawnManager : MonoBehaviour
         }
     }
 
-    public void SpawnEnemy(string enemyName) //에너미 스폰하는 매서드. 그냥 이거 가져가서 스폰할 얘 이름만 적으면 됨
+    public void SpawnEnemy(int enemyName) //에너미 스폰하는 매서드. 그냥 이거 가져가서 스폰할 얘 번호만 적으면 됨
     {
         if(enemyDic.ContainsKey(enemyName))
         {
@@ -89,12 +91,12 @@ public class SpawnManager : MonoBehaviour
             Debug.Log("총알이 다 떨어졋음");
         }
     }
-    public void EnemyReturn(string name, GameObject gameObject) // 에너미 죽었을 때, 다시 넣어주는 메서드. 죽은 얘 이름과, 죽은 애의 게임 오브젝트 넣어주면 됨
+    public void EnemyReturn(int number, GameObject gameObject) // 에너미 죽었을 때, 다시 넣어주는 메서드. 죽은 얘 이름과, 죽은 애의 게임 오브젝트 넣어주면 됨
     {
-        if(enemyDic.ContainsKey(name))
+        if(enemyDic.ContainsKey(number))
         {
             gameObject.SetActive(false);
-            enemyDic[name].Push(gameObject);
+            enemyDic[number].Push(gameObject);
             activeEnemy.Remove(gameObject);
         }
         else
