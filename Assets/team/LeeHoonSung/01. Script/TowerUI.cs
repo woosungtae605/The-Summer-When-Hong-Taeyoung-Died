@@ -4,6 +4,7 @@ using UnityEngine;
 public class TowerUI : MonoBehaviour
 {    
     TowerStatSO _towerStartSo;
+    Tower _towera;
     [Header("Ability")]
     public TextMeshProUGUI _name;
     public TextMeshProUGUI _textDamage;
