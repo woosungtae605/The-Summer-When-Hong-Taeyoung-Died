@@ -15,11 +15,11 @@ public class Manager : MonoBehaviour
 
         Initialize();
     }
-    public TowerManager tower { get; private set; }
+  
     public SpawnManager Spwan { get; private set; }
     public void Initialize()
     {
-        tower = GetComponentInChildren<TowerManager>();
+       
         Spwan = GetComponentInChildren<SpawnManager>();
     }
     

@@ -7,31 +7,24 @@ public class Monster : MonoBehaviour
 {
     public MonsterSO monsterSO;
 
-    private MonsterMovement movement;
+   
     private int WayPointCount;
-
+    private int currentCount;
     [SerializeField] private int number;
     
     [SerializeField] GameObject[] point;
     public int hp { get; private set; }
     private void Start()
     {
-        movement = GetComponent<MonsterMovement>();
+        
     }
     private void Initialize()
     {
-
-    }
-    public int gold { get; private set; }
-    private int currentCount;
-    private void OnEnable()
-    {
-       
         number = monsterSO.monsterNum;
         hp = monsterSO.hp;
         gold = monsterSO.gold;
-        
     }
+    public int gold { get; private set; }
     public int GetNumber()
     {
         return number;
