@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem.Utilities;
 public class SpawnManager : MonoBehaviour
 {
     [SerializeField] private GameObject[] enemies;
@@ -113,5 +114,22 @@ public class SpawnManager : MonoBehaviour
     public List<GameObject> GetActiveEnemy() // 이걸로 살아있는 애들 중, 가장 가까운 적 찾기
     {
         return activeEnemy;
+    }
+
+    public GameObject First(Transform towerPosition) //에너미 우선순위 정하기
+    {
+        float saveDistance = 100;
+        GameObject a = null;
+        foreach (var choidan_Distance in activeEnemy)
+        {
+            float distance = (towerPosition.position - choidan_Distance.transform.position).sqrMagnitude;
+            if (saveDistance > distance)
+            {
+                saveDistance = distance;
+                a = choidan_Distance;   
+            }
+        }
+        return a;
+        
     }
 }
