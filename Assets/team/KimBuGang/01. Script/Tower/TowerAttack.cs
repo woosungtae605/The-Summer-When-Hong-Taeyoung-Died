@@ -4,16 +4,10 @@ using UnityEngine;
 
 public class TowerAttack : MonoBehaviour
 {
-    [Header("Settings")]
+    [Header("Settings")] 
+    public TowerOwnStatSO stat;
     public GameObject target;
-    public int damage;
-    public float rate;
-    public float range;
-    public float bulletSpeed;
     
-    [Header("Cost")]
-    public int upgradeCost;
-    public int sellCost;
     
     private Rigidbody2D rb;
 
@@ -32,16 +26,17 @@ public class TowerAttack : MonoBehaviour
             float rotZ = Mathf.Atan2(newPos.y, newPos.x) * Mathf.Rad2Deg;
             transform.rotation = Quaternion.Euler(0, 0, rotZ);
 
-            if (canShoot && math.distance(target.transform.position, transform.position) <= range)
+            if (canShoot && math.distance(target.transform.position, transform.position) <= stat.range)
             {
                 StartCoroutine(ShootDelay());
                 BulletMove bullet =
                     Instantiate(Resources.Load("Bullet") as GameObject, transform.position, Quaternion.identity)
                         .GetComponent<BulletMove>();
                 bullet.gameObject.GetComponent<SpriteRenderer>().sortingOrder = -1;
+                bullet.gameObject.GetComponent<SpriteRenderer>().color = stat.bulletColor;
                 bullet.target = target;
-                bullet.speed = bulletSpeed;
-                bullet.damage = damage;
+                bullet.speed = stat.bulletSpeed;
+                bullet.damage = stat.dmg;
             }
         }
     }
@@ -49,13 +44,13 @@ public class TowerAttack : MonoBehaviour
     private IEnumerator ShootDelay()
     {
         canShoot = false;
-        yield return new WaitForSeconds(rate);
+        yield return new WaitForSeconds(stat.rate);
         canShoot = true;
     }
 
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, range);
+        Gizmos.DrawWireSphere(transform.position, stat.range);
     }
 }
