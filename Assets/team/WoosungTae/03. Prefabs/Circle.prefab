@@ -102,3 +102,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   monsterSO: {fileID: 11400000, guid: 0acb0e69b57f5e74d97f97d3784253be, type: 2}
   number: 2
+  point: []

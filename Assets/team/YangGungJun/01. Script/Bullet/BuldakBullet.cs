@@ -1,10 +1,12 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
-public class NomalBullet : Bullet
+public class BuldakBullet : Bullet
 {
     [SerializeField] string name;
     [SerializeField] Rigidbody2D rb;
-  
+    [SerializeField] float Slow;
     private void OnEnable()
     {
         base.OnEnable();
@@ -19,10 +21,15 @@ public class NomalBullet : Bullet
         if (collision.gameObject.TryGetComponent<Monster>(out Monster monster))
         {
             monster.SetHP(dmg);
+            Ability(monster.gameObject);
         }
     }
-    public override void Ability(GameObject Monster)
+    public override void Ability(GameObject monster)
     {
-
+       
+    }
+    IEnumerator dmg123()
+    {
+        yield return new WaitForSeconds(3);
     }
 }

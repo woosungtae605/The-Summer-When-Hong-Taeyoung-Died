@@ -8,6 +8,7 @@ public abstract class Tower : MonoBehaviour
     protected bool ISell = false;
     [SerializeField] private TowerStatSO TowerStatSO;
     GameObject Range;
+    GameObject AttackTarget;
 
     public float attackSpeed { set; private get; }
     protected void Awake()
@@ -21,6 +22,10 @@ public abstract class Tower : MonoBehaviour
         attackSpeed = TowerStatSO.attackSpeed;
         Range = transform.GetChild(0).gameObject;
     }
+    private void Update()
+    {
+        AttackTarget = Manager.manager.Spwan.First(transform);
+    }
     public void AttackSpeed(float value)
     {
         attackSpeed = value;
@@ -32,18 +37,22 @@ public abstract class Tower : MonoBehaviour
         yield return new WaitUntil(() => isSet);
         Range.SetActive(false);
         MyState = TowerState.Idle;
-        /*while (!ISell)
+        while (!ISell)
         {
-            /*
-               if (EnemyInRange())
-               {
-                   MyState = TowerState.Shoot;
-               }
-               else
-               {
-                   MyState = TowerState.Idle;
-               }
-        }*/
+
+            if (AttackTarget != null)
+            {
+                float distance = Vector3.Distance(AttackTarget.transform.position, transform.position);
+                if (distance <= TowerStatSO.Range)
+                    MyState = TowerState.Shoot;
+                else
+                    MyState = TowerState.Idle;
+                yield return null;
+            }
+            else
+                MyState = TowerState.Idle;
+            yield return null;
+        }
         MyState = TowerState.Sell;
     }
 }
