@@ -1,15 +1,19 @@
-using System;
 using System.Collections;
 using Unity.Mathematics;
 using UnityEngine;
 
 public class TowerAttack : MonoBehaviour
 {
+    [Header("Settings")]
     public GameObject target;
     public int damage;
     public float rate;
     public float range;
     public float bulletSpeed;
+    
+    [Header("Cost")]
+    public int upgradeCost;
+    public int sellCost;
     
     private Rigidbody2D rb;
 

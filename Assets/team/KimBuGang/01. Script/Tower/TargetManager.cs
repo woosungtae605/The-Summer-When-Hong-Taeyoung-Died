@@ -19,6 +19,8 @@ public class TargetManager : MonoBehaviour
         towerScript.rate = towerStat.rate;
         towerScript.range = towerStat.range;
         towerScript.bulletSpeed = towerStat.bulletSpeed;
+        towerScript.upgradeCost = towerStat.upgradeCost;
+        towerScript.sellCost = towerStat.sellCost;
         tower.transform.GetChild(0).transform.localScale = new Vector2(towerStat.range * 2, towerStat.range * 2);
     }
 }
