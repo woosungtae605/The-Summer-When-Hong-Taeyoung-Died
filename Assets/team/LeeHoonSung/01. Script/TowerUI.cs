@@ -115,11 +115,6 @@ public class TowerUI : MonoBehaviour
         _tower.stat.sellCost += _SellCostUpdate;        
     }
 
-    public void TowerAbilityMax(TowerAttack _tower)
-    {
-       // _tower.upgradeCost = 
-    }
-
     public void UpgradeStart(TowerAttack _tower)
     {
         _upgradeDamage.text = _tower.stat.dmg.ToString();
