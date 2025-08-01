@@ -182,7 +182,7 @@ public class TowerUI : MonoBehaviour
     public void Remove(TowerAttack _tower)
     {
         _channel.ChangeGold((ulong)_tower.stat.sellCost, GoldTypeEnum.GET);
-        _TowerPrefab.SetActive(false);
-        _TowerUI.SetActive(false);
+        Destroy(_TowerPrefab);
+        Destroy(_TowerUI);
     }    
 }
