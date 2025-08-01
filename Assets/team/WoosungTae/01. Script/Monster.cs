@@ -33,7 +33,6 @@ public class Monster : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        Debug.Log(number);
     }
     public int GetNumber()
     {

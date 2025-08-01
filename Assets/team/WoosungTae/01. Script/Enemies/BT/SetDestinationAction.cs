@@ -40,9 +40,5 @@ public partial class SetDestinationAction : Action
         }
         return Status.Running;
     }
-
-    protected override void OnEnd()
-    {
-    }
 }
 

@@ -20,7 +20,7 @@ public class SpawnEnemy : MonoBehaviour
 
     IEnumerator EnemySpawn()
     {
-        for(int i = 0; i < enemies.Length; i++)
+        for (int i = 0; i < enemies.Length; i++)
         {
             canSpawn = true;
             GameObject enemy = Instantiate(enemies[i]);
@@ -31,13 +31,14 @@ public class SpawnEnemy : MonoBehaviour
             {
                 pathMovement.SetReferences(baseTileMap, this.target);
             }
+            TargetTrace target = enemy.AddComponent<TargetTrace>();
+            TargetManager.Instance.targets.Add(target);
             yield return new WaitForSeconds(1);
         }
-            
-        //TargetTrace target = enemy.AddComponent<TargetTrace>();
-       // TargetManager.Instance.targets.Add(target);
-
         canSpawn = false;
     }
-
+       
+       
 }
+
+

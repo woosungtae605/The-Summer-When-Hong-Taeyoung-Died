@@ -7,7 +7,7 @@ public class Home : MonoBehaviour
     [SerializeField] StageClearUI clearUI;
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("target"))
+        if (collision.gameObject.CompareTag("Target"))
         {
             Destroy(collision.gameObject);
             GetDmg();
