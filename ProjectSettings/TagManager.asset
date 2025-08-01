@@ -5,8 +5,7 @@ TagManager:
   serializedVersion: 3
   tags:
   - Target
-  - Tower
-  - Road
+  - Load
   layers:
   - Default
   - TransparentFX

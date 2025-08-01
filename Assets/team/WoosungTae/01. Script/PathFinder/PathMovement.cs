@@ -67,11 +67,33 @@ public class PathMovement : MonoBehaviour, IComponent
     private void Update()
     {
         if (IsStop) return;
+
+        if (_pathCount <= 1)
+        {
+            Debug.LogWarning("경로 없음 또는 실패 (_pathCount=" + _pathCount + ")");
+            return;
+        }
+
+        // 웨이포인트 처리
+        if (!CheckArrived())
+        {
+            Vector2 direction = _path[_currentPathIndex] - (Vector3)_owner.transform.position;
+            _mover.SetMovementInput(direction.normalized);
+            Debug.Log("이동 중, currentIndex=" + _currentPathIndex);
+        }
+        else
+        {
+            // 웨이포인트 하나 도달한 직후
+            Debug.Log("웨이포인트 도달, currentIndex=" + _currentPathIndex);
+            _mover.StopImmediately();
+        }
         if (_currentPathIndex >= _pathCount) return;
 
         if (CheckArrived() == false)
         {
+            Debug.Log("직동");
             Vector2 direction = _path[_currentPathIndex] - _owner.transform.position;
+            Debug.Log(direction);
             _mover.SetMovementInput(direction);
         }
         else

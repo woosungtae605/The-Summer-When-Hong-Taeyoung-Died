@@ -308,4 +308,4 @@ MonoBehaviour:
           m_Value0: 3962455218408309718
           m_Value1: 2397157013354350375
         Name: WayPoints
-        m_Value: {fileID: 5107598034973582138, guid: 5d823b9dc49103e44af4474022e5ad6d, type: 3}
+        m_Value: {fileID: 0}
