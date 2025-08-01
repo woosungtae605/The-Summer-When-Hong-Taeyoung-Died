@@ -1097,7 +1097,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2867541037209678498, guid: e74fd4f6456217246aa62a183088734b, type: 3}
       propertyPath: BGMList.Array.size
-      value: 4
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2867541037209678498, guid: e74fd4f6456217246aa62a183088734b, type: 3}
       propertyPath: SFXList.Array.size
@@ -1113,7 +1113,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2867541037209678498, guid: e74fd4f6456217246aa62a183088734b, type: 3}
       propertyPath: BGMList.Array.data[3].Id
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2867541037209678498, guid: e74fd4f6456217246aa62a183088734b, type: 3}
+      propertyPath: BGMList.Array.data[4].Id
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2867541037209678498, guid: e74fd4f6456217246aa62a183088734b, type: 3}
+      propertyPath: BGMList.Array.data[5].Id
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2867541037209678498, guid: e74fd4f6456217246aa62a183088734b, type: 3}
+      propertyPath: BGMList.Array.data[6].Id
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2867541037209678498, guid: e74fd4f6456217246aa62a183088734b, type: 3}
+      propertyPath: BGMList.Array.data[7].Id
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2867541037209678498, guid: e74fd4f6456217246aa62a183088734b, type: 3}
       propertyPath: SFXList.Array.data[2].Id
@@ -1137,6 +1153,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2867541037209678498, guid: e74fd4f6456217246aa62a183088734b, type: 3}
       propertyPath: BGMList.Array.data[3].Name
+      value: "\uC2A4\uD14C\uC774\uC9C0 1\uBE0C\uAE08"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2867541037209678498, guid: e74fd4f6456217246aa62a183088734b, type: 3}
+      propertyPath: BGMList.Array.data[4].Name
+      value: "\uC2A4\uD14C\uC774\uC9C0 2\uBE0C\uAE08"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2867541037209678498, guid: e74fd4f6456217246aa62a183088734b, type: 3}
+      propertyPath: BGMList.Array.data[5].Name
+      value: "\uC2A4\uD14C\uC774\uC9C0 3\uBE0C\uAE08"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2867541037209678498, guid: e74fd4f6456217246aa62a183088734b, type: 3}
+      propertyPath: BGMList.Array.data[6].Name
+      value: "\uC2A4\uD14C\uC774\uC9C0 4\uBE0C\uAE08"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2867541037209678498, guid: e74fd4f6456217246aa62a183088734b, type: 3}
+      propertyPath: BGMList.Array.data[7].Name
       value: "\uC2A4\uD14C\uC774\uC9C0 5\uBE0C\uAE08"
       objectReference: {fileID: 0}
     - target: {fileID: 2867541037209678498, guid: e74fd4f6456217246aa62a183088734b, type: 3}
@@ -1161,6 +1193,22 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: 4601595ae78d25141924175bc14284c1, type: 3}
     - target: {fileID: 2867541037209678498, guid: e74fd4f6456217246aa62a183088734b, type: 3}
       propertyPath: BGMList.Array.data[3].audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 4403a970e2cea3b4fac7dc318b11b50c, type: 3}
+    - target: {fileID: 2867541037209678498, guid: e74fd4f6456217246aa62a183088734b, type: 3}
+      propertyPath: BGMList.Array.data[4].audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 4403a970e2cea3b4fac7dc318b11b50c, type: 3}
+    - target: {fileID: 2867541037209678498, guid: e74fd4f6456217246aa62a183088734b, type: 3}
+      propertyPath: BGMList.Array.data[5].audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 4403a970e2cea3b4fac7dc318b11b50c, type: 3}
+    - target: {fileID: 2867541037209678498, guid: e74fd4f6456217246aa62a183088734b, type: 3}
+      propertyPath: BGMList.Array.data[6].audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: b8864e458d427f4428f907d38730726f, type: 3}
+    - target: {fileID: 2867541037209678498, guid: e74fd4f6456217246aa62a183088734b, type: 3}
+      propertyPath: BGMList.Array.data[7].audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 4403a970e2cea3b4fac7dc318b11b50c, type: 3}
     - target: {fileID: 2867541037209678498, guid: e74fd4f6456217246aa62a183088734b, type: 3}

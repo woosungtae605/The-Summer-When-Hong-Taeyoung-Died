@@ -28,6 +28,7 @@ public class CamaraControll : MonoBehaviour
     }
     public void ShakeCamara()
     {
+        Debug.Log("sad");
         StopAllCoroutines();
         StartCoroutine(ShakeCoroutine());
     }

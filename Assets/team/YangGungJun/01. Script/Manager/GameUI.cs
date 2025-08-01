@@ -9,9 +9,11 @@ public class GameUI : MonoBehaviour
     [SerializeField] float MaxTime;
     [SerializeField] TextMeshProUGUI WaveText;
     [SerializeField] GameObject GameEndUI;
+    private AudioSource audioSource;
     int count = 0;
     private void Start()
     {
+        audioSource.clip = Manager.manager.Sound.SetSoundBGM(3);
         SetText();
     }
     private void Update()
