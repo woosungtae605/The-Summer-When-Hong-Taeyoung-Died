@@ -5,7 +5,7 @@ public class TowerUI : MonoBehaviour
 {
     [Header("publicObject")]
     public TowerAttack _towerAttack;
-    public CostManager _costManager;
+    public Sprite _icon;
 
     [Header("Ability")]  // ´É·ÂÄ¡
     public TextMeshProUGUI _name;
@@ -60,6 +60,12 @@ public class TowerUI : MonoBehaviour
         UpgradeStart(_towerAttack);
         TowerAbilityMiray(_towerAttack);
     }
+
+    public void OnIcon(TowerAttack _tower)
+    {
+        
+    }
+
 
     public void TowerName(TowerAttack _tower)
     {
