@@ -5,6 +5,7 @@ public class SpawnTower : MonoBehaviour
 {
     public TowerStats towerStats;
     public GameObject mouse;
+    public GoldChannelSO goldChannel;
     
     private GameObject currentTower = null;
     private TowerStats.TowerStat currentTowerStat = null;
@@ -43,6 +44,7 @@ public class SpawnTower : MonoBehaviour
     {
         if (currentTower != null && currentTowerStat != null)
         {
+            goldChannel.ChangeGold((ulong)currentTowerStat.purchaseCost, GoldTypeEnum.SPEND);
             TargetManager.Instance.AddTower(currentTowerStat);
             currentTower = null;
             currentTowerStat = null;
