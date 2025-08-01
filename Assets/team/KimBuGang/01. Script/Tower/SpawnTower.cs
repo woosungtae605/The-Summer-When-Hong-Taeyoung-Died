@@ -6,6 +6,8 @@ public class SpawnTower : MonoBehaviour
     public TowerStats towerStats;
     public GameObject mouse;
     public GoldChannelSO goldChannel;
+
+    public int maxTowerCount;
     
     private GameObject currentTower = null;
     private TowerStats.TowerStat currentTowerStat = null;
@@ -44,7 +46,7 @@ public class SpawnTower : MonoBehaviour
     {
         if (currentTower != null && currentTowerStat != null  && !OnMouse.Instance.onTower)
         {
-            if ((int)goldChannel.Gold  >= currentTowerStat.purchaseCost)
+            if ((int)goldChannel.Gold  >= currentTowerStat.purchaseCost && TargetManager.Instance.towers.Count <  maxTowerCount)
             {
                 goldChannel.ChangeGold((ulong)currentTowerStat.purchaseCost, GoldTypeEnum.SPEND);
                 TargetManager.Instance.AddTower(currentTowerStat);
