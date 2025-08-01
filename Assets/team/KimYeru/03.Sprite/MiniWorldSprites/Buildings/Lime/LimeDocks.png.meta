@@ -40,7 +40,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -54,7 +54,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -107,9 +107,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 16
         width: 32
-        height: 32
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -125,12 +125,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LimeDocks_1
+      name: LimeDocks_2
       rect:
         serializedVersion: 2
-        x: 31
+        x: 32
         y: 0
-        width: 33
+        width: 16
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -138,10 +138,54 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 5902a45cbf484e6f0800000000000000
-      internalID: -656253428807622507
+      spriteID: a791fd2a66f938047ad233bf8919ed9d
+      internalID: -1951584353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LimeDocks_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 611ff6acdd8c23e47babc475e07a88a6
+      internalID: -1223397730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LimeDocks_7
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1458eca62e2c6bd47b4224bf5b054529
+      internalID: 1670426097
       vertices: []
       indices: 
       edges: []
@@ -150,7 +194,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: b27b10001f72aed4593ed659b6ca7fe1
     internalID: 0
     vertices: []
     indices: 
@@ -159,7 +203,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      LimeDocks_0: 8468817231004389226
+      LimeDocks_1: -656253428807622507
+      LimeDocks_2: -1951584353
+      LimeDocks_3: 1789225026
+      LimeDocks_4: -1223397730
+      LimeDocks_5: 169603308
+      LimeDocks_6: 598782365
+      LimeDocks_7: 1670426097
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
