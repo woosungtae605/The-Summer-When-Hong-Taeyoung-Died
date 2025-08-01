@@ -1222,7 +1222,7 @@ PrefabInstance:
     - target: {fileID: 2867541037209678498, guid: e74fd4f6456217246aa62a183088734b, type: 3}
       propertyPath: SFXList.Array.data[4].audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: c1f70ab65082b5040be301e36fd5fa1a, type: 3}
+      objectReference: {fileID: 8300000, guid: d2403b5f6afbca94287a68560b021f2b, type: 3}
     - target: {fileID: 3298695694258383484, guid: e74fd4f6456217246aa62a183088734b, type: 3}
       propertyPath: Loop
       value: 1
