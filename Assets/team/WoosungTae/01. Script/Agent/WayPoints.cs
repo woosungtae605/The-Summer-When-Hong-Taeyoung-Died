@@ -5,6 +5,12 @@ public class WayPoints : MonoBehaviour
     [SerializeField] private WayPoint[] wayPoints;
 
     private int _currentIdx;
+    private int waypointsLength;
+
+    private void Awake()
+    {
+      //  waypointsLength
+    }
 
     public Vector3 GetNextWayPoint()
     {
