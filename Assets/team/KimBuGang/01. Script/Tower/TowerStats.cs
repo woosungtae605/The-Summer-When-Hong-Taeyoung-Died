@@ -17,7 +17,7 @@ public class TowerStats : ScriptableObject
         public float bulletSpeed;
         public int upgradeCost;
         public int sellCost;
-        public Color bulletColor;
+        public GameObject bullet;
     }
     
     public List<TowerStat> towers = new List<TowerStat>();

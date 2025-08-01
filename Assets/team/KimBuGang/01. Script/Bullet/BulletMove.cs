@@ -3,6 +3,7 @@ using DG.Tweening;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
+[RequireComponent(typeof(SpecialBullet))]
 public class BulletMove : MonoBehaviour
 {
     public GameObject target;
@@ -10,10 +11,12 @@ public class BulletMove : MonoBehaviour
     public float speed;
     
     private Rigidbody2D rb;
+    private SpecialBullet sb;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        sb = GetComponent<SpecialBullet>();
     }
 
     private void FixedUpdate()
@@ -29,7 +32,12 @@ public class BulletMove : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == target.tag)
+        if (other == target&& other.TryGetComponent<Monster>(out Monster monsters))
+        {
             Destroy(gameObject);
+            sb.Damage(monsters,damage);
+        }
+        else if (other.TryGetComponent<Monster>(out Monster monster) && sb.type == SpecialBulletType.Piercing)
+            monster.SetHP(damage);
     }
 }
