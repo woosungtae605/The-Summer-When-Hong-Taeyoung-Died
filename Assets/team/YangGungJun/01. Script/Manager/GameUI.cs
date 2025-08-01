@@ -9,9 +9,11 @@ public class GameUI : MonoBehaviour
     [SerializeField] float MaxTime;
     [SerializeField] TextMeshProUGUI WaveText;
     [SerializeField] GameObject GameEndUI;
+    private AudioSource audioSource;
     int count = 0;
     private void Start()
     {
+        audioSource.clip = Manager.manager.Sound.SetSoundBGM(3);
         SetText();
     }
     private void Update()
@@ -35,10 +37,12 @@ public class GameUI : MonoBehaviour
     public void ReStartGame()
     {
         int NowScene = SceneManager.GetActiveScene().buildIndex;
+        Time.timeScale = 1;
         SceneManager.LoadScene(NowScene);
     }
     public void GoMenu()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
+        Time.timeScale = 1;
     }
 }

@@ -92,7 +92,7 @@ public class PathMovement : MonoBehaviour, IComponent
         if (CheckArrived() == false)
         {
             Vector2 direction = _path[_currentPathIndex] - _owner.transform.position;
-            Debug.Log(direction);
+            //Debug.Log(direction);
             _mover.SetMovementInput(direction);
         }
         else
