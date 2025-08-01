@@ -82,7 +82,7 @@ public class TowerUI : MonoBehaviour
         _mirayRange = _tower.stat.range;
         _mirayGcd = _tower.stat.rate;
         _mirayDamage += _tower.stat.damageUpgrade;
-        _mirayRange += _tower.stat.ranageUpgrade;
+        _mirayRange += _tower.stat.rangeUpgrade;
         _mirayGcd += _tower.stat.rateUpgrade;
 
         _mirayDamamge.text = _mirayDamage.ToString();
@@ -104,7 +104,7 @@ public class TowerUI : MonoBehaviour
     {       
         _tower.stat.dmg += _tower.stat.damageUpgrade;
         _tower.stat.rate /= _tower.stat.rateUpgrade;
-        _tower.stat.range += _tower.stat.ranageUpgrade;
+        _tower.stat.range += _tower.stat.rangeUpgrade;
         _tower.gameObject.transform.GetChild(0).transform.localScale = new Vector3(_tower.stat.range*2, _tower.stat.range*2, 1);
         _tower.stat.upgradeCost += _tower.stat.updateCostUpgrade;
         _tower.stat.sellCost += _tower.stat.sellCostUpgrade;        
