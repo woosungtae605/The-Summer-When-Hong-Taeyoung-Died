@@ -718,7 +718,7 @@ GameObject:
   - component: {fileID: 797477776}
   - component: {fileID: 797477775}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: wave
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1031,7 +1031,7 @@ PrefabInstance:
     - target: {fileID: 6834668621642049930, guid: a5c951e54b4b35045bfb13d295cb30bf, type: 3}
       propertyPath: WaveText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 797477775}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1943,6 +1943,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1117675913}
   - component: {fileID: 1117675914}
+  - component: {fileID: 1117675915}
   m_Layer: 0
   m_Name: SpawnManager
   m_TagString: Untagged
@@ -1984,6 +1985,22 @@ MonoBehaviour:
   target: {fileID: 1022837707}
   enemies:
   - {fileID: 6631934145062661979, guid: 1b9eadbcde6fcdf4ea7ae3e389f8d492, type: 3}
+  - {fileID: 5680964478913546209, guid: df9787479e5df38488aadbdc5f80b672, type: 3}
+  - {fileID: 8532992676162648809, guid: 9b2deefd623c85d4d8eaa093c81a585c, type: 3}
+  - {fileID: 1892321558341078886, guid: 20fcd0dccd3639a4faed9c053b8ccc24, type: 3}
+--- !u!114 &1117675915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1117675911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 473b01a41ab33b943b00022a391aaa3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waveText: {fileID: 797477775}
 --- !u!1 &1281957216
 GameObject:
   m_ObjectHideFlags: 0

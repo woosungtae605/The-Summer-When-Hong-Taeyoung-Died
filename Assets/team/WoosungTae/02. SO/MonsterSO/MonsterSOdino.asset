@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd0327eb720d3b44cb7e5e2ddf49feeb, type: 3}
   m_Name: MonsterSOdino
   m_EditorClassIdentifier: 
-  monsterNum: 0
-  hp: 0
-  speed: 0
-  gold: 0
+  monsterNum: 1
+  hp: 2
+  speed: 5
+  gold: 1
