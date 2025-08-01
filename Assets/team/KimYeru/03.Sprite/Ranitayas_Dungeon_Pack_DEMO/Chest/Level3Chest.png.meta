@@ -409,7 +409,19 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Level3Chest_0: -1562860036861850351
+      Level3Chest_1: -2739120288053762372
+      Level3Chest_10: -899022324963914133
+      Level3Chest_11: 1545677127873111458
+      Level3Chest_2: -3464368270361735723
+      Level3Chest_3: -3731121327469152976
+      Level3Chest_4: 8584993710384627664
+      Level3Chest_5: 3167772636113245014
+      Level3Chest_6: 5531060898840859933
+      Level3Chest_7: -1378199062017093442
+      Level3Chest_8: -4468538222913065706
+      Level3Chest_9: -5800027792265116360
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

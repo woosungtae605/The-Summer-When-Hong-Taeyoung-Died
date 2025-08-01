@@ -259,7 +259,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Fire coming out Sheet_0: 7161012683937551573
+      Fire coming out Sheet_1: 9163383946920109910
+      Fire coming out Sheet_2: -2890388035519087919
+      Fire coming out Sheet_3: -5642898595546851047
+      Fire coming out Sheet_4: 2350773989314563576
+      Fire coming out Sheet_5: 4941352509513032078
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
