@@ -1034,6 +1034,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 797477775}
     - target: {fileID: 6834668621642049930, guid: a5c951e54b4b35045bfb13d295cb30bf, type: 3}
+      propertyPath: CamaraSize
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6834668621642049930, guid: a5c951e54b4b35045bfb13d295cb30bf, type: 3}
       propertyPath: PlayBgmNumber
       value: 4
       objectReference: {fileID: 0}
