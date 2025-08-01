@@ -29,7 +29,7 @@ public class TargetManager : MonoBehaviour
     {
         for (int i = targets.Count - 1; i >= 0; i--)
         {
-            if (targets[i] == null) // Unity¿¡¼­ ÆÄ±«µÈ °´Ã¼´Â ºñ±³½Ã null·Î Æò°¡µÊ
+            if (targets[i] == null) // Unityï¿½ï¿½ï¿½ï¿½ ï¿½Ä±ï¿½ï¿½ï¿½ ï¿½ï¿½Ã¼ï¿½ï¿½ ï¿½ñ±³½ï¿½ nullï¿½ï¿½ ï¿½ò°¡µï¿½
                 targets.RemoveAt(i);
         }
     }
@@ -50,15 +50,11 @@ public class TargetManager : MonoBehaviour
         if (tower == null || tower.stat == null) return;
 
         List<TargetTrace> targets = new List<TargetTrace>();
-        Debug.Log("È®ÀÎ1");
         foreach (var target in this.targets)
         {
             
             if (math.distance(target.transform.position, tower.transform.position) < tower.stat.range)
-            {
                 targets.Add(target);
-                Debug.Log("È®ÀÎ2");
-            }
          
         }
             
@@ -66,7 +62,6 @@ public class TargetManager : MonoBehaviour
         TargetTrace finalTarget = null;
         foreach (var target in targets)
         {
-            Debug.Log("È®ÀÎ3");
             if (finalTarget == null)
                 finalTarget = target;
             else if (finalTarget.priority > target.priority)
