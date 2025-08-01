@@ -18,7 +18,7 @@ MonoBehaviour:
     tower: {fileID: 4405898564516946075, guid: 53234dd4d2895234ab7f88aac93a3ab7, type: 3}
     dmg: 50
     rate: 4
-    range: 20
+    range: 2.5
     bulletSpeed: 5
     upgradeCost: 200
     sellCost: 100

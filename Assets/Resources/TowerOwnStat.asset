@@ -16,8 +16,8 @@ MonoBehaviour:
   name: 
   tower: {fileID: 0}
   dmg: 20
-  rate: 7
-  range: 10
+  rate: 3
+  range: 2.5
   bulletSpeed: 4
   upgradeCost: 200
   sellCost: 100
