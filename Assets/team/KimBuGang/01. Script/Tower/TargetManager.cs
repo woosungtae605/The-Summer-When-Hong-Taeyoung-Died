@@ -17,6 +17,7 @@ public class TargetManager : MonoBehaviour
         TowerOwnStatSO towerScript = tower.GetComponent<TowerAttack>().stat;
         towers.Add(tower.GetComponent<TowerAttack>());
         tower.GetComponent<TowerAttack>().target= testTarget;
+        towerScript.icon = towerStat.icon;
         towerScript.name = tower.name;
         towerScript.dmg = towerStat.dmg;
         towerScript.rate = towerStat.rate;
