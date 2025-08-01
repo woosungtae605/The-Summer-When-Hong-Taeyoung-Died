@@ -159,7 +159,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Sorcerer_noOutline (sleeping)_0: 8088752171335131005
+      Sorcerer_noOutline (sleeping)_1: 8969152280028227455
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

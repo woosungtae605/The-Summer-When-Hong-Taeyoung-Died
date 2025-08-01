@@ -309,7 +309,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Fox_sleeping_0: 6772515625116434280
+      Fox_sleeping_1: 5783268123199638120
+      Fox_sleeping_2: 8028731669988455847
+      Fox_sleeping_3: -3228899164589541440
+      Fox_sleeping_4: -9138884470326893562
+      Fox_sleeping_5: 652336456992405120
+      Fox_sleeping_6: -2796774475202463938
+      Fox_sleeping_7: -3698795405232150014
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

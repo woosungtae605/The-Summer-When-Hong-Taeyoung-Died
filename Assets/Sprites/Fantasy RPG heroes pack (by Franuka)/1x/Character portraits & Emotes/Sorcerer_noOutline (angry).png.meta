@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Sorcerer_noOutline (angry)_0: -8559682746920168171
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

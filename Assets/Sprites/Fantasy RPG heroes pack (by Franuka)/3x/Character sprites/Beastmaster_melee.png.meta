@@ -509,7 +509,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Beastmaster_melee_0: 5760083491746613107
+      Beastmaster_melee_1: -1011638119075385437
+      Beastmaster_melee_10: 2437096779711647800
+      Beastmaster_melee_11: 8080866346324482830
+      Beastmaster_melee_12: -7195936911242497519
+      Beastmaster_melee_13: 7067271858041153236
+      Beastmaster_melee_14: 5643235618015139434
+      Beastmaster_melee_15: -4413395352694053718
+      Beastmaster_melee_2: -7082619157037610705
+      Beastmaster_melee_3: -4790104686229682332
+      Beastmaster_melee_4: 1256705086013970149
+      Beastmaster_melee_5: 4383329066769464662
+      Beastmaster_melee_6: -5738383338175729660
+      Beastmaster_melee_7: 5453737947106730015
+      Beastmaster_melee_8: -8411518173811164773
+      Beastmaster_melee_9: -3779146487104588602
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

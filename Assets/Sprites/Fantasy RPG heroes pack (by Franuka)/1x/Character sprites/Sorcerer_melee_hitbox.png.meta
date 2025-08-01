@@ -409,7 +409,19 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Sorcerer_melee_hitbox_0: 8548539607581221428
+      Sorcerer_melee_hitbox_1: -9071135618153368415
+      Sorcerer_melee_hitbox_10: -8546632052627984888
+      Sorcerer_melee_hitbox_11: 6016523474880775677
+      Sorcerer_melee_hitbox_2: -5334497155218759081
+      Sorcerer_melee_hitbox_3: 1503812759515831190
+      Sorcerer_melee_hitbox_4: 7086399885705225710
+      Sorcerer_melee_hitbox_5: 1287131522298511100
+      Sorcerer_melee_hitbox_6: -9065322257083882237
+      Sorcerer_melee_hitbox_7: 1649334551312304448
+      Sorcerer_melee_hitbox_8: 6451490590150086957
+      Sorcerer_melee_hitbox_9: -5197415304524648959
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

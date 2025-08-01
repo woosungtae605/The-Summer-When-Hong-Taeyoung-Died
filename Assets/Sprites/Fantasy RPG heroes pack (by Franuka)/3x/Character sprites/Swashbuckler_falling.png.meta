@@ -409,7 +409,19 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Swashbuckler_falling_0: -4296250633454533486
+      Swashbuckler_falling_1: -237019722815418073
+      Swashbuckler_falling_10: -137602480415576859
+      Swashbuckler_falling_11: -8188585160620346462
+      Swashbuckler_falling_2: 7677165213376498517
+      Swashbuckler_falling_3: -6127971419583646173
+      Swashbuckler_falling_4: -4825891362641201977
+      Swashbuckler_falling_5: 4368843355212632601
+      Swashbuckler_falling_6: -6299264287925063614
+      Swashbuckler_falling_7: 7566595309586803442
+      Swashbuckler_falling_8: 1046301907966610882
+      Swashbuckler_falling_9: 1835867001667941032
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -209,7 +209,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Sorcerer_cast_0: -1960164790129265713
+      Sorcerer_cast_1: -5164140595074035293
+      Sorcerer_cast_2: -3259575263416364861
+      Sorcerer_cast_3: -7979035953343296317
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

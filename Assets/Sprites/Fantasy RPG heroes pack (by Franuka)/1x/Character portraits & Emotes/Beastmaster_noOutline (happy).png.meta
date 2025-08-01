@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Beastmaster_noOutline (happy)_0: -8055341924770179397
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

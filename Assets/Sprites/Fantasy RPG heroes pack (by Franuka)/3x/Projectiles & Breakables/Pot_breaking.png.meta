@@ -309,7 +309,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Pot_breaking_0: -5010013814836235217
+      Pot_breaking_1: 1799668702068370425
+      Pot_breaking_2: -3919532085865059988
+      Pot_breaking_3: 1758512546494272791
+      Pot_breaking_4: 6524370154381060046
+      Pot_breaking_5: 652944183853562765
+      Pot_breaking_6: -4067959441693906627
+      Pot_breaking_7: 2908710703740111776
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

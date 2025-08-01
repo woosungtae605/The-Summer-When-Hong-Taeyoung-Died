@@ -509,7 +509,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Beastmaster_walk_0: -5605807227258013367
+      Beastmaster_walk_1: 9092720556708195499
+      Beastmaster_walk_10: 7223175002151927071
+      Beastmaster_walk_11: 7158346968821274588
+      Beastmaster_walk_12: 5542546899980024175
+      Beastmaster_walk_13: -971678595132253309
+      Beastmaster_walk_14: 8768415575222663371
+      Beastmaster_walk_15: 4871416931433343999
+      Beastmaster_walk_2: 842102327359864278
+      Beastmaster_walk_3: -5405101789161757403
+      Beastmaster_walk_4: 745049705226445857
+      Beastmaster_walk_5: 6531141927809301292
+      Beastmaster_walk_6: -739095068074783055
+      Beastmaster_walk_7: -3880815760170029787
+      Beastmaster_walk_8: 4611724283150432732
+      Beastmaster_walk_9: 9136919420213954700
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

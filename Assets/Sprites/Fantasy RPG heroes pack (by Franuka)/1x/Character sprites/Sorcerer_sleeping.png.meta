@@ -309,7 +309,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Sorcerer_sleeping_0: -8587350528559282487
+      Sorcerer_sleeping_1: -1750221900393200929
+      Sorcerer_sleeping_2: 3570565932512598078
+      Sorcerer_sleeping_3: 2293462190599677757
+      Sorcerer_sleeping_4: 218635386511078156
+      Sorcerer_sleeping_5: -7571248373251358483
+      Sorcerer_sleeping_6: -8807190766613365782
+      Sorcerer_sleeping_7: -3743551134495617413
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

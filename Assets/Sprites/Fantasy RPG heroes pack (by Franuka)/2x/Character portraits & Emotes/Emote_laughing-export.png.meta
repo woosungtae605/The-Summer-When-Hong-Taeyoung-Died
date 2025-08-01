@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Emote_laughing-export_0: -2195006247672865499
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

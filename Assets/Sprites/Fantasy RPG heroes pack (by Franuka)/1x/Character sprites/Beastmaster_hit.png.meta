@@ -309,7 +309,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Beastmaster_hit_0: -4926955442184212563
+      Beastmaster_hit_1: -3544121401106918518
+      Beastmaster_hit_2: 4415091440991659122
+      Beastmaster_hit_3: 2321775840481363005
+      Beastmaster_hit_4: 863056966755054677
+      Beastmaster_hit_5: -7618253758617618910
+      Beastmaster_hit_6: 181677973611783346
+      Beastmaster_hit_7: 8961762457700542846
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

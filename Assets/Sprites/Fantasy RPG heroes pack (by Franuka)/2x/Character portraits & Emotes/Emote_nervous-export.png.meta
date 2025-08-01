@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Emote_nervous-export_0: 7073162259552403118
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

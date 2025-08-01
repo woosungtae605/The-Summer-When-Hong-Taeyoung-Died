@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Beastmaster_frame (angry)_0: 4348568404764859103
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

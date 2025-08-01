@@ -809,7 +809,35 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Sorcerer_teleport_0: -1684006490505212347
+      Sorcerer_teleport_1: 1392618510011015944
+      Sorcerer_teleport_10: 1523490572450810562
+      Sorcerer_teleport_11: -6549091254731439630
+      Sorcerer_teleport_12: 3815974840833102301
+      Sorcerer_teleport_13: -3798047576964232116
+      Sorcerer_teleport_14: 7659972535437225167
+      Sorcerer_teleport_15: 1283189252927651772
+      Sorcerer_teleport_16: 5836899644035483216
+      Sorcerer_teleport_17: 4683185133101582616
+      Sorcerer_teleport_18: 8471368748507712007
+      Sorcerer_teleport_19: 7287380255495545616
+      Sorcerer_teleport_2: 2350783351557306329
+      Sorcerer_teleport_20: -9205424755850912369
+      Sorcerer_teleport_21: 4506612026822383527
+      Sorcerer_teleport_22: 4237560654733996427
+      Sorcerer_teleport_23: -1266317633358425049
+      Sorcerer_teleport_24: 3707846871051498060
+      Sorcerer_teleport_25: 7942254244188249162
+      Sorcerer_teleport_26: 5948819323737311355
+      Sorcerer_teleport_27: -5963138927724796103
+      Sorcerer_teleport_3: 7469083942599530003
+      Sorcerer_teleport_4: 5839871308336161293
+      Sorcerer_teleport_5: -794355521426164550
+      Sorcerer_teleport_6: -4143782128738377611
+      Sorcerer_teleport_7: -8064790542418743953
+      Sorcerer_teleport_8: 8651049223378916598
+      Sorcerer_teleport_9: 8386270211545354346
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

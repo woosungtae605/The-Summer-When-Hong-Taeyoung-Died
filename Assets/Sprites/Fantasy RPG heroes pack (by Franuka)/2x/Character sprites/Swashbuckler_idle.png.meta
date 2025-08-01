@@ -509,7 +509,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Swashbuckler_idle_0: -4595008655229252104
+      Swashbuckler_idle_1: -5000528131510629218
+      Swashbuckler_idle_10: -6232729357020441760
+      Swashbuckler_idle_11: 5946859957433860741
+      Swashbuckler_idle_12: 8510045429761129239
+      Swashbuckler_idle_13: -811515012610139370
+      Swashbuckler_idle_14: -4516616133760520166
+      Swashbuckler_idle_15: -7587791486536784488
+      Swashbuckler_idle_2: 6336023033504755637
+      Swashbuckler_idle_3: 7110763459766771337
+      Swashbuckler_idle_4: 2153445011518970247
+      Swashbuckler_idle_5: 2551099119353950220
+      Swashbuckler_idle_6: -7740258867106429801
+      Swashbuckler_idle_7: -7003637590394290254
+      Swashbuckler_idle_8: 9014916623393576987
+      Swashbuckler_idle_9: -6413353000691580246
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

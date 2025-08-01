@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Beastmaster_noOutline (nervous)_0: 5103791256610487526
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

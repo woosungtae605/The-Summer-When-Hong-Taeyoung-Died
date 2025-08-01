@@ -509,7 +509,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Swashbuckler_melee_0: 7468747580607057466
+      Swashbuckler_melee_1: -2525745508203718435
+      Swashbuckler_melee_10: -1278238426313622133
+      Swashbuckler_melee_11: 5399292362470667882
+      Swashbuckler_melee_12: 6209659387872740642
+      Swashbuckler_melee_13: -6967139115571894423
+      Swashbuckler_melee_14: 6488815421093597574
+      Swashbuckler_melee_15: -807439788562774251
+      Swashbuckler_melee_2: -1889330031000670710
+      Swashbuckler_melee_3: -7842551293795409592
+      Swashbuckler_melee_4: 7858977224811831889
+      Swashbuckler_melee_5: -8765178925718161173
+      Swashbuckler_melee_6: -3621818978312428058
+      Swashbuckler_melee_7: 3082481239447209961
+      Swashbuckler_melee_8: -6392498826761001509
+      Swashbuckler_melee_9: 1013933000630242709
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

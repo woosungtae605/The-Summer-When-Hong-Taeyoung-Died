@@ -609,7 +609,27 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Sorcerer_woodcutting_0: -3799588215060936017
+      Sorcerer_woodcutting_1: 4722417501041107020
+      Sorcerer_woodcutting_10: 9186410025996049955
+      Sorcerer_woodcutting_11: 4839336897371401956
+      Sorcerer_woodcutting_12: 3561590585251134939
+      Sorcerer_woodcutting_13: -4519134605103526632
+      Sorcerer_woodcutting_14: -5310187212490950743
+      Sorcerer_woodcutting_15: -1634513412706589552
+      Sorcerer_woodcutting_16: -2210079282138625714
+      Sorcerer_woodcutting_17: 771141549106967574
+      Sorcerer_woodcutting_18: -7923666655251705494
+      Sorcerer_woodcutting_19: -7466587151682730958
+      Sorcerer_woodcutting_2: -2124556027288285881
+      Sorcerer_woodcutting_3: 4775061900704826822
+      Sorcerer_woodcutting_4: -7550128527959113972
+      Sorcerer_woodcutting_5: -2582623368845584339
+      Sorcerer_woodcutting_6: -7935900621980494264
+      Sorcerer_woodcutting_7: 4077545122706667292
+      Sorcerer_woodcutting_8: -8317488691171995138
+      Sorcerer_woodcutting_9: 4747012546453740857
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

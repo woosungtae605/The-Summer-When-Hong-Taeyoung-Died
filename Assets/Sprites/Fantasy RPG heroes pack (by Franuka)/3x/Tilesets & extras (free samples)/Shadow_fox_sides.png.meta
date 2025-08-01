@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Shadow_fox_sides_0: -2368633722485796581
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

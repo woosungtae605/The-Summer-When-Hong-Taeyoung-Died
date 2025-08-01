@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Swashbuckler (sleeping)_0: -4478638351459588744
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

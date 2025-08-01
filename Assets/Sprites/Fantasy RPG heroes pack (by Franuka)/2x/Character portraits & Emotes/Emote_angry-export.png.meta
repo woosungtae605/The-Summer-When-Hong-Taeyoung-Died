@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Emote_angry-export_0: -7550711373452695806
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

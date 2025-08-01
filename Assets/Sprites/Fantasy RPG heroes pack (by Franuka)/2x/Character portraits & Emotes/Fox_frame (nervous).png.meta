@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Fox_frame (nervous)_0: 3205975215669924939
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

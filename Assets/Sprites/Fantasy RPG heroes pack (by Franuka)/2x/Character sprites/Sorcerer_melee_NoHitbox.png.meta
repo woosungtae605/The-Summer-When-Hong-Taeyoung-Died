@@ -509,7 +509,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Sorcerer_melee_NoHitbox_0: -40733953707368570
+      Sorcerer_melee_NoHitbox_1: -7300544816096837530
+      Sorcerer_melee_NoHitbox_10: 7408995233318569856
+      Sorcerer_melee_NoHitbox_11: -4822763447557462322
+      Sorcerer_melee_NoHitbox_12: -5049393777215439351
+      Sorcerer_melee_NoHitbox_13: -416390036448964971
+      Sorcerer_melee_NoHitbox_14: 9064669569960977772
+      Sorcerer_melee_NoHitbox_15: 3462510842421036070
+      Sorcerer_melee_NoHitbox_2: 1707142037718250896
+      Sorcerer_melee_NoHitbox_3: 8796516686171599252
+      Sorcerer_melee_NoHitbox_4: -202100566985740615
+      Sorcerer_melee_NoHitbox_5: -7455040530073708694
+      Sorcerer_melee_NoHitbox_6: -8890645742023274465
+      Sorcerer_melee_NoHitbox_7: 6098172490163302397
+      Sorcerer_melee_NoHitbox_8: -4779127765572345555
+      Sorcerer_melee_NoHitbox_9: 9097006139374428148
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

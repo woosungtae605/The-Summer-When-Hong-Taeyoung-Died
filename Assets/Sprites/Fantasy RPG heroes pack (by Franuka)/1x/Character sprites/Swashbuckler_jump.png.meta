@@ -209,7 +209,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Swashbuckler_jump_0: -1720462565478749041
+      Swashbuckler_jump_1: 4956819903587150808
+      Swashbuckler_jump_2: 4813000884355497687
+      Swashbuckler_jump_3: 1757122724923497941
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

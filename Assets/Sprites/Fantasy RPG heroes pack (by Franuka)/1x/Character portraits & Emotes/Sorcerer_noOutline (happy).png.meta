@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Sorcerer_noOutline (happy)_0: -813391659364904161
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

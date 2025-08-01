@@ -509,7 +509,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Fox_melee_NoHitbox_0: 1554378451774498446
+      Fox_melee_NoHitbox_1: 8501023105572441363
+      Fox_melee_NoHitbox_10: 1078434490259398187
+      Fox_melee_NoHitbox_11: -5737464168623380842
+      Fox_melee_NoHitbox_12: -636414042253439104
+      Fox_melee_NoHitbox_13: 1683563821056361422
+      Fox_melee_NoHitbox_14: -5611684179289316916
+      Fox_melee_NoHitbox_15: 7553408488231084203
+      Fox_melee_NoHitbox_2: 5392561585366297881
+      Fox_melee_NoHitbox_3: -7247790212587167075
+      Fox_melee_NoHitbox_4: -4106216775209166614
+      Fox_melee_NoHitbox_5: -8007509547278073004
+      Fox_melee_NoHitbox_6: 2086731956375594633
+      Fox_melee_NoHitbox_7: 6265245060482973366
+      Fox_melee_NoHitbox_8: 1148990626403512629
+      Fox_melee_NoHitbox_9: 806042109467526563
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

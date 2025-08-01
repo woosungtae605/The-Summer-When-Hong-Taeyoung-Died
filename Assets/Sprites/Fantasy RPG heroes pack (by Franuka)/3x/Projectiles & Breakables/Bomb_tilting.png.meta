@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Bomb_tilting_0: 4306707584661264096
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

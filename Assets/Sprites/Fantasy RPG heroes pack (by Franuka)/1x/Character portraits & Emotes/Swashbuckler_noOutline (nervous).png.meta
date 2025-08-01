@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Swashbuckler_noOutline (nervous)_0: 4967413015560953890
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

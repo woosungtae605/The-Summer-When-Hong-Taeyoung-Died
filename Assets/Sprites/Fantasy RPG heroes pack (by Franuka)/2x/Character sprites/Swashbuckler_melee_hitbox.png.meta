@@ -659,7 +659,29 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Swashbuckler_melee_hitbox_0: -6977924751035737147
+      Swashbuckler_melee_hitbox_1: -3612832164698797452
+      Swashbuckler_melee_hitbox_10: -4961848013243237492
+      Swashbuckler_melee_hitbox_11: 7252236859289052782
+      Swashbuckler_melee_hitbox_12: 771277564302834639
+      Swashbuckler_melee_hitbox_13: -1028831116579165928
+      Swashbuckler_melee_hitbox_14: -4966588329087341067
+      Swashbuckler_melee_hitbox_15: 4488502801187460459
+      Swashbuckler_melee_hitbox_16: -603637018697421332
+      Swashbuckler_melee_hitbox_17: 728885001506342704
+      Swashbuckler_melee_hitbox_18: -2798434433120789041
+      Swashbuckler_melee_hitbox_19: -7778425135376081849
+      Swashbuckler_melee_hitbox_2: -5357170958698593724
+      Swashbuckler_melee_hitbox_20: 1609807240786094098
+      Swashbuckler_melee_hitbox_21: 25513620285201871
+      Swashbuckler_melee_hitbox_3: -3585863394415971070
+      Swashbuckler_melee_hitbox_4: -6749108956306633113
+      Swashbuckler_melee_hitbox_5: -9196541230938855750
+      Swashbuckler_melee_hitbox_6: -3273742648470886747
+      Swashbuckler_melee_hitbox_7: -3727700762731039205
+      Swashbuckler_melee_hitbox_8: -4747644648840265206
+      Swashbuckler_melee_hitbox_9: -6565560957416874162
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

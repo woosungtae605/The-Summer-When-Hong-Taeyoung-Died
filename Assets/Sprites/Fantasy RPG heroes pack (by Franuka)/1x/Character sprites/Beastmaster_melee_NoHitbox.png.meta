@@ -509,7 +509,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Beastmaster_melee_NoHitbox_0: -1466774649837456774
+      Beastmaster_melee_NoHitbox_1: -6891308527277154310
+      Beastmaster_melee_NoHitbox_10: -6661184630338666913
+      Beastmaster_melee_NoHitbox_11: -5493883492371856328
+      Beastmaster_melee_NoHitbox_12: -5830331010713725631
+      Beastmaster_melee_NoHitbox_13: -373536565318558429
+      Beastmaster_melee_NoHitbox_14: -7457073106749777624
+      Beastmaster_melee_NoHitbox_15: -2123207446817688229
+      Beastmaster_melee_NoHitbox_2: 3632830824173357920
+      Beastmaster_melee_NoHitbox_3: 2640207145609105983
+      Beastmaster_melee_NoHitbox_4: 8466600696273767693
+      Beastmaster_melee_NoHitbox_5: 6461814243568839439
+      Beastmaster_melee_NoHitbox_6: -3214562440184375854
+      Beastmaster_melee_NoHitbox_7: -8710526349381092019
+      Beastmaster_melee_NoHitbox_8: 3813269503675286706
+      Beastmaster_melee_NoHitbox_9: 4785823295639476773
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

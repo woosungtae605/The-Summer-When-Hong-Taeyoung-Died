@@ -209,7 +209,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Sorcerer_jump_0: 8647805815699270693
+      Sorcerer_jump_1: -8594705438548053413
+      Sorcerer_jump_2: 647025679910526706
+      Sorcerer_jump_3: -2577555923014321658
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

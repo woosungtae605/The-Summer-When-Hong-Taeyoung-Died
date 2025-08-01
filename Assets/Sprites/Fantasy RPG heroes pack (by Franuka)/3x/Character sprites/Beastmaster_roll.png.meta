@@ -609,7 +609,27 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Beastmaster_roll_0: -8865501571703698353
+      Beastmaster_roll_1: -1685366880923504537
+      Beastmaster_roll_10: 8333420264486245892
+      Beastmaster_roll_11: 2578496247050523698
+      Beastmaster_roll_12: -6185789368266582222
+      Beastmaster_roll_13: -6138103513265390918
+      Beastmaster_roll_14: -6626131789768987091
+      Beastmaster_roll_15: -3063388302177802837
+      Beastmaster_roll_16: 3073487582859326746
+      Beastmaster_roll_17: -1627639392056889061
+      Beastmaster_roll_18: -1349481184665838739
+      Beastmaster_roll_19: -924179519393509831
+      Beastmaster_roll_2: -1345812170449697371
+      Beastmaster_roll_3: -2294714253390441865
+      Beastmaster_roll_4: -1437136209343954030
+      Beastmaster_roll_5: 7475249447216323510
+      Beastmaster_roll_6: -8309553408770311486
+      Beastmaster_roll_7: 1744227636247596489
+      Beastmaster_roll_8: 9006126508620653084
+      Beastmaster_roll_9: 4236178601575501621
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

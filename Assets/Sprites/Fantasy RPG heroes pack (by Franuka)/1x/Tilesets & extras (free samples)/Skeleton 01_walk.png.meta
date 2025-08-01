@@ -509,7 +509,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Skeleton 01_walk_0: 6273242436557789404
+      Skeleton 01_walk_1: -9008302553579157260
+      Skeleton 01_walk_10: -7252693647118223335
+      Skeleton 01_walk_11: -1725529856589255700
+      Skeleton 01_walk_12: -1977441106030510192
+      Skeleton 01_walk_13: -5791834734869587514
+      Skeleton 01_walk_14: 5184492641548162863
+      Skeleton 01_walk_15: 5452355238917291707
+      Skeleton 01_walk_2: -8787952570130299658
+      Skeleton 01_walk_3: -7708917158236068447
+      Skeleton 01_walk_4: -2927269261551171347
+      Skeleton 01_walk_5: -6381463992930530685
+      Skeleton 01_walk_6: -2674534119797388680
+      Skeleton 01_walk_7: -4017848811851917907
+      Skeleton 01_walk_8: -3141974449011782725
+      Skeleton 01_walk_9: -3754480931116040755
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

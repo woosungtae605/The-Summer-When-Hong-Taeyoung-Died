@@ -209,7 +209,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Beastmaster_itemGot_0: 2455647446569917999
+      Beastmaster_itemGot_1: -4904946899633478908
+      Beastmaster_itemGot_2: -3094063001353461072
+      Beastmaster_itemGot_3: -8106861708851162907
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -759,7 +759,33 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Grass_breaking_0: -3928489340870477433
+      Grass_breaking_1: 1346103923806886087
+      Grass_breaking_10: -2049986951436999976
+      Grass_breaking_11: -6417898653741883428
+      Grass_breaking_12: 3433075786351265800
+      Grass_breaking_13: -2385384086823811945
+      Grass_breaking_14: -6781836890297926725
+      Grass_breaking_15: 597999497506827050
+      Grass_breaking_16: -3467627102665723341
+      Grass_breaking_17: 2202639854409491451
+      Grass_breaking_18: -2916520399005451709
+      Grass_breaking_19: 5149741658256006900
+      Grass_breaking_2: 5829814474066724716
+      Grass_breaking_20: -1178496928847651036
+      Grass_breaking_21: 4038393218102928667
+      Grass_breaking_22: 6251441470607354408
+      Grass_breaking_23: -6452355784700129191
+      Grass_breaking_24: 3514290180950298126
+      Grass_breaking_25: 1452482980717755046
+      Grass_breaking_3: 322662252443784637
+      Grass_breaking_4: -2788141428088104972
+      Grass_breaking_5: 4797052663328909084
+      Grass_breaking_6: 5337983044689717108
+      Grass_breaking_7: 2926574305739893549
+      Grass_breaking_8: 5761027297595805041
+      Grass_breaking_9: -2049058141383799229
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

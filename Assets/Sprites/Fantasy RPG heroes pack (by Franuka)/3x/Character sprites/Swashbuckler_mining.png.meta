@@ -609,7 +609,27 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Swashbuckler_mining_0: 6124877433171623233
+      Swashbuckler_mining_1: 7270063377833895790
+      Swashbuckler_mining_10: -422102656360446183
+      Swashbuckler_mining_11: -3024816651983481690
+      Swashbuckler_mining_12: 7844509883173227011
+      Swashbuckler_mining_13: -21415677406529730
+      Swashbuckler_mining_14: 4749732912837428076
+      Swashbuckler_mining_15: 2569661563807122108
+      Swashbuckler_mining_16: -6769548105535491412
+      Swashbuckler_mining_17: 9063699936622165032
+      Swashbuckler_mining_18: -5667488267269254510
+      Swashbuckler_mining_19: 1650407875497120729
+      Swashbuckler_mining_2: -4920452184818782086
+      Swashbuckler_mining_3: -8213061684280831743
+      Swashbuckler_mining_4: 4725458461616780939
+      Swashbuckler_mining_5: 8267136705399115199
+      Swashbuckler_mining_6: 8150062565524463413
+      Swashbuckler_mining_7: 5413814298808447075
+      Swashbuckler_mining_8: 4173548492057548418
+      Swashbuckler_mining_9: 5558411293019090304
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

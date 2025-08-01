@@ -1009,7 +1009,43 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Fox_melee_0: -8662681066524875758
+      Fox_melee_1: 9100893427476776862
+      Fox_melee_10: 6069181805655513644
+      Fox_melee_11: -8499103155024176756
+      Fox_melee_12: 5012472789758090164
+      Fox_melee_13: -4417840393123387958
+      Fox_melee_14: 1739390309878384716
+      Fox_melee_15: -5829254388290739316
+      Fox_melee_16: 204168361881424997
+      Fox_melee_17: -2528568368256860230
+      Fox_melee_18: -7132406311932496835
+      Fox_melee_19: -4861209141504406396
+      Fox_melee_2: 5397928559362031493
+      Fox_melee_20: 4411259837729535760
+      Fox_melee_21: -1803482252805355498
+      Fox_melee_22: -385088064387346040
+      Fox_melee_23: 6069005778147056006
+      Fox_melee_24: -1921598180487172080
+      Fox_melee_25: -6933079162050258581
+      Fox_melee_26: -8428443699174801747
+      Fox_melee_27: -5169696867919304416
+      Fox_melee_28: 7841038508782522841
+      Fox_melee_29: 4111931239539563144
+      Fox_melee_3: 4581175636519872994
+      Fox_melee_30: -5656128670863874842
+      Fox_melee_31: 8457734004162197253
+      Fox_melee_32: 2726197352983280450
+      Fox_melee_33: -7456949663614221016
+      Fox_melee_34: 3940712901753823602
+      Fox_melee_35: 7893813461259970782
+      Fox_melee_4: -7546842983156288113
+      Fox_melee_5: -5167580455447011704
+      Fox_melee_6: -4280459343117400328
+      Fox_melee_7: 1414282947495609357
+      Fox_melee_8: 5940276875568993697
+      Fox_melee_9: 8346382239991130311
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

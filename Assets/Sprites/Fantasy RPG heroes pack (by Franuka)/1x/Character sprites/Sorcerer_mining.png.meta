@@ -609,7 +609,27 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Sorcerer_mining_0: -3163325742092242950
+      Sorcerer_mining_1: 2314435243970222854
+      Sorcerer_mining_10: 2513978494922905335
+      Sorcerer_mining_11: -4988925314639827525
+      Sorcerer_mining_12: 7244789886374589009
+      Sorcerer_mining_13: -2507873466809977334
+      Sorcerer_mining_14: 8806619214237235347
+      Sorcerer_mining_15: -8408548691098146710
+      Sorcerer_mining_16: -657518200031380653
+      Sorcerer_mining_17: 406054394834919347
+      Sorcerer_mining_18: 50988206979503829
+      Sorcerer_mining_19: -2087887058889153093
+      Sorcerer_mining_2: -6963129060440325288
+      Sorcerer_mining_3: -3863870669272122826
+      Sorcerer_mining_4: 7022309020961776530
+      Sorcerer_mining_5: 148892739392087288
+      Sorcerer_mining_6: 2739213341129470805
+      Sorcerer_mining_7: 7583840762892094902
+      Sorcerer_mining_8: 6539517636067758229
+      Sorcerer_mining_9: -4834739413447510031
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

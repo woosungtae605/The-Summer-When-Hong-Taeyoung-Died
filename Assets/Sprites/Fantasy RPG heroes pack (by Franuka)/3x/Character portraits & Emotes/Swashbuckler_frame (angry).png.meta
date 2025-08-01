@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Swashbuckler_frame (angry)_0: 538923144338855732
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -609,7 +609,27 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Swashbuckler_woodcutting_0: -3029747527567667082
+      Swashbuckler_woodcutting_1: 8928025174310513031
+      Swashbuckler_woodcutting_10: -3677261954128344916
+      Swashbuckler_woodcutting_11: -3235460551782986395
+      Swashbuckler_woodcutting_12: -8773870950515934943
+      Swashbuckler_woodcutting_13: -6482925475189377405
+      Swashbuckler_woodcutting_14: 2186319092857030035
+      Swashbuckler_woodcutting_15: -205404745045767656
+      Swashbuckler_woodcutting_16: -5100792392288297385
+      Swashbuckler_woodcutting_17: -4100244633052944847
+      Swashbuckler_woodcutting_18: 2919584887570326400
+      Swashbuckler_woodcutting_19: 8419801974466238857
+      Swashbuckler_woodcutting_2: 6467057398936925106
+      Swashbuckler_woodcutting_3: 3825457755914593391
+      Swashbuckler_woodcutting_4: 8857384598328833249
+      Swashbuckler_woodcutting_5: 360530567176890632
+      Swashbuckler_woodcutting_6: -2124986378166716086
+      Swashbuckler_woodcutting_7: -9189288986949025509
+      Swashbuckler_woodcutting_8: 8105875299312565028
+      Swashbuckler_woodcutting_9: 4135355284493108208
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

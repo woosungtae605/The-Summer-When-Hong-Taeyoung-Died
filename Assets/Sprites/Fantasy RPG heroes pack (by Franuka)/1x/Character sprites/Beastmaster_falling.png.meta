@@ -409,7 +409,19 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Beastmaster_falling_0: -3780921298519730830
+      Beastmaster_falling_1: -5683105966298546002
+      Beastmaster_falling_10: -6874382679586701884
+      Beastmaster_falling_11: -5188712398799909342
+      Beastmaster_falling_2: 8582426999909018399
+      Beastmaster_falling_3: 6880749414803908930
+      Beastmaster_falling_4: 2043698702449684646
+      Beastmaster_falling_5: 3318003445670352301
+      Beastmaster_falling_6: 1728586695740597877
+      Beastmaster_falling_7: -6167060107472485814
+      Beastmaster_falling_8: -4522096162758187398
+      Beastmaster_falling_9: -2811800108412371341
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

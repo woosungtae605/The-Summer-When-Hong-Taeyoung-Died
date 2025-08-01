@@ -609,7 +609,27 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Beastmaster_mining_0: -6894586194653806984
+      Beastmaster_mining_1: -6374835112581879111
+      Beastmaster_mining_10: 3604450959862955859
+      Beastmaster_mining_11: -3858565667649036318
+      Beastmaster_mining_12: -6907231575460746842
+      Beastmaster_mining_13: -3321368882830436006
+      Beastmaster_mining_14: -5063500312117060381
+      Beastmaster_mining_15: 2742143940192925383
+      Beastmaster_mining_16: 6211690798674560581
+      Beastmaster_mining_17: 1824099635156748975
+      Beastmaster_mining_18: -5248228423114777044
+      Beastmaster_mining_19: 1416797900329044868
+      Beastmaster_mining_2: -3900600545744494247
+      Beastmaster_mining_3: -6694434976402241085
+      Beastmaster_mining_4: 1950694521714433310
+      Beastmaster_mining_5: 6746366515492386633
+      Beastmaster_mining_6: -7223710069313585501
+      Beastmaster_mining_7: -7317546524057665190
+      Beastmaster_mining_8: -261376925682609047
+      Beastmaster_mining_9: 8869908003407395345
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

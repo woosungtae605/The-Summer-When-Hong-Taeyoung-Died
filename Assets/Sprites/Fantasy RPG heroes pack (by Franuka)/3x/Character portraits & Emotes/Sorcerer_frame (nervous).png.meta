@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Sorcerer_frame (nervous)_0: -8357940120973033326
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

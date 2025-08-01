@@ -309,7 +309,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Sorcerer_hit_0: 1177969806204489755
+      Sorcerer_hit_1: -8557888614496516990
+      Sorcerer_hit_2: 3757618482387896834
+      Sorcerer_hit_3: -5741739817004304988
+      Sorcerer_hit_4: -6186087033591443411
+      Sorcerer_hit_5: -1202411051146426387
+      Sorcerer_hit_6: 599348468798300160
+      Sorcerer_hit_7: -2146321136391337900
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

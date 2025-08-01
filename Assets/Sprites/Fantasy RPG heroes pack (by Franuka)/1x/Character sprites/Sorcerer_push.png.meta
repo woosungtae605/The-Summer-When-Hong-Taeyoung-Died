@@ -509,7 +509,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Sorcerer_push_0: 2888361522206463244
+      Sorcerer_push_1: 701752080489613652
+      Sorcerer_push_10: 1186368636294273187
+      Sorcerer_push_11: 5089252682871913660
+      Sorcerer_push_12: 547059144954101786
+      Sorcerer_push_13: 7092463534052401008
+      Sorcerer_push_14: 4599262548355386703
+      Sorcerer_push_15: 5866265298760982444
+      Sorcerer_push_2: -5098983256787154489
+      Sorcerer_push_3: -5462078804174529712
+      Sorcerer_push_4: -1066951062304179391
+      Sorcerer_push_5: -3023948996221482694
+      Sorcerer_push_6: -8633627146865011375
+      Sorcerer_push_7: -2876854569950956467
+      Sorcerer_push_8: 8549052047585086766
+      Sorcerer_push_9: 371325105718358266
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -409,7 +409,19 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Sorcerer_falling_0: 9207559969767024679
+      Sorcerer_falling_1: -6740266781032039864
+      Sorcerer_falling_10: -3241476210076792665
+      Sorcerer_falling_11: 428057203701976082
+      Sorcerer_falling_2: 9143393634011820557
+      Sorcerer_falling_3: -5401840866304570204
+      Sorcerer_falling_4: 8963415013541750454
+      Sorcerer_falling_5: 5487763386276412490
+      Sorcerer_falling_6: 5501061427798432811
+      Sorcerer_falling_7: -5225391243165661636
+      Sorcerer_falling_8: 793711601391986523
+      Sorcerer_falling_9: -5390647473658886128
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

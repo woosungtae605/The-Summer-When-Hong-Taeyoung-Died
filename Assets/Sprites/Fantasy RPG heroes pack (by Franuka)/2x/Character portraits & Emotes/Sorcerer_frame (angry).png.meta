@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Sorcerer_frame (angry)_0: 4972153212297148112
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

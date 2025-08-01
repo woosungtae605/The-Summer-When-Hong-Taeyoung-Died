@@ -309,7 +309,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Beastmaster_sleeping_0: 8617643631359702619
+      Beastmaster_sleeping_1: -7421005852268481686
+      Beastmaster_sleeping_2: 3680906583252653439
+      Beastmaster_sleeping_3: 1885474948583100467
+      Beastmaster_sleeping_4: 3354255911287392785
+      Beastmaster_sleeping_5: -4152527272028400912
+      Beastmaster_sleeping_6: -3092157088618202298
+      Beastmaster_sleeping_7: 1343285682874129676
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

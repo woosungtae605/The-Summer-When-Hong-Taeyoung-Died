@@ -209,7 +209,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Beastmaster_ranged_0: -9129638988439602702
+      Beastmaster_ranged_1: -5254411781314132835
+      Beastmaster_ranged_2: 4879450181165393507
+      Beastmaster_ranged_3: 7312281302242845013
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

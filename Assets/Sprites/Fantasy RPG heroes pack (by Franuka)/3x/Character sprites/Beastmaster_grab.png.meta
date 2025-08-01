@@ -209,7 +209,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Beastmaster_grab_0: -6887914088668285124
+      Beastmaster_grab_1: 5271823022396728135
+      Beastmaster_grab_2: -3251640884274384591
+      Beastmaster_grab_3: -5823371907759850802
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
