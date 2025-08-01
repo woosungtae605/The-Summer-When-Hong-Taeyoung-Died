@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      BlueDinosaur3_0: -4565477501057141866
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
