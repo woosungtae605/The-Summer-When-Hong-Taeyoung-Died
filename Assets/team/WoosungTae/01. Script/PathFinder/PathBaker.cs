@@ -44,6 +44,7 @@ public class PathBaker : MonoBehaviour
                     {
                         if (CheckCorner(nextPoint, nodeData.cellPosition))
                         {
+                            Debug.Log("ตส");
                             nodeData.AddNeighbor(adjacentNode);
                         }
                     }
