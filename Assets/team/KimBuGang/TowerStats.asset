@@ -13,21 +13,33 @@ MonoBehaviour:
   m_Name: TowerStats
   m_EditorClassIdentifier: 
   towers:
-  - name: Default
+  - icon: {fileID: 0}
+    name: Default
     tower: {fileID: 4405898564516946075, guid: 53234dd4d2895234ab7f88aac93a3ab7, type: 3}
     dmg: 3
     rate: 1
     range: 8
     bulletSpeed: 5
-  - name: Speed
+    upgradeCost: 0
+    sellCost: 0
+    bulletColor: {r: 1, g: 1, b: 1, a: 1}
+  - icon: {fileID: 0}
+    name: Speed
     tower: {fileID: 2636040404408354085, guid: 89e5b2b864fade042b5dc6326750feeb, type: 3}
     dmg: 1
     rate: 0.2
     range: 5
     bulletSpeed: 8
-  - name: Power
+    upgradeCost: 0
+    sellCost: 0
+    bulletColor: {r: 1, g: 1, b: 1, a: 1}
+  - icon: {fileID: 0}
+    name: Power
     tower: {fileID: 488889409089806986, guid: 727dafe0ff132a549b9f2738d6757717, type: 3}
     dmg: 12
     rate: 3
     range: 4
     bulletSpeed: 3
+    upgradeCost: 0
+    sellCost: 0
+    bulletColor: {r: 1, g: 1, b: 1, a: 1}
