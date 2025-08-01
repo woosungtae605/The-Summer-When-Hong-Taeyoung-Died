@@ -3,7 +3,6 @@ using UnityEngine;
 public class SpawnTower : MonoBehaviour
 {
     public TowerStats towerStats;
-    [SerializeField] TargetManager targetManager;
     
     private TowerStats.TowerStat currentTower = null;
 
@@ -19,7 +18,7 @@ public class SpawnTower : MonoBehaviour
         if (Input.GetMouseButtonUp(0))
             if (currentTower != null)
             {
-                targetManager.AddTower( currentTower);
+                TargetManager.Instance.AddTower( currentTower);
                 currentTower = null;
             }
     }
