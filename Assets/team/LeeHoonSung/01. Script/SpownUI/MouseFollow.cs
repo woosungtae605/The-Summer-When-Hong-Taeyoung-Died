@@ -8,6 +8,6 @@ public class MouseFollow : MonoBehaviour
 
         Vector3 worldPostion = Camera.main.ScreenToWorldPoint(mousePostion);
 
-        transform.position = worldPostion;
+        transform.position = new Vector3(worldPostion.x, worldPostion.y, 0);
     }
 }
