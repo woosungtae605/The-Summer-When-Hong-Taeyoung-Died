@@ -64,7 +64,7 @@ public class StartUI : MonoBehaviour
         startButtonOriginPos = startButton.transform.position;
         menuButtonOriginPos = menuButton.transform.position;
         exitButtonOriginPos = exitButton.transform.position;
-
+        Manager.manager.BGM.SetBGM(0);
         MoveButtons();
     }
     private void MoveButtons()

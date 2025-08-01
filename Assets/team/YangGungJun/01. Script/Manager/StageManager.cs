@@ -24,6 +24,7 @@ public class StageManager : MonoBehaviour
     private void Start()
     {
         ListMaxCount = PanelList.Count;
+        Manager.manager.BGM.SetBGM(1);
         audioSource.clip = Manager.manager.Sound.SetSoundSFX(0);
     }
     public void NextPoint()
