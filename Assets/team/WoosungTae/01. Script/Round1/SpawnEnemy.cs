@@ -22,10 +22,12 @@ public class SpawnEnemy : MonoBehaviour
         Debug.Log("µø¿€â≥");
         canSpawn = true;
         GameObject enemy = Instantiate(enemies[0]);
+        TargetTrace target = enemy.AddComponent<TargetTrace>();
+        TargetManager.Instance.targets.Add(target);
         enemy.transform.position = spawnPosition.transform.position;
         var pathMovement = enemy.GetComponent<PathMovement>();
         if (pathMovement != null)
-            pathMovement.SetReferences(baseTileMap, target);
+            pathMovement.SetReferences(baseTileMap, this.target);
         yield return new WaitForSeconds(1);
         canSpawn = false;
     }
