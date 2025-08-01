@@ -209,7 +209,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Barrel Hit Animation Sheet_0: 634647610487819425
+      Barrel Hit Animation Sheet_1: -7906040912890107904
+      Barrel Hit Animation Sheet_2: 2116634553071795380
+      Barrel Hit Animation Sheet_3: 7992209121159749497
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

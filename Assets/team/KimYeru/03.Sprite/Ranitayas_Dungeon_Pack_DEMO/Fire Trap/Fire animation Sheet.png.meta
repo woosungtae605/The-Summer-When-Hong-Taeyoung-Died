@@ -334,7 +334,16 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Fire animation Sheet_0: 4052138366099867681
+      Fire animation Sheet_1: 6511300603075991483
+      Fire animation Sheet_2: -3643701824405924837
+      Fire animation Sheet_3: -6498191984832539928
+      Fire animation Sheet_4: -2777035095525375191
+      Fire animation Sheet_5: 1311776693046038732
+      Fire animation Sheet_6: -4942340132038513547
+      Fire animation Sheet_7: -8122824581914630271
+      Fire animation Sheet_8: -1401726175014088656
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
