@@ -13,7 +13,7 @@ public class Spawn2Enemy : MonoBehaviour
     {
         if (!canSpawn)
         {
-             StartCoroutine(EnemySpawn());
+             // StartCoroutine(EnemySpawn());
         }
     }
 
@@ -43,7 +43,13 @@ public class Spawn2Enemy : MonoBehaviour
     public void EnemySpawn_1()
     {
         GameObject enemy = Instantiate(enemies[0]);
-        enemy.transform.position = spawnPosition[0].position;
+        int a = Random.Range(0, 2);
+        enemy.transform.position = spawnPosition[a].position;
+        if (a >= 1)
+        {
+            SpriteRenderer flip = enemy.GetComponent<SpriteRenderer>();
+            flip.flipX = true;
+        }
 
         var pathMovement = enemy.GetComponent<PathMovement>();
         if (pathMovement != null)
@@ -58,6 +64,11 @@ public class Spawn2Enemy : MonoBehaviour
         GameObject enemy = Instantiate(enemies[1]);
         int a = Random.Range(0, 2);
         enemy.transform.position = spawnPosition[a].position;
+        if(a >= 1)
+        {
+           SpriteRenderer flip = enemy.GetComponent<SpriteRenderer>();
+            flip.flipX = true;
+        }
 
         var pathMovement = enemy.GetComponent<PathMovement>();
         if (pathMovement != null)
@@ -73,6 +84,11 @@ public class Spawn2Enemy : MonoBehaviour
         GameObject enemy = Instantiate(enemies[2]);
         int a = Random.Range(0, 2);
         enemy.transform.position = spawnPosition[a].position;
+        if (a >= 1)
+        {
+            SpriteRenderer flip = enemy.GetComponent<SpriteRenderer>();
+            flip.flipX = true;
+        }
 
         var pathMovement = enemy.GetComponent<PathMovement>();
         if (pathMovement != null)
@@ -87,6 +103,11 @@ public class Spawn2Enemy : MonoBehaviour
         GameObject enemy = Instantiate(enemies[3]);
         int a = Random.Range(0, 2);
         enemy.transform.position = spawnPosition[a].position;
+        if (a >= 1)
+        {
+            SpriteRenderer flip = enemy.GetComponent<SpriteRenderer>();
+            flip.flipX = true;
+        }
 
         var pathMovement = enemy.GetComponent<PathMovement>();
         if (pathMovement != null)

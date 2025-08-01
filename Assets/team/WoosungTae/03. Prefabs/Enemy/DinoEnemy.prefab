@@ -17,7 +17,6 @@ GameObject:
   - component: {fileID: 2182743202924214903}
   - component: {fileID: 1221048210511150572}
   - component: {fileID: 211119432263561129}
-  - component: {fileID: 4726628362969699971}
   m_Layer: 0
   m_Name: DinoEnemy
   m_TagString: Target
@@ -205,7 +204,7 @@ MonoBehaviour:
           m_Value0: 3962455218408309718
           m_Value1: 2397157013354350375
         Name: WayPoints
-        m_Value: {fileID: 0}
+        m_Value: {fileID: 7576763247764135721, guid: 6d51a2faf26561041b0d54f9ecde0d16, type: 3}
 --- !u!114 &7112757721950775466
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -218,7 +217,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b447bfff25df10c4083a47f54b686147, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bakedData: {fileID: 11400000, guid: 8075e13c9e41fb947ba4b09b3e9f9e11, type: 2}
+  bakedData: {fileID: 11400000, guid: 6bc6523993e9a9147beb3e08bc038c19, type: 2}
 --- !u!114 &2182743202924214903
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -263,28 +262,6 @@ MonoBehaviour:
   channelSO: {fileID: 11400000, guid: d23b7cd91e789084a81c18dc53a2e054, type: 2}
   number: 0
   point: []
---- !u!95 &4726628362969699971
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1892321558341078886}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2225abd9f5523354086acb9de22d5282, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &5581609107528537206
 GameObject:
   m_ObjectHideFlags: 0
