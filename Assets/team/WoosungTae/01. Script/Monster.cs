@@ -1,7 +1,5 @@
 using System.Collections;
 using UnityEngine;
-using UnityEngine.InputSystem;
-using UnityEngine.InputSystem.iOS;
 
 public class Monster : MonoBehaviour
 {
@@ -15,6 +13,7 @@ public class Monster : MonoBehaviour
     [SerializeField] GameObject[] point;
     public int hp { get; private set; }
     public float speed { get; private set; }
+    private float basicSpeed;
     private void Start()
     {
         Initialize();
@@ -25,15 +24,9 @@ public class Monster : MonoBehaviour
         speed = monsterSO.speed;
         hp = monsterSO.hp;
         gold = monsterSO.gold;
+        basicSpeed = speed;
     }
     public int gold { get; private set; }
-    private void Update()
-    {
-        if(hp <= 0)
-        {
-            Destroy(gameObject);
-        }
-    }
     public int GetNumber()
     {
         return number;
@@ -42,13 +35,25 @@ public class Monster : MonoBehaviour
     public void SetHP(int damage)
     {
         hp -= damage;
+        if(hp <= 0)
+        {
+            Destroy(gameObject);
+        }
     }
-    public void SetSpeed(float slow)
+    public void SetSpeed(float slow, float time)
     {
-        speed -= slow;
+        StartCoroutine(SlowDown(slow, time));
     }
     public void SetGold(ulong manyMoney)
     {
         channelSO.ChangeGold(manyMoney,GoldTypeEnum.GET);
+    }
+
+    private IEnumerator SlowDown(float slow, float time)
+    {
+        speed = basicSpeed - slow;
+        speed = Mathf.Clamp(speed, 0, basicSpeed);
+        yield return new WaitForSeconds(time);
+        speed = basicSpeed;
     }
 }

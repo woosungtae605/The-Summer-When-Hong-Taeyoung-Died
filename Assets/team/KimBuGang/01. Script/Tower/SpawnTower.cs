@@ -42,13 +42,16 @@ public class SpawnTower : MonoBehaviour
 
     public void Confirm()
     {
-        if (currentTower != null && currentTowerStat != null)
+        if (currentTower != null && currentTowerStat != null )
         {
-            goldChannel.ChangeGold((ulong)currentTowerStat.purchaseCost, GoldTypeEnum.SPEND);
-            TargetManager.Instance.AddTower(currentTowerStat);
-            currentTower = null;
-            currentTowerStat = null;
-            Destroy(mouse.transform.GetChild(0).gameObject);
+            if ((int)goldChannel.Gold  >= currentTowerStat.purchaseCost)
+            {
+                goldChannel.ChangeGold((ulong)currentTowerStat.purchaseCost, GoldTypeEnum.SPEND);
+                TargetManager.Instance.AddTower(currentTowerStat);
+                currentTower = null;
+                currentTowerStat = null;
+                Destroy(mouse.transform.GetChild(0).gameObject);
+            }
         }
         else if (currentTowerStat == null && currentTower == null)
             OnMouse.Instance.ClickTower();
