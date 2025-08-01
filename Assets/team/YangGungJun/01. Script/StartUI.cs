@@ -3,6 +3,7 @@ using UnityEngine.UI;
 using DG.Tweening;
 using System.Collections;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class StartUI : MonoBehaviour
 {
@@ -22,7 +23,10 @@ public class StartUI : MonoBehaviour
     [SerializeField] private float buttonMoveTime = 0.5f;
     [SerializeField] private float panelMoveTime = 0.87f;
     [SerializeField] private Vector3 panelOutPosition = new Vector3(-1500f, 0, 0);
-    [SerializeField] private Vector3 panelResetPosition = new Vector3(-200f, 0, 0);
+    [SerializeField] private float PanelPos;
+    [SerializeField] Canvas canvas;
+
+    [SerializeField] AudioSource audioSource;
 
     private Vector3 GameTextOriginPos;
     private Vector3 startButtonOriginPos;
@@ -35,6 +39,7 @@ public class StartUI : MonoBehaviour
         startButtonOriginPos = startButton.transform.position;
         menuButtonOriginPos = menuButton.transform.position;
         exitButtonOriginPos = exitButton.transform.position;
+        DontDestroyOnLoad(canvas);
         MoveButtons();
     }
 
@@ -62,7 +67,15 @@ public class StartUI : MonoBehaviour
     {
         StartCoroutine(HideMenuSequence());
     }
-
+    public void StartButton()
+    {
+        StartCoroutine(ShowMenuSequence());
+        Invoke("GoStage1", 0.35f);
+    }
+    public void GoStage1()
+    {
+        SceneManager.LoadScene(1);
+    }
     private IEnumerator ShowMenuSequence()
     {
         PlayCutSceneOut();
@@ -98,7 +111,8 @@ public class StartUI : MonoBehaviour
 
     private void PlayCutSceneOut()
     {
-
+        audioSource.clip = Manager.manager.Sound.SetSoundSFX(1);
+        audioSource.Play();
         Vector3 target = new Vector3(panelOutPosition.x, Panel.transform.position.y, 0);
         Panel.transform.DOMove(target, panelMoveTime);
     }
@@ -106,7 +120,7 @@ public class StartUI : MonoBehaviour
     private void ResetPanelPosition()
     {
         RectTransform rect = Panel.GetComponent<RectTransform>();
-        rect.anchoredPosition = new Vector2(2400, rect.anchoredPosition.y);
+        rect.anchoredPosition = new Vector2(PanelPos, rect.anchoredPosition.y);
     }
 
     public void QuitGame() => Application.Quit();
