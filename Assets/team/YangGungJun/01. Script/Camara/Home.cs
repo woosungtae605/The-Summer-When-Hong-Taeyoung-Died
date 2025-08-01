@@ -16,7 +16,7 @@ public class Home : MonoBehaviour
     private void GetDmg(int dmg)
     {
         Hp -= dmg;
-        //   CamaraControll.camaraControl.ShakeCamara();
+        //CamaraControll.camaraControl.ShakeCamara();
         // CamaraControll.camaraControl.DownCamara(Camera.main, 1);
         if (Hp <= 0)
         {

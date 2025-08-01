@@ -6,6 +6,7 @@ using TMPro;
 using UnityEngine.SceneManagement;
 using NUnit.Framework;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 
 public class StartUI : MonoBehaviour
 {
@@ -21,6 +22,8 @@ public class StartUI : MonoBehaviour
     [SerializeField] private GameObject Panel;
     [SerializeField] private GameObject Menu;
     [SerializeField] private GameObject tutoriel;
+    [SerializeField] private GameObject OnecreditsObject;
+    [SerializeField] private GameObject creditsObject;
 
     [Header("애니메이션 설정")]
     [SerializeField] private float NameDistance;
@@ -40,6 +43,7 @@ public class StartUI : MonoBehaviour
     private Vector3 startButtonOriginPos;
     private Vector3 menuButtonOriginPos;
     private Vector3 exitButtonOriginPos;
+    private Vector3 creditsOriginPos;
 
     private int CurrunetCount = 0;
     private bool OnTutoriel = false;
@@ -59,11 +63,12 @@ public class StartUI : MonoBehaviour
     }
     private void Start()
     {
-        
+
         GameTextOriginPos = GameName.transform.position;
         startButtonOriginPos = startButton.transform.position;
         menuButtonOriginPos = menuButton.transform.position;
         exitButtonOriginPos = exitButton.transform.position;
+        creditsOriginPos = creditsObject.transform.position;
         Manager.manager.BGM.SetBGM(0);
         MoveButtons();
     }
@@ -98,7 +103,7 @@ public class StartUI : MonoBehaviour
             StartCoroutine(ShowMenuSequence());
             Invoke("GoStage1", 0.35f);
         }
-       
+
     }
     public void GoStage1()
     {
@@ -172,13 +177,13 @@ public class StartUI : MonoBehaviour
     }
     public void SetTutorial()
     {
-        
+
         List();
         tutoriel.SetActive(true);
     }
     public void UnSetTutorial()
     {
-        
+
         ListUn();
         tutoriel.SetActive(false);
     }
@@ -190,6 +195,20 @@ public class StartUI : MonoBehaviour
         {
             ImageList[i].gameObject.SetActive(CurrunetCount == i);
         }
+    }
+    public void credits()
+    {
+        creditsObject.transform.DOKill();
+        creditsObject.transform.position = creditsOriginPos;
+
+        OnecreditsObject.SetActive(true);
+        creditsObject.transform.DOMoveY(creditsOriginPos.y + 3000, 30);
+    }
+    public void Returncredits()
+    {
+        creditsObject.transform.DOKill();
+        creditsObject.transform.position = creditsOriginPos; 
+        OnecreditsObject.SetActive(false); 
     }
     private void ListUn()
     {
