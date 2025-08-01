@@ -10,7 +10,7 @@ public class Home : MonoBehaviour
         if (collision.gameObject.CompareTag("Target"))
         {
             Destroy(collision.gameObject);
-           
+            GetDmg(1);
         }
     }
     private void GetDmg(int dmg)
