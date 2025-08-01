@@ -13,8 +13,7 @@ public class TargetManager : MonoBehaviour
                 Camera.main.ScreenToWorldPoint(Input.mousePosition).y, 0),
             Quaternion.identity);
         if (tower.GetComponent<TowerAttack>().stat == null)
-            tower.GetComponent<TowerAttack>().stat =
-                Instantiate(Resources.Load<TowerOwnStatSO>("TowerOwnStat"));
+            tower.GetComponent<TowerAttack>().stat = Resources.Load<TowerOwnStatSO>("TowerOwnStat");
         TowerOwnStatSO towerScript = tower.GetComponent<TowerAttack>().stat;
         towers.Add(tower.GetComponent<TowerAttack>());
         tower.GetComponent<TowerAttack>().target= testTarget;
