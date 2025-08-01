@@ -30,7 +30,7 @@ public class GameUI : MonoBehaviour
     public void SetText()
     {
         count++;
-        WaveText.text = $"{count}Wave";
+       // WaveText.text = $"{count}Wave";
     }
     public void ReStartGame()
     {

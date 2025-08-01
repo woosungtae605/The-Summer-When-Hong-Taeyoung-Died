@@ -27,11 +27,13 @@ public class StageClearUI : MonoBehaviour
     {
         if (win)
         {
+            gameObject.SetActive(true); 
             StartCoroutine(textWinText());
             
         }
         else
         {
+            gameObject.SetActive(true);
             StartCoroutine(textLoseText());
         }
     }
