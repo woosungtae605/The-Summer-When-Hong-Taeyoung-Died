@@ -8,7 +8,7 @@ public class ButtonUI12 : MonoBehaviour,IPointerEnterHandler,IPointerExitHandler
     [SerializeField] TextMeshProUGUI Starttext;
     public void OnPointerEnter(PointerEventData eventData)
     {
-        Starttext.transform.DOScale(2f, 0.2f).SetEase(Ease.OutBack);
+        Starttext.transform.DOScale(1.5f, 0.2f).SetEase(Ease.OutBack);
     }
     public void OnPointerExit(PointerEventData eventData)
     {

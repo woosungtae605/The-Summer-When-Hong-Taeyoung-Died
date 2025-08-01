@@ -5,9 +5,9 @@ using static UnityEngine.Rendering.DebugUI;
 
 public class VolumeManager : MonoBehaviour
 {
-    [SerializeField] private Slider masterSlider;
-    [SerializeField] private Slider sfxSlider;
-    [SerializeField] private Slider BGMSlider;
+    private Slider masterSlider;
+    private Slider sfxSlider;
+    private Slider BGMSlider;
     [SerializeField] private AudioMixer audioMixer;
 
     private const string MASTER_VOLUME_KEY = "MasterVolume";
@@ -36,6 +36,21 @@ public class VolumeManager : MonoBehaviour
         sfxSlider.onValueChanged.AddListener(SetSFXVolume);
         BGMSlider.onValueChanged.AddListener(SetBGMVolume);
     }
+    public void SetSliders(Slider master, Slider sfx, Slider bgm)
+    {
+        masterSlider = master;
+        sfxSlider = sfx;
+        BGMSlider = bgm;
+
+        masterSlider.value = PlayerPrefs.GetFloat("MasterVolume", 0.75f);
+        sfxSlider.value = PlayerPrefs.GetFloat("SFXVolume", 0.75f);
+        BGMSlider.value = PlayerPrefs.GetFloat("BGMVolume", 0.75f);
+
+        masterSlider.onValueChanged.AddListener(SetMasterVolume);
+        sfxSlider.onValueChanged.AddListener(SetSFXVolume);
+        BGMSlider.onValueChanged.AddListener(SetBGMVolume);
+    }
+
     public void SetMasterVolume(float value)
     {
         float dB = Mathf.Log10(Mathf.Clamp(value, 0.0001f, 1f)) * 20f;
@@ -60,7 +75,7 @@ public class VolumeManager : MonoBehaviour
         beforeSFX = sfxSlider.value;
         beforeBGM = BGMSlider.value;
 
-        
+
         masterSlider.value = 0;
         sfxSlider.value = 0;
         BGMSlider.value = 0;
@@ -81,17 +96,17 @@ public class VolumeManager : MonoBehaviour
         sfxSlider.onValueChanged.RemoveListener(SetSFXVolume);
         BGMSlider.onValueChanged.RemoveListener(SetBGMVolume);
 
-     
+
         masterSlider.value = beforeMaster;
         sfxSlider.value = beforeSFX;
         BGMSlider.value = beforeBGM;
 
-       
+
         SetMasterVolume(beforeMaster);
         SetSFXVolume(beforeSFX);
         SetBGMVolume(beforeBGM);
 
-      
+
         masterSlider.onValueChanged.AddListener(SetMasterVolume);
         sfxSlider.onValueChanged.AddListener(SetSFXVolume);
         BGMSlider.onValueChanged.AddListener(SetBGMVolume);

@@ -18,7 +18,6 @@ public class StageManager : MonoBehaviour
     [SerializeField] private float PanelPos;
     [SerializeField] Sprite MuteImage;
     [SerializeField] Sprite MuteNoImage;
-    [SerializeField] Image SoundImage;
     private int ListMaxCount;
     private int ImageCurrentCount = 0;
     private int Count = 0;
@@ -109,21 +108,7 @@ public class StageManager : MonoBehaviour
         StartCoroutine(ShowMenuSequence());
         Invoke("GoMenu", 0.35f);
     }
-    public void VolumSetting()
-    {
-        Count++;
-        if (Count % 2 == 0)
-        {
-            SoundImage.sprite = MuteNoImage;
-            Manager.manager.Volume.MuteAll();
-        }
-        else
-        {
-            SoundImage.sprite = MuteImage;
-            Manager.manager.Volume.MuteNoAll();
-        } 
-
-    }
+   
     private void GoMenu() => SceneManager.LoadScene(0);
 
 }
