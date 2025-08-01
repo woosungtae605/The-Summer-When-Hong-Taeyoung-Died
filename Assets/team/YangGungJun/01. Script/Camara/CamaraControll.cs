@@ -1,6 +1,8 @@
 using System.Collections;
-using Unity.VisualScripting;
+using UnityEditor.SearchService;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using Scene = UnityEngine.SceneManagement.Scene;
 
 public class CamaraControll : MonoBehaviour
 {
@@ -21,36 +23,41 @@ public class CamaraControll : MonoBehaviour
             Destroy(gameObject);
         }
     }
-  
+
     private void Start()
     {
         originalPosition = camera1.transform.localPosition;
+        SceneManager.sceneLoaded += OnSceneLoaded;
     }
-    public void ShakeCamara()
+    public void DownCamara(float dmg)
     {
-        Debug.Log("sad");
-        StopAllCoroutines();
+        camera1.orthographicSize -= dmg;
         StartCoroutine(ShakeCoroutine());
     }
-    public void DownCamara(Camera camera, float dmg)
+    public void SetCamaraSize(int size)
     {
-        camera.orthographicSize -= dmg;
+        camera1.orthographicSize = size;
     }
-    private IEnumerator ShakeCoroutine()
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        StopAllCoroutines();
+    }
+
+    public IEnumerator ShakeCoroutine()
     {
         float elapsed = 0f;
-
+       
         while (elapsed < shakeDuration)
         {
             float x = Random.Range(-1f, 1f) * shakeMagnitude;
             float y = Random.Range(-1f, 1f) * shakeMagnitude;
 
-            transform.localPosition = originalPosition + new Vector3(x, y, 0);
+            camera1.transform.localPosition = originalPosition + new Vector3(x, y, 0);
 
             elapsed += Time.deltaTime;
             yield return null;
         }
-
-        transform.localPosition = originalPosition;
+        camera1.transform.localPosition = originalPosition;
     }
+
 }

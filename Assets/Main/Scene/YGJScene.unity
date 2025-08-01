@@ -1194,7 +1194,7 @@ PrefabInstance:
     - target: {fileID: 2867541037209678498, guid: e74fd4f6456217246aa62a183088734b, type: 3}
       propertyPath: BGMList.Array.data[3].audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 4403a970e2cea3b4fac7dc318b11b50c, type: 3}
+      objectReference: {fileID: 8300000, guid: 9b4807b251ec9bf4b86517d9dc46efca, type: 3}
     - target: {fileID: 2867541037209678498, guid: e74fd4f6456217246aa62a183088734b, type: 3}
       propertyPath: BGMList.Array.data[4].audioClip
       value: 
@@ -8725,6 +8725,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6865754741702812545, guid: 9d3bf07de68b04b4dbf6e2a8e2c99777, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6865754741702812545, guid: 9d3bf07de68b04b4dbf6e2a8e2c99777, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6865754741702812545, guid: 9d3bf07de68b04b4dbf6e2a8e2c99777, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6865754741702812545, guid: 9d3bf07de68b04b4dbf6e2a8e2c99777, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.0202215

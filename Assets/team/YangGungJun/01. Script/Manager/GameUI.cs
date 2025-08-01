@@ -5,35 +5,18 @@ using UnityEngine.SceneManagement;
 
 public class GameUI : MonoBehaviour
 {
-    [SerializeField] float CurretTime;
-    [SerializeField] float MaxTime;
+    
     [SerializeField] TextMeshProUGUI WaveText;
-    [SerializeField] GameObject GameEndUI;
-    private AudioSource audioSource;
-    int count = 0;
+    [SerializeField] int CamaraSize;
+    [SerializeField] AudioSource audioSource;
     private void Start()
     {
         audioSource.clip = Manager.manager.Sound.SetSoundBGM(3);
-        SetText();
+        CamaraControll.camaraControl.SetCamaraSize(CamaraSize);
     }
-    private void Update()
-    {
-        CurretTime += Time.deltaTime;
-        if (CurretTime >= MaxTime)
-        {
-            SetText();
-            CurretTime = 0;
-        }
-    }
-    public void OpenGameEndUI()
-    {
-        GameEndUI.SetActive(true);
-    }
-    public void SetText()
-    {
-        count++;
-       // WaveText.text = $"{count}Wave";
-    }
+  
+   
+    
     public void ReStartGame()
     {
         int NowScene = SceneManager.GetActiveScene().buildIndex;
