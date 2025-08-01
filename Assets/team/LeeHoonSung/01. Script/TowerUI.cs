@@ -1,11 +1,16 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TowerUI : MonoBehaviour
 {
     [Header("publicObject")]
     public TowerAttack _towerAttack;
-    public CostManager _costManager;
+    public Image _icon;
+    public GoldChannelSO _channel;
+    [Header("Prefab")]
+    public GameObject _TowerPrefab;
+    public GameObject _TowerUI;
 
     [Header("Ability")]  // 능력치
     public TextMeshProUGUI _name;
@@ -59,23 +64,29 @@ public class TowerUI : MonoBehaviour
         StartTower();
         UpgradeStart(_towerAttack);
         TowerAbilityMiray(_towerAttack);
+        OnIcon(_towerAttack);
+    }
+
+    public void OnIcon(TowerAttack _tower)
+    {
+       _icon.sprite = _tower.stat.icon;
     }
 
     public void TowerName(TowerAttack _tower)
     {
-        _name.text = _tower.name; // 타워 이름 So
+        _name.text = _tower.stat.name; // 타워 이름 So
     }
 
     public void TowerDamage(TowerAttack _tower)
     {
-       // _textDamage.text = _tower.damage.ToString();
+        _textDamage.text = _tower.stat.dmg.ToString();
     }
 
     public void TowerAbilityMiray(TowerAttack _tower)
     {
-        //_mirayDamage = _tower.damage;
-       // _mirayRange = _tower.range;
-        //_mirayGcd = _tower.rate;
+        _mirayDamage = _tower.stat.dmg;
+        _mirayRange = _tower.stat.range;
+        _mirayGcd = _tower.stat.rate;
         _mirayDamage += _DamageUpdate;
         _mirayRange += _RanageUpdate;
         _mirayGcd += _GcdUpdate;
@@ -87,41 +98,34 @@ public class TowerUI : MonoBehaviour
 
     public void TowerUpdateGCD(TowerAttack _tower)
     {
-        //_textGcd.text = _tower.rate.ToString();
+        _textGcd.text = _tower.stat.rate.ToString();
     }
 
     public void TowerRange(TowerAttack _tower)
     {
-        //_textRange.text = _tower.range.ToString();
+        _textRange.text = _tower.stat.range.ToString();
     }
     
     public void TowerAbilityUpdate(TowerAttack _tower)
-    {
-        /*
-        _tower.damage += _DamageUpdate;
-        _tower.rate += _GcdUpdate;
-        _tower.range += _RanageUpdate;
-        _tower.upgradeCost += _UpdateCostUpdate;
-        _tower.sellCost += _SellCostUpdate;
-        */
-    }
-
-    public void TowerAbilityMax(TowerAttack _tower)
-    {
-       // _tower.upgradeCost = 
+    {       
+        _tower.stat.dmg += _DamageUpdate;
+        _tower.stat.rate += _GcdUpdate;
+        _tower.stat.range += _RanageUpdate;
+        _tower.stat.upgradeCost += _UpdateCostUpdate;
+        _tower.stat.sellCost += _SellCostUpdate;        
     }
 
     public void UpgradeStart(TowerAttack _tower)
     {
-        //_upgradeDamage.text = _tower.damage.ToString();
-        //_upgradeRange.text = _tower.range.ToString();
-        //_upgradeGcd.text = _tower.rate.ToString();
+        _upgradeDamage.text = _tower.stat.dmg.ToString();
+        _upgradeRange.text = _tower.stat.range.ToString();
+        _upgradeGcd.text = _tower.stat.rate.ToString();
     }
 
     public void CostStart(TowerAttack _tower)
     {
-        //_textUpdateCost.text = _tower.upgradeCost.ToString(); // 업데이트 Cost
-        //_textSellCost.text = _tower.sellCost.ToString();     // 판매 Cost
+        _textUpdateCost.text = _tower.stat.upgradeCost.ToString(); // 업데이트 Cost
+        _textSellCost.text = _tower.stat.sellCost.ToString();     // 판매 Cost
     }
 
     public void StartTower()
@@ -139,11 +143,15 @@ public class TowerUI : MonoBehaviour
     public TextMeshProUGUI _textFirstLevel;
     public TextMeshProUGUI _textLastLevel;
 
-    public void OnUpdateTower()
+    public void OnUpdateTower(TowerAttack _tower)
     {
-        if(_firstLevel < _maxiumLevel)
-        {
+        if((int)_channel.Gold >= _tower.stat.upgradeCost)
+        {       
+            _channel.ChangeGold((ulong)_tower.stat.upgradeCost,GoldTypeEnum.SPEND);
+            if(_firstLevel < _maxiumLevel)
+            {
                 _firstLevel++;
+
             if (_lastLevel < _maxiumLevel)
             {
                 _lastLevel++;
@@ -158,7 +166,7 @@ public class TowerUI : MonoBehaviour
                 StartTower();
                 UpgradeStart(_towerAttack);
                 TowerAbilityMiray(_towerAttack);
-        }
+            }
         else if (_firstLevel == _maxiumLevel)
         {
             _maxText.gameObject.SetActive(true);
@@ -168,13 +176,13 @@ public class TowerUI : MonoBehaviour
             _maxLevel.gameObject.SetActive(true);
             
         }
+        }
     }
     
-    
-
-
-    public void Remove()
+    public void Remove(TowerAttack _tower)
     {
-        
+        _channel.ChangeGold((ulong)_tower.stat.sellCost, GoldTypeEnum.GET);
+        _TowerPrefab.SetActive(false);
+        _TowerUI.SetActive(false);
     }    
 }

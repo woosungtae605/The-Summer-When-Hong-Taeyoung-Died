@@ -12,12 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97fddc60ed61825438a687cdec0eacdc, type: 3}
   m_Name: TowerOwnStat
   m_EditorClassIdentifier: 
-  name: 
+  icon: {fileID: 0}
+  name: Defa
   tower: {fileID: 0}
-  dmg: 0
-  rate: 0
-  range: 0
-  bulletSpeed: 0
-  upgradeCost: 0
-  sellCost: 0
+  dmg: 20
+  rate: 9
+  range: 17.5
+  bulletSpeed: 4
+  upgradeCost: 800
+  sellCost: 550
   bulletColor: {r: 0, g: 0, b: 0, a: 0}
