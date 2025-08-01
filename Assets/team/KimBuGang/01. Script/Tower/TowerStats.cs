@@ -13,6 +13,7 @@ public class TowerStats : ScriptableObject
         public int dmg;
         public float rate;
         public float range;
+        public int purchaseCost;
         public float bulletSpeed;
         public int upgradeCost;
         public int sellCost;
