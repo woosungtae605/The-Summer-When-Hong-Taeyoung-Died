@@ -24,7 +24,6 @@ public class StartUI : MonoBehaviour
     [SerializeField] private float panelMoveTime = 0.87f;
     [SerializeField] private Vector3 panelOutPosition = new Vector3(-1500f, 0, 0);
     [SerializeField] private float PanelPos;
-    [SerializeField] Canvas canvas;
 
     [SerializeField] AudioSource audioSource;
 
@@ -39,7 +38,7 @@ public class StartUI : MonoBehaviour
         startButtonOriginPos = startButton.transform.position;
         menuButtonOriginPos = menuButton.transform.position;
         exitButtonOriginPos = exitButton.transform.position;
-        DontDestroyOnLoad(canvas);
+ 
         MoveButtons();
     }
 
