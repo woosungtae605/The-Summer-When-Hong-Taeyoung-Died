@@ -9,7 +9,7 @@ public class SpawnTower : MonoBehaviour
     
     private GameObject currentTower = null;
     private TowerStats.TowerStat currentTowerStat = null;
-
+    private AudioSource audioSource;
     public static SpawnTower Instance;
 
     private void Awake()
@@ -51,6 +51,8 @@ public class SpawnTower : MonoBehaviour
                 currentTower = null;
                 currentTowerStat = null;
                 Destroy(mouse.transform.GetChild(0).gameObject);
+                audioSource.clip = Manager.manager.Sound.SetSoundSFX(4);
+                audioSource.Play();
             }
         }
         else if (currentTowerStat == null && currentTower == null)
