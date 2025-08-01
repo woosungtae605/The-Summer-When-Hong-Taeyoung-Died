@@ -14,10 +14,10 @@ public class SpawnEnemy : MonoBehaviour
     {
         if(!canSpawn)
         {
-            StartCoroutine(EnemySpawn());
+          // StartCoroutine(EnemySpawn());
         }
     }
-
+    
     IEnumerator EnemySpawn()
     {
         for (int i = 0; i < enemies.Length; i++)
@@ -38,8 +38,61 @@ public class SpawnEnemy : MonoBehaviour
         }
         canSpawn = false;
     }
-       
-       
+
+    public void EnemySpawn_1()
+    {
+        GameObject enemy = Instantiate(enemies[0]);
+        enemy.transform.position = spawnPosition.transform.position;
+
+        var pathMovement = enemy.GetComponent<PathMovement>();
+        if (pathMovement != null)
+        {
+            pathMovement.SetReferences(baseTileMap, this.target);
+        }
+        TargetTrace target = enemy.AddComponent<TargetTrace>();
+        TargetManager.Instance.targets.Add(target);
+    }
+    public void EnemySpawn_2()
+    {
+        GameObject enemy = Instantiate(enemies[1]);
+        enemy.transform.position = spawnPosition.transform.position;
+
+        var pathMovement = enemy.GetComponent<PathMovement>();
+        if (pathMovement != null)
+        {
+            pathMovement.SetReferences(baseTileMap, this.target);
+        }
+        TargetTrace target = enemy.AddComponent<TargetTrace>();
+        TargetManager.Instance.targets.Add(target);
+    }
+
+    public void EnemySpawn_3()
+    {
+        GameObject enemy = Instantiate(enemies[2]);
+        enemy.transform.position = spawnPosition.transform.position;
+
+        var pathMovement = enemy.GetComponent<PathMovement>();
+        if (pathMovement != null)
+        {
+            pathMovement.SetReferences(baseTileMap, this.target);
+        }
+        TargetTrace target = enemy.AddComponent<TargetTrace>();
+        TargetManager.Instance.targets.Add(target);
+    }
+    public void EnemySpawn_4()
+    {
+        GameObject enemy = Instantiate(enemies[3]);
+        enemy.transform.position = spawnPosition.transform.position;
+
+        var pathMovement = enemy.GetComponent<PathMovement>();
+        if (pathMovement != null)
+        {
+            pathMovement.SetReferences(baseTileMap, this.target);
+        }
+        TargetTrace target = enemy.AddComponent<TargetTrace>();
+        TargetManager.Instance.targets.Add(target);
+    }
+
 }
 
 
