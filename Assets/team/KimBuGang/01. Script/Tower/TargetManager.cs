@@ -91,6 +91,11 @@ public class TargetManager : MonoBehaviour
         towerScript.sellCost = towerStat.sellCost;
         towerScript.bullet = towerStat.bullet;
         towerScript.lvl = 1;
+        towerScript.damageUpgrade = towerStat.damageUpgrade;
+        towerScript.rangeUpgrade = towerStat.rangeUpgrade;
+        towerScript.rateUpgrade = towerStat.rateUpgrade;
+        towerScript.updateCostUpgrade =  towerStat.updateCostUpgrade;
+        towerScript.sellCostUpgrade = towerStat.sellCostUpgrade;
         tower.transform.GetChild(0).transform.localScale = new Vector2(towerStat.range * 2, towerStat.range * 2);
         tower.transform.GetChild(0).gameObject.SetActive(false);
         tower.GetComponent<MouseFollow>().enabled = false;

@@ -17,7 +17,7 @@ public class TowerOwnStatSO : ScriptableObject
     [Header("Upgrade")]
     public int damageUpgrade;
     public float rateUpgrade;
-    public float ranageUpgrade;
+    public float rangeUpgrade;
     public int updateCostUpgrade;
     public int sellCostUpgrade;
 
