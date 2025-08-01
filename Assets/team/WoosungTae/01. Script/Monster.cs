@@ -19,6 +19,14 @@ public class Monster : MonoBehaviour
         Debug.Log("½ÇÇàµÊ");
     }
 
+    private void Update()
+    {
+        if(hp <= 0)
+        {
+            SpawnManager.instance.EnemyReturn(number,gameObject);
+        }
+        Debug.Log(number);
+    }
     public int GetNumber()
     {
         return number;
