@@ -18,7 +18,7 @@ public class Home : MonoBehaviour
         if (Hp <= 0)
         {
             CamaraControll.camaraControl.ShakeCamara();
-
+            CamaraControll.camaraControl.DownCamara(Camera.main,1);
         }
     }
 }
