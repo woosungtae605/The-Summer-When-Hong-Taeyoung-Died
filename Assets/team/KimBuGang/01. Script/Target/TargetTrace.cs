@@ -1,16 +1,34 @@
+using System;
 using UnityEngine;
 
 public class TargetTrace : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    private Vector2Int currentPos => new Vector2Int(Mathf.RoundToInt(transform.position.x), Mathf.RoundToInt(transform.position.y));
+    private Vector2Int prevPos;
+
+    public int moveCount;
+
+    public int priority;
+
+    private void Update()
     {
-        
+        if (currentPos != prevPos)
+        {
+            moveCount++;
+            prevPos = currentPos;
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnEnable()
     {
-        
+        moveCount = 0;
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, 0.1f);
+        Gizmos.color = Color.blue;
+        Gizmos.DrawWireSphere(new Vector3(prevPos.x, prevPos.y, 0), 0.1f);
     }
 }

@@ -29,6 +29,12 @@ public class PathMovement : MonoBehaviour, IComponent
     {
         SetDestination(target.position);
     }
+
+    public void SetReferences(Tilemap tilemap, Transform tgt)
+    {
+        baseTileMap = tilemap;
+        target = tgt;
+    }
     public void Initialize(Agent agent)
     {
         _owner = agent;
@@ -71,6 +77,7 @@ public class PathMovement : MonoBehaviour, IComponent
         else
         {
             _mover.StopImmediately();
+            Debug.Log("¸ØÃã");
         }
     }
 
@@ -87,6 +94,7 @@ public class PathMovement : MonoBehaviour, IComponent
             _currentPathIndex++;
             if (_currentPathIndex > _pathCount)
                 IsArrived = true;
+            Debug.Log(IsArrived);
             return IsArrived;
         }
         return false;

@@ -6,6 +6,7 @@ public class TowerOwnStatSO : ScriptableObject
     public Sprite icon;
     public string name;
     public GameObject tower;
+    public int lvl = 1;
     public int dmg;
     public float rate;
     public float range;

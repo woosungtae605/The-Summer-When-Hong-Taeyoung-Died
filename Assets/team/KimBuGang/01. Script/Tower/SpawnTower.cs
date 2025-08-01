@@ -1,26 +1,54 @@
+using System;
 using UnityEngine;
 
 public class SpawnTower : MonoBehaviour
 {
     public TowerStats towerStats;
-    [SerializeField] TargetManager targetManager;
+    public GameObject mouse;
     
-    private TowerStats.TowerStat currentTower = null;
+    private GameObject currentTower = null;
+    private TowerStats.TowerStat currentTowerStat = null;
 
-    private void Update()
+    public static SpawnTower Instance;
+
+    private void Awake()
     {
-        if (Input.GetKeyUp(KeyCode.Alpha1))
-            currentTower = towerStats.towers[0];
-        if (Input.GetKeyUp(KeyCode.Alpha2))
-            currentTower = towerStats.towers[1];
-        if (Input.GetKeyUp(KeyCode.Alpha3))
-            currentTower = towerStats.towers[2];
-        
-        if (Input.GetMouseButtonUp(0))
-            if (currentTower != null)
-            {
-                targetManager.AddTower( currentTower);
-                currentTower = null;
-            }
+        if (Instance == null)
+            Instance = this;
+        else Destroy(this);
+    }
+
+    public void Spawn(int n)
+    {
+        if(currentTower == null)
+        {
+            currentTower = Instantiate(towerStats.towers[n].tower, mouse.transform);
+            currentTowerStat = towerStats.towers[n];
+            currentTower.GetComponent<TowerAttack>().enabled = false; currentTower.GetComponent<MouseFollow>().enabled = true;
+            currentTower.transform.GetChild(0).transform.localScale = new Vector2(currentTowerStat.range * 2, currentTowerStat.range * 2);
+        }
+    }
+
+    public void Cancel()
+    {
+        if (currentTower != null || currentTowerStat != null)
+        {
+            currentTower = null;
+            currentTowerStat = null;
+            Destroy(mouse.transform.GetChild(0).gameObject);
+        }
+    }
+
+    public void Confirm()
+    {
+        if (currentTower != null && currentTowerStat != null)
+        {
+            TargetManager.Instance.AddTower(currentTowerStat);
+            currentTower = null;
+            currentTowerStat = null;
+            Destroy(mouse.transform.GetChild(0).gameObject);
+        }
+        else if (currentTowerStat == null && currentTower == null)
+            OnMouse.Instance.ClickTower();
     }
 }

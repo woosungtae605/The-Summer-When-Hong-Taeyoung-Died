@@ -12,9 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0299fada8eb5114fbfa3fd5f5a5650d, type: 3}
   m_Name: number1
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
+  Name: 
+  dmg: 0
+  attackSpeed: 0
+  Range: 1
+=======
   Name: test
   dmg: 40
   attackSpeed: 3
   Range: 10
   UpdateCost: 200
   SellCost: 100
+>>>>>>> main

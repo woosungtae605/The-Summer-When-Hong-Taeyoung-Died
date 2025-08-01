@@ -30,7 +30,6 @@ public class AgentMover : MonoBehaviour, IComponent
     {
         rigidbody.linearVelocity = _movementInput * moveSpeed;
         moveSpeed = monsterSO.speed;
-        Debug.Log(moveSpeed);
         OnSpeedChange?.Invoke(rigidbody.linearVelocity);
     }
 }

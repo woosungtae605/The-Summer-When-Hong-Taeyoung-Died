@@ -1,29 +1,37 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.iOS;
 
 public class Monster : MonoBehaviour
 {
     public MonsterSO monsterSO;
+    public GoldChannelSO channelSO;
+   
+    private int WayPointCount;
+    private int currentCount;
     [SerializeField] private int number;
+    
+    [SerializeField] GameObject[] point;
     public int hp { get; private set; }
     public float speed { get; private set; }
-    public int gold { get; private set; }
-    
-    private void OnEnable()
+    private void Start()
     {
-       
-        number = monsterSO.monsterNum;
-        hp = monsterSO.hp;
-        speed = monsterSO.speed;
-        gold = monsterSO.gold;
-        Debug.Log("½ÇÇàµÊ");
+        Initialize();
     }
-
+    private void Initialize()
+    {
+        number = monsterSO.monsterNum;
+        speed = monsterSO.speed;
+        hp = monsterSO.hp;
+        gold = monsterSO.gold;
+    }
+    public int gold { get; private set; }
     private void Update()
     {
         if(hp <= 0)
         {
-            SpawnManager.instance.EnemyReturn(number,gameObject);
+            Destroy(gameObject);
         }
         Debug.Log(number);
     }
@@ -40,8 +48,8 @@ public class Monster : MonoBehaviour
     {
         speed -= slow;
     }
-    public void SetGold(int manyMoney)
+    public void SetGold(ulong manyMoney)
     {
-        gold += manyMoney;
+        channelSO.ChangeGold(manyMoney,GoldTypeEnum.GET);
     }
 }
