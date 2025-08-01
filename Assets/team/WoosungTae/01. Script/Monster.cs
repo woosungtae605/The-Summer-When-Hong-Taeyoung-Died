@@ -31,7 +31,7 @@ public class Monster : MonoBehaviour
     {
         if(hp <= 0)
         {
-            SpawnManager.instance.EnemyReturn(number,gameObject);
+            Destroy(gameObject);
         }
         Debug.Log(number);
     }
