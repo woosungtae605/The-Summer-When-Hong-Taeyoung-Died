@@ -9,23 +9,51 @@ public class StageClearUI : MonoBehaviour
     [SerializeField] float colorSpeed;
     [Header("텍스트 나오는 속도")]
     [SerializeField] float textSpeed;
-    [Header("출력할 문자")]
-    [SerializeField] string Text;
+    [Header(" 패배시 출력할 문자")]
+    [SerializeField] string TextWin;
+    [SerializeField] string TextLose;
     [SerializeField] Image image;
     [SerializeField] TextMeshProUGUI textMeshProUGUI;
     private void OnDisable()
     {
         image.color = new Color(0, 0, 0, 0);
     }
+    private void Start()
+    {
+        PrintText(true);
+    }
     private void Update()
     {
         colorSpeed = Mathf.Clamp01(colorSpeed);
         image.color += new Color(0, 0, 0, colorSpeed);
     }
-    IEnumerator text()
+    public void PrintText(bool win)
+    {
+        if (win)
+        {
+            StartCoroutine(textWinText());
+            
+        }
+        else
+        {
+            StartCoroutine(textLoseText());
+        }
+    }
+    IEnumerator textLoseText()
     {
         Time.timeScale = 0;
-        string me = Text;
+        string me = TextWin;
+        foreach (char c in me)
+        {
+            textMeshProUGUI.text += c;
+            yield return new WaitForSecondsRealtime(textSpeed);
+        }
+        yield break;
+    }
+    IEnumerator textWinText()
+    {
+        Time.timeScale = 0;
+        string me = TextLose;
         foreach (char c in me)
         {
             textMeshProUGUI.text += c;
