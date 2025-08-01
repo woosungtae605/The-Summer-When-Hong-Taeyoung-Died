@@ -15,7 +15,11 @@ public class SpawnTower : MonoBehaviour
     private void Awake()
     {
         if (Instance == null)
+        {
             Instance = this;
+            audioSource = GetComponent<AudioSource>();
+        }
+           
         else Destroy(this);
     }
 
