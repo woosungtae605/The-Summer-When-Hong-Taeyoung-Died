@@ -23,7 +23,12 @@ MonoBehaviour:
     bulletSpeed: 5
     upgradeCost: 200
     sellCost: 100
-    bullet: {fileID: 1639223553889042308, guid: f90706426a4fed945a02325605d2374a, type: 3}
+    damageUpdate: 0
+    ranageUpdate: 10
+    gcdUpdate: 20
+    updateCostUpdate: 0
+    sellCostUpdate: 0
+    bullet: {fileID: 0}
   - icon: {fileID: -2357659898952462716, guid: a5f43d7b61fb7224997ade90b38096d3, type: 3}
     name: Speed
     tower: {fileID: 2636040404408354085, guid: 89e5b2b864fade042b5dc6326750feeb, type: 3}
@@ -34,17 +39,11 @@ MonoBehaviour:
     bulletSpeed: 8
     upgradeCost: 0
     sellCost: 0
-    bullet: {fileID: 1639223553889042308, guid: f90706426a4fed945a02325605d2374a, type: 3}
-  - icon: {fileID: 0}
-    name: Power
-    tower: {fileID: 488889409089806986, guid: 727dafe0ff132a549b9f2738d6757717, type: 3}
-    dmg: 12
-    rate: 3
-    range: 4
-    purchaseCost: 0
-    bulletSpeed: 3
-    upgradeCost: 0
-    sellCost: 0
+    damageUpdate: 0
+    ranageUpdate: 0
+    gcdUpdate: 0
+    updateCostUpdate: 0
+    sellCostUpdate: 0
     bullet: {fileID: 0}
   - icon: {fileID: 0}
     name: Power
@@ -56,6 +55,11 @@ MonoBehaviour:
     bulletSpeed: 3
     upgradeCost: 0
     sellCost: 0
+    damageUpdate: 0
+    ranageUpdate: 0
+    gcdUpdate: 0
+    updateCostUpdate: 0
+    sellCostUpdate: 0
     bullet: {fileID: 0}
   - icon: {fileID: 0}
     name: Power
@@ -67,4 +71,25 @@ MonoBehaviour:
     bulletSpeed: 3
     upgradeCost: 0
     sellCost: 0
+    damageUpdate: 0
+    ranageUpdate: 0
+    gcdUpdate: 0
+    updateCostUpdate: 0
+    sellCostUpdate: 0
+    bullet: {fileID: 0}
+  - icon: {fileID: 0}
+    name: Power
+    tower: {fileID: 488889409089806986, guid: 727dafe0ff132a549b9f2738d6757717, type: 3}
+    dmg: 12
+    rate: 3
+    range: 4
+    purchaseCost: 0
+    bulletSpeed: 3
+    upgradeCost: 0
+    sellCost: 0
+    damageUpdate: 0
+    ranageUpdate: 0
+    gcdUpdate: 0
+    updateCostUpdate: 0
+    sellCostUpdate: 0
     bullet: {fileID: 0}
