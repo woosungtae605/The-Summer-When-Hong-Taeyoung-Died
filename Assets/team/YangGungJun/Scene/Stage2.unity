@@ -449,6 +449,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1515615471124202135, guid: 0251dc817e8ad224aa3ddcff4f068974, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.52
+      objectReference: {fileID: 0}
     - target: {fileID: 4603729669833925655, guid: 0251dc817e8ad224aa3ddcff4f068974, type: 3}
       propertyPath: m_SortingOrder
       value: 1
@@ -6760,8 +6764,9 @@ MonoBehaviour:
   spawnPosition: {fileID: 2136998977}
   baseTileMap: {fileID: 1464506980}
   target: {fileID: 360396809}
+  sceneWayPoints: {fileID: 0}
   enemies:
-  - {fileID: 6631934145062661979, guid: 021386c9fa946d24bb42580903ee1952, type: 3}
+  - {fileID: 6631934145062661979, guid: 1b9eadbcde6fcdf4ea7ae3e389f8d492, type: 3}
   - {fileID: 2819840995917780510, guid: 096414da0d059aa4393104064f81104c, type: 3}
   - {fileID: 1892321558341078886, guid: aefcdf04f88dd464ea2f46a9511df5d3, type: 3}
 --- !u!4 &1189158308
@@ -6792,7 +6797,7 @@ GameObject:
   - component: {fileID: 1464506979}
   m_Layer: 0
   m_Name: Road
-  m_TagString: Untagged
+  m_TagString: Load
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8117,13 +8122,9 @@ Tilemap:
   m_TileAssetArray:
   - m_RefCount: 124
     m_Data: {fileID: 11400000, guid: 0231fc51b86b7774e836cd9ef67dddfb, type: 2}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
   m_TileSpriteArray:
   - m_RefCount: 124
     m_Data: {fileID: -371772402, guid: 52cdbf090899a5549b992a382fcd4aac, type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
   m_TileMatrixArray:
   - m_RefCount: 124
     m_Data:
@@ -8149,8 +8150,8 @@ Tilemap:
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Origin: {x: -22, y: -9, z: 0}
-  m_Size: {x: 37, y: 13, z: 1}
+  m_Origin: {x: -18, y: -9, z: 0}
+  m_Size: {x: 33, y: 13, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
   m_TileOrientation: 0
   m_TileOrientationMatrix:
@@ -8361,11 +8362,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1271684326307677077, guid: 5d823b9dc49103e44af4474022e5ad6d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 13.16
+      value: 14.27
       objectReference: {fileID: 0}
     - target: {fileID: 1271684326307677077, guid: 5d823b9dc49103e44af4474022e5ad6d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.88
+      value: 3.44
       objectReference: {fileID: 0}
     - target: {fileID: 2972649731777732274, guid: 5d823b9dc49103e44af4474022e5ad6d, type: 3}
       propertyPath: m_Name
@@ -8373,15 +8374,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7723066986322122997, guid: 5d823b9dc49103e44af4474022e5ad6d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.3509251
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7723066986322122997, guid: 5d823b9dc49103e44af4474022e5ad6d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.6101854
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7723066986322122997, guid: 5d823b9dc49103e44af4474022e5ad6d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.0062027215
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7723066986322122997, guid: 5d823b9dc49103e44af4474022e5ad6d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -8441,7 +8442,7 @@ Transform:
   m_GameObject: {fileID: 2136998976}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -17.49, y: -7.52, z: -0.15517646}
+  m_LocalPosition: {x: -16.71, y: -8.05, z: -0.15517646}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
