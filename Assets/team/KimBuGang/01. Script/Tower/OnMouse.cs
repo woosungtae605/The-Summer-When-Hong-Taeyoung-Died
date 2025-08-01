@@ -34,7 +34,6 @@ public class OnMouse : MonoBehaviour
             other.transform.GetChild(0).gameObject.SetActive(true);
             onTower = true;
             tower = other.GetComponent<TowerAttack>();
-            Debug.Log("OnMouse");
         }
         if (other.tag == "Road")
             onRoad = true;
@@ -46,7 +45,6 @@ public class OnMouse : MonoBehaviour
             other.transform.GetChild(0).gameObject.SetActive(false);
             onTower = false;
             tower = null;
-            Debug.Log("LeftMouse");
         }
         if (other.tag == "Road")
             onRoad = false;
@@ -54,10 +52,8 @@ public class OnMouse : MonoBehaviour
 
     public void ClickTower()
     {
-        Debug.Log("BeforeClick");
         if (onTower)
         {
-            Debug.Log("UI");
             UI.GetComponentInChildren<TowerUI>()._towerAttack = tower;
             UI.SetActive(true);
         }
