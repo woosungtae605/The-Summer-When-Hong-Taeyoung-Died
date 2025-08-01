@@ -91,7 +91,6 @@ public class PathMovement : MonoBehaviour, IComponent
 
         if (CheckArrived() == false)
         {
-            Debug.Log("Á÷µ¿");
             Vector2 direction = _path[_currentPathIndex] - _owner.transform.position;
             Debug.Log(direction);
             _mover.SetMovementInput(direction);
@@ -99,7 +98,6 @@ public class PathMovement : MonoBehaviour, IComponent
         else
         {
             _mover.StopImmediately();
-            Debug.Log("¸ØÃã");
         }
     }
 
