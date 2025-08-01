@@ -21,11 +21,12 @@ public class Stage1Spawn : MonoBehaviour
     private void WaveNumPlus()
     {
         waveNum++;
-        waveText.text = $"wave : {waveNum} / 10";
+        waveText.text = $"wave : {waveNum} / 8";
     }
 
     IEnumerator Stage()
     {
+        yield return new WaitForSeconds(10);
         for(int i = 0; i < 8; i++) //1스테이지
         {
             spawnEnemy.EnemySpawn_1();
@@ -109,18 +110,18 @@ public class Stage1Spawn : MonoBehaviour
                 yield return new WaitForSeconds(0.1f);
                 spawnEnemy.EnemySpawn_1(); 
             }
-            if (i > 9)
+            if (i > 11)
             {
                 yield return new WaitForSeconds(0.2f);
                 spawnEnemy.EnemySpawn_2();
                 yield return new WaitForSeconds(0.1f);
-                spawnEnemy.EnemySpawn_2();
+                spawnEnemy.EnemySpawn_4();
             }
         }
 
-        for (int i = 0; i < 12; i++) // 8스테이지
+        for (int i = 0; i < 15; i++) // 8스테이지
         {
-            spawnEnemy.EnemySpawn_3();
+            spawnEnemy.EnemySpawn_4();
             yield return new WaitForSeconds(0.4f);
             if (i > 3)
             {
@@ -131,7 +132,7 @@ public class Stage1Spawn : MonoBehaviour
             if (i > 9)
             {
                 yield return new WaitForSeconds(0.2f);
-                spawnEnemy.EnemySpawn_2();
+                spawnEnemy.EnemySpawn_3();
                 yield return new WaitForSeconds(0.1f);
                 spawnEnemy.EnemySpawn_2();
             }

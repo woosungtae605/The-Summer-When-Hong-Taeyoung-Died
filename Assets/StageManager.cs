@@ -22,6 +22,7 @@ public class StageManager : MonoBehaviour
     {
         ListMaxCount = PanelList.Count;
         Manager.manager.BGM.SetBGM(1);
+        CamaraControll.camaraControl.SetCamaraSize(5);
         audioSource.clip = Manager.manager.Sound.SetSoundSFX(0);
     }
     public void NextPoint()

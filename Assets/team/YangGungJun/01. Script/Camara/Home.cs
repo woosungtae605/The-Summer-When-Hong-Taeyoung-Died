@@ -17,7 +17,8 @@ public class Home : MonoBehaviour
     {
         Hp -= dmg;
         //CamaraControll.camaraControl.ShakeCamara();
-        // CamaraControll.camaraControl.DownCamara(Camera.main, 1);
+        //CamaraControll.camaraControl.DownCamara(Camera.main, 1);
+        Debug.Log("¸Â¾ÒÀ½");
         if (Hp <= 0)
         {
             clearUI.PrintText(false);

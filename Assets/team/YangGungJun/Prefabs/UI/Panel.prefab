@@ -229,7 +229,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3386121709675703755
 RectTransform:
   m_ObjectHideFlags: 0
@@ -274,8 +274,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   colorSpeed: 0.01
   textSpeed: 0.05
-  TextWin: "\uC139\uC2A4\uC548\uD558\uACE0 \uC2F6\uB2E4"
-  TextLose: "\uC139\uC2A4\uAC00 \uB9C8\uB835\uB2E4"
+  TextWin: "\uC2A4\uD14C\uC774\uC9C0 \uD074\uB9AC\uC5B4"
+  TextLose: "\uC2A4\uD14C\uC774\uC9C0 \uD328\uBC30"
   image: {fileID: 5923921495096270058}
   textMeshProUGUI: {fileID: 4305356079538624287}
 --- !u!1 &4484006757521901175
@@ -409,7 +409,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
+        m_CallState: 1
 --- !u!1 &8885691932112201913
 GameObject:
   m_ObjectHideFlags: 0
