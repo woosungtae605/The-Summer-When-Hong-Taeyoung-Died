@@ -3,7 +3,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class ButtonUI : MonoBehaviour,IPointerEnterHandler,IPointerExitHandler
+public class ButtonUI12 : MonoBehaviour,IPointerEnterHandler,IPointerExitHandler
 {
     [SerializeField] TextMeshProUGUI Starttext;
     public void OnPointerEnter(PointerEventData eventData)
