@@ -1,22 +1,24 @@
 using TMPro;
 using Unity.AppUI.UI;
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
 
 public class GameUI : MonoBehaviour
 {
-    
+
     [SerializeField] TextMeshProUGUI WaveText;
     [SerializeField] int CamaraSize;
     [SerializeField] AudioSource audioSource;
+    [SerializeField] int PlayBgmNumber;
     private void Start()
     {
-        audioSource.clip = Manager.manager.Sound.SetSoundBGM(3);
+        Manager.manager.BGM.SetBGM(PlayBgmNumber);
         CamaraControll.camaraControl.SetCamaraSize(CamaraSize);
     }
-  
-   
-    
+
+
+
     public void ReStartGame()
     {
         int NowScene = SceneManager.GetActiveScene().buildIndex;
