@@ -23,12 +23,7 @@ public class TowerUI : MonoBehaviour
     public TextMeshProUGUI _upgradeRange;
     public TextMeshProUGUI _upgradeGcd;
 
-    [Header("UpdateAbility")]
-    public int _DamageUpdate = 0; // ������ ���� ������Ʈ
-    public float _RanageUpdate = 0; // ��Ÿ� ���� ������Ʈ
-    public float _GcdUpdate = 0;    // ��Ÿ�� ���� ������Ʈ
-    public int _UpdateCostUpdate = 0;   // ���׷��̵� ������Ʈ
-    public int _SellCostUpdate = 0;     // �Ǹ� ������Ʈ
+     
 
     [Header("Maximum Level")]
     public int _maxiumLevel = 10; // �ִ� ���� ����
@@ -88,9 +83,9 @@ public class TowerUI : MonoBehaviour
         _mirayDamage = _tower.stat.dmg;
         _mirayRange = _tower.stat.range;
         _mirayGcd = _tower.stat.rate;
-        _mirayDamage += _DamageUpdate;
-        _mirayRange += _RanageUpdate;
-        _mirayGcd += _GcdUpdate;
+        _mirayDamage += _tower.stat.damageUpgrade;
+        _mirayRange += _tower.stat.ranageUpgrade;
+        _mirayGcd += _tower.stat.rateUpgrade;
 
         _mirayDamamge.text = _mirayDamage.ToString();
         _mirayRange2.text = _mirayRange.ToString();
@@ -109,11 +104,11 @@ public class TowerUI : MonoBehaviour
     
     public void TowerAbilityUpdate(TowerAttack _tower)
     {       
-        _tower.stat.dmg += _DamageUpdate;
-        _tower.stat.rate += _GcdUpdate;
-        _tower.stat.range += _RanageUpdate;
-        _tower.stat.upgradeCost += _UpdateCostUpdate;
-        _tower.stat.sellCost += _SellCostUpdate;        
+        _tower.stat.dmg += _tower.stat.damageUpgrade;
+        _tower.stat.rate += _tower.stat.rateUpgrade;
+        _tower.stat.range += _tower.stat.ranageUpgrade;
+        _tower.stat.upgradeCost += _tower.stat.updateCostUpgrade;
+        _tower.stat.sellCost += _tower.stat.sellCostUpgrade;        
     }
 
     public void UpgradeStart(TowerAttack _tower)
