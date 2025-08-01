@@ -29,6 +29,12 @@ public class PathMovement : MonoBehaviour, IComponent
     {
         SetDestination(target.position);
     }
+
+    public void SetReferences(Tilemap tilemap, Transform tgt)
+    {
+        baseTileMap = tilemap;
+        target = tgt;
+    }
     public void Initialize(Agent agent)
     {
         _owner = agent;

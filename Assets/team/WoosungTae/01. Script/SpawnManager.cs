@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem.Utilities;
+using UnityEngine.Tilemaps;
 public class SpawnManager : MonoBehaviour
 {
     [SerializeField] private GameObject[] enemies;
@@ -8,6 +8,8 @@ public class SpawnManager : MonoBehaviour
     [SerializeField] private int enemyMaxSpawn;
     [SerializeField] private int bulletMaxSpawn;
     [SerializeField] private Transform spawnPosition;
+    [SerializeField] private Tilemap baseTileMap;
+    [SerializeField] private Transform target;
     private Dictionary<int, Stack<GameObject>> enemyDic = new();
     private Stack<GameObject> bulletStack = new();
     private List<GameObject> activeEnemy = new(); // 현재 살아있는 에너미 수. 이걸로 살아있는 얘들 중, 가장 가까운 적 찾는거임
@@ -35,9 +37,12 @@ public class SpawnManager : MonoBehaviour
             Stack<GameObject> stack = new Stack<GameObject>();
             for (int i = 0; i < enemyMaxSpawn; i++ )
             {
-                GameObject aboutEnemy = Instantiate(enemy, transform);
-                stack.Push(aboutEnemy);
-                aboutEnemy.SetActive(false);
+                GameObject instance = Instantiate(enemy, transform);
+                var pathMovement = instance.GetComponent<PathMovement>();
+                if (pathMovement != null)
+                    pathMovement.SetReferences(baseTileMap, target);
+                stack.Push(instance);
+                instance.SetActive(false);
             }
             Monster monster = enemy.GetComponent<Monster>();
             Debug.Log(monster.GetNumber());
