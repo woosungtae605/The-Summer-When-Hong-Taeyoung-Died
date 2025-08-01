@@ -72,6 +72,7 @@ public class SpawnManager : MonoBehaviour
                 enemy.transform.position = spawnPosition.position;
                 enemy.SetActive(true);
                 activeEnemy.Add(enemy);
+                Debug.Log("에너미 스폰");
             }
             else
             {

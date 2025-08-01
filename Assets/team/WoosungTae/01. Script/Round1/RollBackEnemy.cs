@@ -6,8 +6,7 @@ public class RollBackEnemy : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Target"))
         {
-            Monster check = collision.gameObject.GetComponent<Monster>();
-            SpawnManager.instance.EnemyReturn(check.GetNumber(), collision.gameObject);
+            Destroy(collision.gameObject);
         }
     }
 }

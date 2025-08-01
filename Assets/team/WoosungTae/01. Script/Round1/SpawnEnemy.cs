@@ -1,9 +1,14 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 
 public class SpawnEnemy : MonoBehaviour
 {
     private bool canSpawn = false;
+    [SerializeField] private Transform spawnPosition;
+    [SerializeField] private Tilemap baseTileMap;
+    [SerializeField] private Transform target;
+    [SerializeField] private GameObject[] enemies;
     private void Update()
     {
         if(!canSpawn)
@@ -14,8 +19,13 @@ public class SpawnEnemy : MonoBehaviour
 
     IEnumerator EnemySpawn()
     {
+        Debug.Log("µø¿€â≥");
         canSpawn = true;
-        SpawnManager.instance.SpawnEnemy(1);
+        GameObject enemy = Instantiate(enemies[0]);
+        enemy.transform.position = spawnPosition.transform.position;
+        var pathMovement = enemy.GetComponent<PathMovement>();
+        if (pathMovement != null)
+            pathMovement.SetReferences(baseTileMap, target);
         yield return new WaitForSeconds(1);
         canSpawn = false;
     }

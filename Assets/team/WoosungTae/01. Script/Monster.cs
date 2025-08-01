@@ -16,7 +16,7 @@ public class Monster : MonoBehaviour
     public int hp { get; private set; }
     private void Start()
     {
-        
+        Initialize();
     }
     private void Initialize()
     {
