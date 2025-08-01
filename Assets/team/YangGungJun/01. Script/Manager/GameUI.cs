@@ -1,4 +1,5 @@
 using TMPro;
+using Unity.AppUI.UI;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -7,6 +8,7 @@ public class GameUI : MonoBehaviour
     [SerializeField] float CurretTime;
     [SerializeField] float MaxTime;
     [SerializeField] TextMeshProUGUI WaveText;
+    [SerializeField] GameObject GameEndUI;
     int count = 0;
     private void Start()
     {
@@ -20,6 +22,10 @@ public class GameUI : MonoBehaviour
             SetText();
             CurretTime = 0;
         }
+    }
+    public void OpenGameEndUI()
+    {
+        GameEndUI.SetActive(true);
     }
     public void SetText()
     {

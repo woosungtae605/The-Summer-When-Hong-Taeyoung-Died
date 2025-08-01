@@ -2,6 +2,7 @@
 using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.AppUI.UI;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -18,6 +19,7 @@ public class StageManager : MonoBehaviour
     [SerializeField] private float PanelPos;
     [SerializeField] Sprite MuteImage;
     [SerializeField] Sprite MuteNoImage;
+    [SerializeField] Panel Menu;
     private int ListMaxCount;
     private int ImageCurrentCount = 0;
     private int Count = 0;
