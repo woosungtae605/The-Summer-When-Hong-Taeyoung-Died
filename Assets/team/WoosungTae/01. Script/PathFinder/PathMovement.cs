@@ -91,10 +91,10 @@ public class PathMovement : MonoBehaviour, IComponent
 
         if (Vector2.Dot(beforeDirection, currentDirection) <= 0 || Vector2.Distance(destination, currentPosition) < 0.01f)
         {
-            Debug.Log(IsArrived);
             _currentPathIndex++;
             if (_currentPathIndex > _pathCount)
                 IsArrived = true;
+            Debug.Log(IsArrived);
             return IsArrived;
         }
         return false;

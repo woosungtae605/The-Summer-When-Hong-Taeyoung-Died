@@ -19,16 +19,22 @@ public class SpawnEnemy : MonoBehaviour
 
     IEnumerator EnemySpawn()
     {
-        Debug.Log("µø¿€â≥");
-        canSpawn = true;
-        GameObject enemy = Instantiate(enemies[0]);
-        TargetTrace target = enemy.AddComponent<TargetTrace>();
-        TargetManager.Instance.targets.Add(target);
-        enemy.transform.position = spawnPosition.transform.position;
-        var pathMovement = enemy.GetComponent<PathMovement>();
-        if (pathMovement != null)
-            pathMovement.SetReferences(baseTileMap, this.target);
-        yield return new WaitForSeconds(1);
+        for(int i = 0; i < enemies.Length; i++)
+        {
+            canSpawn = true;
+            GameObject enemy = Instantiate(enemies[i]);
+            enemy.transform.position = spawnPosition.transform.position;
+            var pathMovement = enemy.GetComponent<PathMovement>();
+            if (pathMovement != null)
+            {
+                pathMovement.SetReferences(baseTileMap, this.target);
+            }
+            yield return new WaitForSeconds(1);
+        }
+            
+        //TargetTrace target = enemy.AddComponent<TargetTrace>();
+       // TargetManager.Instance.targets.Add(target);
+
         canSpawn = false;
     }
 

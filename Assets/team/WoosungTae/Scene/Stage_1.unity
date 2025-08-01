@@ -158,7 +158,8 @@ MonoBehaviour:
   baseTileMap: {fileID: 1348137555}
   target: {fileID: 403847755}
   enemies:
-  - {fileID: 2819840995917780510, guid: 096414da0d059aa4393104064f81104c, type: 3}
+  - {fileID: 6345672765823158191, guid: 11bfe099ce9541c4d8d0d3e708a97dc3, type: 3}
+  - {fileID: 7685321189609760203, guid: 5cb4f7964bdd49f469e9a82dcf6fabc0, type: 3}
 --- !u!114 &766451670
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -173,6 +174,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemies:
   - {fileID: 2819840995917780510, guid: 096414da0d059aa4393104064f81104c, type: 3}
+  - {fileID: 5148503056358938083, guid: 940ec20fd0214c64da5c4586d1a8c206, type: 3}
   bullets: []
   enemyMaxSpawn: 5
   bulletMaxSpawn: 5
@@ -1486,21 +1488,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1271684326307677077, guid: 5d823b9dc49103e44af4474022e5ad6d, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 7.14
-      objectReference: {fileID: 0}
     - target: {fileID: 2972649731777732274, guid: 5d823b9dc49103e44af4474022e5ad6d, type: 3}
       propertyPath: m_Name
       value: WayPoints
-      objectReference: {fileID: 0}
-    - target: {fileID: 5107598034973582138, guid: 5d823b9dc49103e44af4474022e5ad6d, type: 3}
-      propertyPath: wayPoints.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5107598034973582138, guid: 5d823b9dc49103e44af4474022e5ad6d, type: 3}
-      propertyPath: 'wayPoints.Array.data[1]'
-      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7723066986322122997, guid: 5d823b9dc49103e44af4474022e5ad6d, type: 3}
       propertyPath: m_LocalPosition.x
