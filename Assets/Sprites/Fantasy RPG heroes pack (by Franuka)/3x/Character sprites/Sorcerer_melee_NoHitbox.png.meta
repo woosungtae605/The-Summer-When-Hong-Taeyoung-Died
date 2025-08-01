@@ -1,0 +1,517 @@
+fileFormatVersion: 2
+guid: f56ba8d552b38eb4eb82a2d82a3ac763
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -40733953707368570
+    second: Sorcerer_melee_NoHitbox_0
+  - first:
+      213: -7300544816096837530
+    second: Sorcerer_melee_NoHitbox_1
+  - first:
+      213: 1707142037718250896
+    second: Sorcerer_melee_NoHitbox_2
+  - first:
+      213: 8796516686171599252
+    second: Sorcerer_melee_NoHitbox_3
+  - first:
+      213: -202100566985740615
+    second: Sorcerer_melee_NoHitbox_4
+  - first:
+      213: -7455040530073708694
+    second: Sorcerer_melee_NoHitbox_5
+  - first:
+      213: -8890645742023274465
+    second: Sorcerer_melee_NoHitbox_6
+  - first:
+      213: 6098172490163302397
+    second: Sorcerer_melee_NoHitbox_7
+  - first:
+      213: -4779127765572345555
+    second: Sorcerer_melee_NoHitbox_8
+  - first:
+      213: 9097006139374428148
+    second: Sorcerer_melee_NoHitbox_9
+  - first:
+      213: 7408995233318569856
+    second: Sorcerer_melee_NoHitbox_10
+  - first:
+      213: -4822763447557462322
+    second: Sorcerer_melee_NoHitbox_11
+  - first:
+      213: -5049393777215439351
+    second: Sorcerer_melee_NoHitbox_12
+  - first:
+      213: -416390036448964971
+    second: Sorcerer_melee_NoHitbox_13
+  - first:
+      213: 9064669569960977772
+    second: Sorcerer_melee_NoHitbox_14
+  - first:
+      213: 3462510842421036070
+    second: Sorcerer_melee_NoHitbox_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Sorcerer_melee_NoHitbox_0
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 476
+        width: 47
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68f99f65fa84f6ff0800000000000000
+      internalID: -40733953707368570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sorcerer_melee_NoHitbox_1
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 476
+        width: 47
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6608ab17b214faa90800000000000000
+      internalID: -7300544816096837530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sorcerer_melee_NoHitbox_2
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 476
+        width: 44
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 095355373acf0b710800000000000000
+      internalID: 1707142037718250896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sorcerer_melee_NoHitbox_3
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 476
+        width: 44
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 491fd04f151831a70800000000000000
+      internalID: 8796516686171599252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sorcerer_melee_NoHitbox_4
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 335
+        width: 44
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bee8e7ea9ef13df0800000000000000
+      internalID: -202100566985740615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sorcerer_melee_NoHitbox_5
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 335
+        width: 44
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6711dae2206a8890800000000000000
+      internalID: -7455040530073708694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sorcerer_melee_NoHitbox_6
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 335
+        width: 41
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f101dd26dc41e9480800000000000000
+      internalID: -8890645742023274465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sorcerer_melee_NoHitbox_7
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 335
+        width: 41
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dff2e3ff19f01a450800000000000000
+      internalID: 6098172490163302397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sorcerer_melee_NoHitbox_8
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 191
+        width: 44
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d21aadc3e902dadb0800000000000000
+      internalID: -4779127765572345555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sorcerer_melee_NoHitbox_9
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 191
+        width: 44
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ffd5f0c2ee0f3e70800000000000000
+      internalID: 9097006139374428148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sorcerer_melee_NoHitbox_10
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 191
+        width: 41
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 087048009e902d660800000000000000
+      internalID: 7408995233318569856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sorcerer_melee_NoHitbox_11
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 191
+        width: 41
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec66990523a121db0800000000000000
+      internalID: -4822763447557462322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sorcerer_melee_NoHitbox_12
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 44
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90e710acc13fce9b0800000000000000
+      internalID: -5049393777215439351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sorcerer_melee_NoHitbox_13
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 44
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59e827dc77fa83af0800000000000000
+      internalID: -416390036448964971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sorcerer_melee_NoHitbox_14
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 44
+        width: 47
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6521db72fc2ccd70800000000000000
+      internalID: 9064669569960977772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sorcerer_melee_NoHitbox_15
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 44
+        width: 47
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 624c179144f4d0030800000000000000
+      internalID: 3462510842421036070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
