@@ -12,7 +12,7 @@ public class TowerUI : MonoBehaviour
     public GameObject _TowerPrefab;
     public GameObject _TowerUI;
 
-    [Header("Ability")]  // ´É·ÂÄ¡
+    [Header("Ability")]  // ï¿½É·ï¿½Ä¡
     public TextMeshProUGUI _name;
     public TextMeshProUGUI _textDamage;
     public TextMeshProUGUI _textRange;
@@ -24,18 +24,18 @@ public class TowerUI : MonoBehaviour
     public TextMeshProUGUI _upgradeGcd;
 
     [Header("UpdateAbility")]
-    public int _DamageUpdate = 0; // µ¥¹ÌÁö Áõ°¡ ¾÷µ¥ÀÌÆ®
-    public float _RanageUpdate = 0; // »ç°Å¸® Áõ°¡ ¾÷µ¥ÀÌÆ®
-    public float _GcdUpdate = 0;    // ÄðÅ¸ÀÓ Áõ°¡ ¾÷µ¥ÀÌÆ®
-    public int _UpdateCostUpdate = 0;   // ¾÷±×·¹ÀÌµå ¾÷µ¥ÀÌÆ®
-    public int _SellCostUpdate = 0;     // ÆÇ¸Å ¾÷µ¥ÀÌÆ®
+    public int _DamageUpdate = 0; // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®
+    public float _RanageUpdate = 0; // ï¿½ï¿½Å¸ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®
+    public float _GcdUpdate = 0;    // ï¿½ï¿½Å¸ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®
+    public int _UpdateCostUpdate = 0;   // ï¿½ï¿½ï¿½×·ï¿½ï¿½Ìµï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®
+    public int _SellCostUpdate = 0;     // ï¿½Ç¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®
 
     [Header("Maximum Level")]
-    public int _maxiumLevel = 10; // ÃÖ´ë ·¹º§ °³¼ö
+    public int _maxiumLevel = 10; // ï¿½Ö´ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 
     [Header("Cost")]
-    public TextMeshProUGUI _textUpdateCost; // ¾÷±×·¹ÀÌµå Cost
-    public TextMeshProUGUI _textSellCost;   // ÆÇ¸Å Cost
+    public TextMeshProUGUI _textUpdateCost; // ï¿½ï¿½ï¿½×·ï¿½ï¿½Ìµï¿½ Cost
+    public TextMeshProUGUI _textSellCost;   // ï¿½Ç¸ï¿½ Cost
 
     int _mirayDamage;
     float _mirayRange;
@@ -58,9 +58,10 @@ public class TowerUI : MonoBehaviour
         _maxLevel.gameObject.SetActive(false);
     }
 
-    private void Start()
+    private void OnEnable()
     {
-        TowerName(_towerAttack); // Å¸¿ö ÀÌ¸§
+        _TowerPrefab = _towerAttack.gameObject;
+        TowerName(_towerAttack); // Å¸ï¿½ï¿½ ï¿½Ì¸ï¿½
         StartTower();
         UpgradeStart(_towerAttack);
         TowerAbilityMiray(_towerAttack);
@@ -74,7 +75,7 @@ public class TowerUI : MonoBehaviour
 
     public void TowerName(TowerAttack _tower)
     {
-        _name.text = _tower.stat.name; // Å¸¿ö ÀÌ¸§ So
+        _name.text = _tower.stat.name; // Å¸ï¿½ï¿½ ï¿½Ì¸ï¿½ So
     }
 
     public void TowerDamage(TowerAttack _tower)
@@ -124,8 +125,8 @@ public class TowerUI : MonoBehaviour
 
     public void CostStart(TowerAttack _tower)
     {
-        _textUpdateCost.text = _tower.stat.upgradeCost.ToString(); // ¾÷µ¥ÀÌÆ® Cost
-        _textSellCost.text = _tower.stat.sellCost.ToString();     // ÆÇ¸Å Cost
+        _textUpdateCost.text = _tower.stat.upgradeCost.ToString(); // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ® Cost
+        _textSellCost.text = _tower.stat.sellCost.ToString();     // ï¿½Ç¸ï¿½ Cost
     }
 
     public void StartTower()
@@ -136,53 +137,52 @@ public class TowerUI : MonoBehaviour
         CostStart(_towerAttack);
     }
 
-    int _firstLevel = 1; // ¿ø·¡ ·¹º§
-    int _lastLevel = 2;  // Áõ°¡ ·¹º§
+    int _firstLevel = 1; // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+    int _lastLevel = 2;  // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 
     [Header("LevelText")] 
     public TextMeshProUGUI _textFirstLevel;
     public TextMeshProUGUI _textLastLevel;
 
-    public void OnUpdateTower(TowerAttack _tower)
+    public void OnUpdateTower()
     {
-        if((int)_channel.Gold >= _tower.stat.upgradeCost)
-        {       
-            _channel.ChangeGold((ulong)_tower.stat.upgradeCost,GoldTypeEnum.SPEND);
-            if(_firstLevel < _maxiumLevel)
+        if ((int)_channel.Gold >= _towerAttack.stat.upgradeCost)
+        {
+            _channel.ChangeGold((ulong)_towerAttack.stat.upgradeCost, GoldTypeEnum.SPEND);
+            if (_towerAttack.stat.lvl < _maxiumLevel)
             {
-                _firstLevel++;
+                _towerAttack.stat.lvl++;
 
-            if (_lastLevel < _maxiumLevel)
-            {
-                _lastLevel++;
-                _textLastLevel.text = _lastLevel.ToString();
-            }
-            else
-                _textLastLevel.text = "Max";
+                if (_towerAttack.stat.lvl + 1 < _maxiumLevel)
+                {
+                    _textLastLevel.text = (_towerAttack.stat.lvl + 1).ToString();
+                }
+                else
+                    _textLastLevel.text = "Max";
 
-               _textFirstLevel.text = _firstLevel.ToString(); // ·¹º§ÀÌ Áõ°¡ÇÏ°í Ç¥Çö
-                 // ·¹º§ÀÌ Áõ°¡ÇÏ°í Ç¥Çö
+                _textFirstLevel.text = _towerAttack.stat.lvl.ToString(); // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï°ï¿½ Ç¥ï¿½ï¿½
+                // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï°ï¿½ Ç¥ï¿½ï¿½
                 TowerAbilityUpdate(_towerAttack);
                 StartTower();
                 UpgradeStart(_towerAttack);
                 TowerAbilityMiray(_towerAttack);
             }
-        else if (_firstLevel == _maxiumLevel)
-        {
-            _maxText.gameObject.SetActive(true);
-            _levelText.gameObject.SetActive(false);
-            _textUpdateCost.text = "Max";
-            _UiDelete.SetActive(false);
-            _maxLevel.gameObject.SetActive(true);
-            
-        }
+            else if (_towerAttack.stat.lvl == _maxiumLevel)
+            {
+                _maxText.gameObject.SetActive(true);
+                _levelText.gameObject.SetActive(false);
+                _textUpdateCost.text = "Max";
+                _UiDelete.SetActive(false);
+                _maxLevel.gameObject.SetActive(true);
+
+            }
         }
     }
-    
-    public void Remove(TowerAttack _tower)
+
+    public void Remove()
     {
-        _channel.ChangeGold((ulong)_tower.stat.sellCost, GoldTypeEnum.GET);
-        _TowerPrefab.SetActive(false);
+        _channel.ChangeGold((ulong)_towerAttack.stat.sellCost, GoldTypeEnum.GET);
+        Destroy(_TowerPrefab);
         _TowerUI.SetActive(false);
     }    
 }

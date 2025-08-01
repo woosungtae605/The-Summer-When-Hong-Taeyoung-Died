@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class TargetTrace : MonoBehaviour
@@ -16,6 +17,11 @@ public class TargetTrace : MonoBehaviour
             moveCount++;
             prevPos = currentPos;
         }
+    }
+
+    private void OnEnable()
+    {
+        moveCount = 0;
     }
 
     private void OnDrawGizmos()

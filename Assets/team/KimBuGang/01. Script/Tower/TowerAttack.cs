@@ -47,10 +47,4 @@ public class TowerAttack : MonoBehaviour
         yield return new WaitForSeconds(stat.rate);
         canShoot = true;
     }
-
-    private void OnDrawGizmos()
-    {
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, stat.range);
-    }
 }
