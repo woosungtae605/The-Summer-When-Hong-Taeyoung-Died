@@ -108,6 +108,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   monsterSO: {fileID: 11400000, guid: 0acb0e69b57f5e74d97f97d3784253be, type: 2}
   number: 2
+<<<<<<< HEAD
 --- !u!114 &122032741659058223
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -260,3 +261,6 @@ MonoBehaviour:
   moveSpeed: 0
   rigidbody: {fileID: 3557366255741144223}
   monsterSO: {fileID: 11400000, guid: 0acb0e69b57f5e74d97f97d3784253be, type: 2}
+=======
+  point: []
+>>>>>>> main

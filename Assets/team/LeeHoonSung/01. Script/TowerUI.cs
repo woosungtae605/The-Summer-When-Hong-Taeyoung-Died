@@ -74,7 +74,7 @@ public class TowerUI : MonoBehaviour
 
     public void TowerName(TowerAttack _tower)
     {
-        _name.text = _tower.name; // 타워 이름 So
+        _name.text = _tower.stat.name; // 타워 이름 So
     }
 
     public void TowerDamage(TowerAttack _tower)
