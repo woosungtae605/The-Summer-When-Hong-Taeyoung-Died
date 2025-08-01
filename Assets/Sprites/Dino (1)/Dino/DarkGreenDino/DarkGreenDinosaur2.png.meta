@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      DarkGreenDinosaur2_0: -1244689989468206530
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
