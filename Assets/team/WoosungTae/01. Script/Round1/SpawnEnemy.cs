@@ -14,7 +14,7 @@ public class SpawnEnemy : MonoBehaviour
     {
         if(!canSpawn)
         {
-          // StartCoroutine(EnemySpawn());
+           StartCoroutine(EnemySpawn());
         }
     }
     
