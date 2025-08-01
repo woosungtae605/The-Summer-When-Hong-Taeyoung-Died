@@ -24,10 +24,7 @@ public class Monster : MonoBehaviour
         hp = monsterSO.hp;
         gold = monsterSO.gold;
     }
-<<<<<<< HEAD
     public int gold { get; private set; }
-=======
-
     private void Update()
     {
         if(hp <= 0)
@@ -36,7 +33,6 @@ public class Monster : MonoBehaviour
         }
         Debug.Log(number);
     }
->>>>>>> main
     public int GetNumber()
     {
         return number;
