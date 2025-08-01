@@ -23,6 +23,7 @@ public class StartUI : MonoBehaviour
     [SerializeField] private GameObject tutoriel;
 
     [Header("애니메이션 설정")]
+    [SerializeField] private float NameDistance;
     [SerializeField] private float buttonMoveDistance = 500f;
     [SerializeField] private float buttonMoveTime = 0.5f;
     [SerializeField] private float panelMoveTime = 0.87f;
@@ -41,6 +42,7 @@ public class StartUI : MonoBehaviour
     private Vector3 exitButtonOriginPos;
 
     private int CurrunetCount = 0;
+    private bool OnTutoriel = false;
     public List<Image> ImageList = new();
 
     private void Awake()
@@ -67,7 +69,7 @@ public class StartUI : MonoBehaviour
     }
     private void MoveButtons()
     {
-        GameName.transform.DOMoveX(GameName.transform.position.x + buttonMoveDistance, buttonMoveTime);
+        GameName.transform.DOMoveX(GameName.transform.position.x + NameDistance, buttonMoveTime);
         startButton.transform.DOMoveX(startButton.transform.position.x + buttonMoveDistance, buttonMoveTime);
         menuButton.transform.DOMoveX(menuButton.transform.position.x + buttonMoveDistance, buttonMoveTime + 0.3f);
         exitButton.transform.DOMoveX(exitButton.transform.position.x + buttonMoveDistance, buttonMoveTime + 0.5f);
@@ -91,8 +93,12 @@ public class StartUI : MonoBehaviour
     }
     public void StartButton()
     {
-        StartCoroutine(ShowMenuSequence());
-        Invoke("GoStage1", 0.35f);
+        if (!OnTutoriel)
+        {
+            StartCoroutine(ShowMenuSequence());
+            Invoke("GoStage1", 0.35f);
+        }
+       
     }
     public void GoStage1()
     {
@@ -166,12 +172,13 @@ public class StartUI : MonoBehaviour
     }
     public void SetTutorial()
     {
-      
+        
         List();
         tutoriel.SetActive(true);
     }
     public void UnSetTutorial()
     {
+        
         ListUn();
         tutoriel.SetActive(false);
     }
