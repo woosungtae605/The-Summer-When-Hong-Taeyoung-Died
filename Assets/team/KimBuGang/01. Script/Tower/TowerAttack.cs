@@ -30,10 +30,8 @@ public class TowerAttack : MonoBehaviour
             {
                 StartCoroutine(ShootDelay());
                 BulletMove bullet =
-                    Instantiate(Resources.Load("Bullet") as GameObject, transform.position, Quaternion.identity)
+                    Instantiate(stat.bullet, transform.position, Quaternion.identity)
                         .GetComponent<BulletMove>();
-                bullet.gameObject.GetComponent<SpriteRenderer>().sortingOrder = -1;
-                bullet.gameObject.GetComponent<SpriteRenderer>().color = stat.bulletColor;
                 bullet.target = target;
                 bullet.speed = stat.bulletSpeed;
                 bullet.damage = stat.dmg;

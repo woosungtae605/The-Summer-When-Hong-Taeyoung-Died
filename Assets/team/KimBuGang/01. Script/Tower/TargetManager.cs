@@ -72,7 +72,7 @@ public class TargetManager : MonoBehaviour
         towerScript.bulletSpeed = towerStat.bulletSpeed;
         towerScript.upgradeCost = towerStat.upgradeCost;
         towerScript.sellCost = towerStat.sellCost;
-        towerScript.bulletColor = towerStat.bulletColor;
+        towerScript.bullet = towerStat.bullet;
         towerScript.lvl = 1;
         tower.transform.GetChild(0).transform.localScale = new Vector2(towerStat.range * 2, towerStat.range * 2);
         tower.transform.GetChild(0).gameObject.SetActive(false);
