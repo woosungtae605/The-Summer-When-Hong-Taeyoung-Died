@@ -36,7 +36,6 @@ public class CamaraControll : MonoBehaviour
     }
     public void SetCamaraSize(int size)
     {
-        Debug.Log("asdsadasd");
         camera1.orthographicSize = size;
     }
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
