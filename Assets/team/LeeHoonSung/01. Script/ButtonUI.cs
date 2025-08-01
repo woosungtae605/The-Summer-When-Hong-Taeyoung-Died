@@ -3,28 +3,11 @@ using UnityEngine.SceneManagement;
 
 public class ButtonUI : MonoBehaviour
 {
-    int _index = 0;
-    
     public GameObject UiLevelUpdate;
-
-    public void OnStartButton()
-    {
-        ++_index; // 버튼을 누르면 _index가 1이 됨
-        SceneManager.LoadScene(_index); // 인덱스가 1일 때 씬을 이동함
-    }
-
-    public void OnQuitButton()
-    {
-        Application.Quit(); // 버튼을 누르면 나가기
-    }
 
     public void Cancel()
     {
+        UiLevelUpdate.GetComponentInChildren<TowerUI>()._towerAttack = null;
         UiLevelUpdate.SetActive(false);
-    }
-
-    public void UITestLevel()
-    {
-        UiLevelUpdate.SetActive(true);
     }
 }

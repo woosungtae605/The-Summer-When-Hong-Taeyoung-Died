@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 7639953017150648773}
   - component: {fileID: 8689715447579342899}
   - component: {fileID: 751717133282886702}
-  - component: {fileID: 1228096709553864614}
   m_Layer: 5
   m_Name: TowerSpawnButtons
   m_TagString: Untagged
@@ -124,104 +123,7 @@ MonoBehaviour:
   towerStats: {fileID: 11400000, guid: 85212a280c3a8704ea731a717d2dea7e, type: 2}
   mouse: {fileID: 0}
   goldChannel: {fileID: 11400000, guid: d23b7cd91e789084a81c18dc53a2e054, type: 2}
-  maxTowerCount: 15
---- !u!82 &1228096709553864614
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5767639764906818445}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 7321559575193615656, guid: 57e39b157421ec543b672e1c069bb603, type: 2}
-  m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
+  maxTowerCount: 10
 --- !u!1001 &36080872551069063
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -342,7 +244,8 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
       value: 4
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3492140074394818951, guid: bcf9d3295869402418172d283797af2e, type: 3}
     m_RemovedGameObjects:
     - {fileID: 6842985586247815795, guid: bcf9d3295869402418172d283797af2e, type: 3}
     m_AddedGameObjects: []
@@ -350,6 +253,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2581713415129646925, guid: bcf9d3295869402418172d283797af2e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1223439381445590395}
+    - targetCorrespondingSourceObject: {fileID: 2581713415129646925, guid: bcf9d3295869402418172d283797af2e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6653016239563677214}
   m_SourcePrefab: {fileID: 100100000, guid: bcf9d3295869402418172d283797af2e, type: 3}
 --- !u!224 &1016172242817851537 stripped
 RectTransform:
@@ -375,6 +281,35 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   index: 4
   tower: {fileID: 11400000, guid: 85212a280c3a8704ea731a717d2dea7e, type: 2}
+--- !u!114 &6653016239563677214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2545723396272845514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 3
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 751717133282886702}
+          m_TargetAssemblyTypeName: SpawnTower, Assembly-CSharp
+          m_MethodName: Spawn
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 4
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &1316797109998010495
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -471,7 +406,8 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 751717133282886702}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3492140074394818951, guid: bcf9d3295869402418172d283797af2e, type: 3}
     m_RemovedGameObjects:
     - {fileID: 6842985586247815795, guid: bcf9d3295869402418172d283797af2e, type: 3}
     m_AddedGameObjects: []
@@ -479,6 +415,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2581713415129646925, guid: bcf9d3295869402418172d283797af2e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 6063923055258483609}
+    - targetCorrespondingSourceObject: {fileID: 2581713415129646925, guid: bcf9d3295869402418172d283797af2e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2438245187264989111}
   m_SourcePrefab: {fileID: 100100000, guid: bcf9d3295869402418172d283797af2e, type: 3}
 --- !u!224 &2079598594069091689 stripped
 RectTransform:
@@ -504,6 +443,35 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   index: 0
   tower: {fileID: 11400000, guid: 85212a280c3a8704ea731a717d2dea7e, type: 2}
+--- !u!114 &2438245187264989111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3571958490758416178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 3
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 751717133282886702}
+          m_TargetAssemblyTypeName: SpawnTower, Assembly-CSharp
+          m_MethodName: Spawn
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &5503212369954490004
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -624,7 +592,8 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3492140074394818951, guid: bcf9d3295869402418172d283797af2e, type: 3}
     m_RemovedGameObjects:
     - {fileID: 6842985586247815795, guid: bcf9d3295869402418172d283797af2e, type: 3}
     m_AddedGameObjects: []
@@ -632,6 +601,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2581713415129646925, guid: bcf9d3295869402418172d283797af2e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1612092277597654093}
+    - targetCorrespondingSourceObject: {fileID: 2581713415129646925, guid: bcf9d3295869402418172d283797af2e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3877785844901755470}
   m_SourcePrefab: {fileID: 100100000, guid: bcf9d3295869402418172d283797af2e, type: 3}
 --- !u!224 &4811342382991594370 stripped
 RectTransform:
@@ -657,6 +629,35 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   index: 1
   tower: {fileID: 11400000, guid: 85212a280c3a8704ea731a717d2dea7e, type: 2}
+--- !u!114 &3877785844901755470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8037589232505946585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 3
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 751717133282886702}
+          m_TargetAssemblyTypeName: SpawnTower, Assembly-CSharp
+          m_MethodName: Spawn
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &7013886912154849809
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -777,7 +778,8 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
       value: 2
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3492140074394818951, guid: bcf9d3295869402418172d283797af2e, type: 3}
     m_RemovedGameObjects:
     - {fileID: 6842985586247815795, guid: bcf9d3295869402418172d283797af2e, type: 3}
     m_AddedGameObjects: []
@@ -785,6 +787,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2581713415129646925, guid: bcf9d3295869402418172d283797af2e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 8114560755441069306}
+    - targetCorrespondingSourceObject: {fileID: 2581713415129646925, guid: bcf9d3295869402418172d283797af2e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3041109061107047322}
   m_SourcePrefab: {fileID: 100100000, guid: bcf9d3295869402418172d283797af2e, type: 3}
 --- !u!1 &4792465866608973148 stripped
 GameObject:
@@ -805,6 +810,35 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   index: 2
   tower: {fileID: 11400000, guid: 85212a280c3a8704ea731a717d2dea7e, type: 2}
+--- !u!114 &3041109061107047322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4792465866608973148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 3
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 751717133282886702}
+          m_TargetAssemblyTypeName: SpawnTower, Assembly-CSharp
+          m_MethodName: Spawn
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 2
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!224 &8055902781586982663 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1052157970987783446, guid: bcf9d3295869402418172d283797af2e, type: 3}
@@ -930,7 +964,8 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
       value: 3
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3492140074394818951, guid: bcf9d3295869402418172d283797af2e, type: 3}
     m_RemovedGameObjects:
     - {fileID: 6842985586247815795, guid: bcf9d3295869402418172d283797af2e, type: 3}
     m_AddedGameObjects: []
@@ -938,6 +973,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2581713415129646925, guid: bcf9d3295869402418172d283797af2e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 4916682613403620775}
+    - targetCorrespondingSourceObject: {fileID: 2581713415129646925, guid: bcf9d3295869402418172d283797af2e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3327206012002200060}
   m_SourcePrefab: {fileID: 100100000, guid: bcf9d3295869402418172d283797af2e, type: 3}
 --- !u!1 &5822598916625639213 stripped
 GameObject:
@@ -958,6 +996,35 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   index: 3
   tower: {fileID: 11400000, guid: 85212a280c3a8704ea731a717d2dea7e, type: 2}
+--- !u!114 &3327206012002200060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5822598916625639213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 3
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 751717133282886702}
+          m_TargetAssemblyTypeName: SpawnTower, Assembly-CSharp
+          m_MethodName: Spawn
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 3
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!224 &9043250492157785462 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1052157970987783446, guid: bcf9d3295869402418172d283797af2e, type: 3}

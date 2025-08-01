@@ -35,6 +35,8 @@ public class OnMouse : MonoBehaviour
             onTower = true;
             tower = other.GetComponent<TowerAttack>();
         }
+        else if (other.tag == "PreView" && !clicked)
+            other.transform.GetChild(0).gameObject.SetActive(true);
         if (other.tag == "Road")
             onRoad = true;
     }
@@ -46,16 +48,24 @@ public class OnMouse : MonoBehaviour
             onTower = false;
             tower = null;
         }
+        else if (other.tag == "PreView" && !clicked)
+            other.transform.GetChild(0).gameObject.SetActive(false);
         if (other.tag == "Road")
             onRoad = false;
     }
 
     public void ClickTower()
     {
-        if (onTower)
+        if (onTower && UI.GetComponentInChildren<TowerUI>()._towerAttack == null)
         {
             UI.GetComponentInChildren<TowerUI>()._towerAttack = tower;
             UI.SetActive(true);
         }
+    }
+
+    public void TowerDestroy()
+    {
+        tower = null;
+        onTower = false;
     }
 }
