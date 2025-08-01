@@ -15,16 +15,10 @@ MonoBehaviour:
   icon: {fileID: 0}
   name: Defa
   tower: {fileID: 0}
-  lvl: 1
   dmg: 20
   rate: 3
   range: 2.5
   bulletSpeed: 4
   upgradeCost: 200
   sellCost: 100
-  damageUpdate: 10
-  ranageUpdate: 5
-  gcdUpdate: 22
-  updateCostUpdate: 3
-  sellCostUpdate: 1
-  bullet: {fileID: 0}
+  bulletColor: {r: 0, g: 0, b: 0, a: 0}

@@ -79,7 +79,7 @@ public class PathMovement : MonoBehaviour, IComponent
         {
             Vector2 direction = _path[_currentPathIndex] - (Vector3)_owner.transform.position;
             _mover.SetMovementInput(direction.normalized);
-            //Debug.Log("이동 중, currentIndex=" + _currentPathIndex);
+            Debug.Log("이동 중, currentIndex=" + _currentPathIndex);
         }
         else
         {
@@ -92,7 +92,7 @@ public class PathMovement : MonoBehaviour, IComponent
         if (CheckArrived() == false)
         {
             Vector2 direction = _path[_currentPathIndex] - _owner.transform.position;
-           // Debug.Log(direction);
+            Debug.Log(direction);
             _mover.SetMovementInput(direction);
         }
         else
@@ -114,7 +114,7 @@ public class PathMovement : MonoBehaviour, IComponent
             _currentPathIndex++;
             if (_currentPathIndex > _pathCount)
                 IsArrived = true;
-            //Debug.Log(IsArrived);
+            Debug.Log(IsArrived);
             return IsArrived;
         }
         return false;

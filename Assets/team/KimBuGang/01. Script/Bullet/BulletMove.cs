@@ -32,10 +32,8 @@ public class BulletMove : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-
-        if (other.TryGetComponent<Monster>(out Monster monsters)) //other == target && other.TryGetComponent<Monster>(out Monster monsters)
+        if (other == target&& other.TryGetComponent<Monster>(out Monster monsters))
         {
-            
             Destroy(gameObject);
             sb.Damage(monsters,damage);
         }

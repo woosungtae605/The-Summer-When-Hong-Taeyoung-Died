@@ -18,21 +18,12 @@ public class TargetManager : MonoBehaviour
 
     private void Update()
     {
-        CleanupDeadTargets();
         SetPriority();
         foreach (TowerAttack tower in towers)
             SetTarget(tower);
         
     }
 
-    private void CleanupDeadTargets()
-    {
-        for (int i = targets.Count - 1; i >= 0; i--)
-        {
-            if (targets[i] == null) // Unity에서 파괴된 객체는 비교시 null로 평가됨
-                targets.RemoveAt(i);
-        }
-    }
     private void SetPriority()
     {
         if (targets.Count > 1)
@@ -47,26 +38,13 @@ public class TargetManager : MonoBehaviour
 
     public void SetTarget(TowerAttack tower)
     {
-        if (tower == null || tower.stat == null) return;
-
         List<TargetTrace> targets = new List<TargetTrace>();
-        Debug.Log("확인1");
         foreach (var target in this.targets)
-        {
-            
             if (math.distance(target.transform.position, tower.transform.position) < tower.stat.range)
-            {
                 targets.Add(target);
-                Debug.Log("확인2");
-            }
-         
-        }
-            
-               
         TargetTrace finalTarget = null;
         foreach (var target in targets)
         {
-            Debug.Log("확인3");
             if (finalTarget == null)
                 finalTarget = target;
             else if (finalTarget.priority > target.priority)
