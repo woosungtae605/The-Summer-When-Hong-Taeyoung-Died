@@ -6879,6 +6879,14 @@ PrefabInstance:
       propertyPath: WaveText
       value: 
       objectReference: {fileID: 349506855}
+    - target: {fileID: 6834668621642049930, guid: a5c951e54b4b35045bfb13d295cb30bf, type: 3}
+      propertyPath: PlayBgmNumber
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8647923174201329745, guid: a5c951e54b4b35045bfb13d295cb30bf, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
