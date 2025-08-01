@@ -16,9 +16,12 @@ public class Home : MonoBehaviour
     private void GetDmg(int dmg)
     {
         Hp -= dmg;
-        CamaraControll.camaraControl.DownCamara(1);
-
+        //CamaraControll.camaraControl.ShakeCamara();
+        //CamaraControll.camaraControl.DownCamara(Camera.main, 1);
+        Debug.Log("¸Â¾ÒÀ½");
         if (Hp <= 0)
+        {
             clearUI.PrintText(false);
+        }
     }
 }

@@ -24,7 +24,7 @@ public class SpawnEnemy : MonoBehaviour
         {
             canSpawn = true;
             GameObject enemy = Instantiate(enemies[i]);
-            enemy.transform.position = spawnPosition.transform.position;
+            enemy.transform.position = spawnPosition.position;
 
             var pathMovement = enemy.GetComponent<PathMovement>();
             if (pathMovement != null)
@@ -42,7 +42,7 @@ public class SpawnEnemy : MonoBehaviour
     public void EnemySpawn_1()
     {
         GameObject enemy = Instantiate(enemies[0]);
-        enemy.transform.position = spawnPosition.transform.position;
+        enemy.transform.position = spawnPosition.position;
 
         var pathMovement = enemy.GetComponent<PathMovement>();
         if (pathMovement != null)
@@ -55,7 +55,7 @@ public class SpawnEnemy : MonoBehaviour
     public void EnemySpawn_2()
     {
         GameObject enemy = Instantiate(enemies[1]);
-        enemy.transform.position = spawnPosition.transform.position;
+        enemy.transform.position = spawnPosition.position;
 
         var pathMovement = enemy.GetComponent<PathMovement>();
         if (pathMovement != null)
@@ -69,7 +69,7 @@ public class SpawnEnemy : MonoBehaviour
     public void EnemySpawn_3()
     {
         GameObject enemy = Instantiate(enemies[2]);
-        enemy.transform.position = spawnPosition.transform.position;
+        enemy.transform.position = spawnPosition.position;
 
         var pathMovement = enemy.GetComponent<PathMovement>();
         if (pathMovement != null)
@@ -82,7 +82,7 @@ public class SpawnEnemy : MonoBehaviour
     public void EnemySpawn_4()
     {
         GameObject enemy = Instantiate(enemies[3]);
-        enemy.transform.position = spawnPosition.transform.position;
+        enemy.transform.position = spawnPosition.position;
 
         var pathMovement = enemy.GetComponent<PathMovement>();
         if (pathMovement != null)

@@ -22,11 +22,8 @@ public class TowerUI : MonoBehaviour
     public TextMeshProUGUI _upgradeDamage;
     public TextMeshProUGUI _upgradeRange;
     public TextMeshProUGUI _upgradeGcd;
-
      
-
-    [Header("Maximum Level")]
-    public int _maxiumLevel = 10; // �ִ� ���� ����
+    // �ִ� ���� ����
 
     [Header("Cost")]
     public TextMeshProUGUI _textUpdateCost; // ���׷��̵� Cost
@@ -145,11 +142,11 @@ public class TowerUI : MonoBehaviour
         if ((int)_channel.Gold >= _towerAttack.stat.upgradeCost)
         {
             _channel.ChangeGold((ulong)_towerAttack.stat.upgradeCost, GoldTypeEnum.SPEND);
-            if (_towerAttack.stat.lvl < _maxiumLevel)
+            if (_towerAttack.stat.lvl < _towerAttack.stat._maxiumLevel)
             {
                 _towerAttack.stat.lvl++;
 
-                if (_towerAttack.stat.lvl + 1 < _maxiumLevel)
+                if (_towerAttack.stat.lvl + 1 < _towerAttack.stat._maxiumLevel)
                 {
                     _textLastLevel.text = (_towerAttack.stat.lvl + 1).ToString();
                 }
@@ -163,7 +160,7 @@ public class TowerUI : MonoBehaviour
                 UpgradeStart(_towerAttack);
                 TowerAbilityMiray(_towerAttack);
             }
-            else if (_towerAttack.stat.lvl == _maxiumLevel)
+            else if (_towerAttack.stat.lvl == _towerAttack.stat._maxiumLevel)
             {
                 _maxText.gameObject.SetActive(true);
                 _levelText.gameObject.SetActive(false);
