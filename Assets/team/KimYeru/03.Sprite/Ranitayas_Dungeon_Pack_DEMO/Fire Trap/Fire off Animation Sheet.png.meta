@@ -509,7 +509,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Fire off Animation Sheet_0: 8368518940866525791
+      Fire off Animation Sheet_1: -3813840640064277489
+      Fire off Animation Sheet_10: 1157161493231780227
+      Fire off Animation Sheet_11: 8284766205713783516
+      Fire off Animation Sheet_12: 820744259836756530
+      Fire off Animation Sheet_13: 5812830907580181566
+      Fire off Animation Sheet_14: -9190350490244217396
+      Fire off Animation Sheet_15: -8296104962767561391
+      Fire off Animation Sheet_2: -368809219802978852
+      Fire off Animation Sheet_3: 7506892709730082340
+      Fire off Animation Sheet_4: 283520279859901707
+      Fire off Animation Sheet_5: 6014825323045010276
+      Fire off Animation Sheet_6: 1176374083868255233
+      Fire off Animation Sheet_7: 4126635325226180340
+      Fire off Animation Sheet_8: 7500853190120796797
+      Fire off Animation Sheet_9: 453876967242870716
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

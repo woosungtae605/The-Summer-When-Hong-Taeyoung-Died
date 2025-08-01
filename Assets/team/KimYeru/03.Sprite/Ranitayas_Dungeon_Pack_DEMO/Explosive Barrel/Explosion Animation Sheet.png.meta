@@ -784,7 +784,34 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Explosion Animation Sheet_0: 3982955278477101100
+      Explosion Animation Sheet_1: -8425817911692580926
+      Explosion Animation Sheet_10: 8409676333246284516
+      Explosion Animation Sheet_11: 7077153446215876179
+      Explosion Animation Sheet_12: -6240929116593828869
+      Explosion Animation Sheet_13: -3884701393849357884
+      Explosion Animation Sheet_14: -4012039096176196650
+      Explosion Animation Sheet_15: 8388904262413462738
+      Explosion Animation Sheet_16: 6510453353829508875
+      Explosion Animation Sheet_17: -7416796058083099330
+      Explosion Animation Sheet_18: 9025762773461557220
+      Explosion Animation Sheet_19: -5469873425379072109
+      Explosion Animation Sheet_2: 7102569812257510243
+      Explosion Animation Sheet_20: 7468570124550728108
+      Explosion Animation Sheet_21: -2240511146107017233
+      Explosion Animation Sheet_22: -4038956605031983740
+      Explosion Animation Sheet_23: -3178303166738831624
+      Explosion Animation Sheet_24: -1509488809275097176
+      Explosion Animation Sheet_25: -206664465189828778
+      Explosion Animation Sheet_26: -6341837309915597193
+      Explosion Animation Sheet_3: -5289320416681859634
+      Explosion Animation Sheet_4: -3230858937018492836
+      Explosion Animation Sheet_5: -5378942186097626935
+      Explosion Animation Sheet_6: -4473374754567051145
+      Explosion Animation Sheet_7: 5674958876645215837
+      Explosion Animation Sheet_8: 3152854890420774522
+      Explosion Animation Sheet_9: 5800042573219768988
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

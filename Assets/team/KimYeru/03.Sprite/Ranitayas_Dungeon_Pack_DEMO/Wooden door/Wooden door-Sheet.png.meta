@@ -509,7 +509,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Wooden door-Sheet_0: 5775630613967566824
+      Wooden door-Sheet_1: -8719727348869381799
+      Wooden door-Sheet_10: -6527995454528171784
+      Wooden door-Sheet_11: 6305215655775236471
+      Wooden door-Sheet_12: 427158906565773839
+      Wooden door-Sheet_13: 1423346621978662880
+      Wooden door-Sheet_14: -1903949893408602191
+      Wooden door-Sheet_15: -4746720250690280744
+      Wooden door-Sheet_2: -8579507254241167150
+      Wooden door-Sheet_3: -19213859161388840
+      Wooden door-Sheet_4: 9040002041078853167
+      Wooden door-Sheet_5: -5489264855886051611
+      Wooden door-Sheet_6: -6585570006933222408
+      Wooden door-Sheet_7: 1855287540405757831
+      Wooden door-Sheet_8: -4049358864362693396
+      Wooden door-Sheet_9: -226880199683467639
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

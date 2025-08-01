@@ -209,7 +209,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Death animation_0: -9086030183863377552
+      Death animation_1: -7153936228573687764
+      Death animation_2: -2626268446236666977
+      Death animation_3: 6070534571612393822
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
