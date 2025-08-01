@@ -1,13 +1,12 @@
 using System.Collections;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class Stage1Spawn : MonoBehaviour
 {
     private SpawnEnemy spawnEnemy;
     [SerializeField] private TextMeshProUGUI waveText;
-    private int waveNum = 1;
+    private int waveNum = 0;
     private void Awake()
     {
         spawnEnemy = GetComponent<SpawnEnemy>();    
@@ -16,10 +15,13 @@ public class Stage1Spawn : MonoBehaviour
     private void Start()
     {
         StartCoroutine(Stage());
+        WaveNumPlus();
     }
-    private void Update()
+
+    private void WaveNumPlus()
     {
-        waveText.text = $"wave : {waveNum}";
+        waveNum++;
+        waveText.text = $"wave : {waveNum} / 10";
     }
 
     IEnumerator Stage()
@@ -30,7 +32,7 @@ public class Stage1Spawn : MonoBehaviour
             yield return new WaitForSeconds(1);
         }
         yield return new WaitForSeconds(10);
-
+        WaveNumPlus();
         for (int i = 0; i < 15; i++) // 2스테이지
         {
             spawnEnemy.EnemySpawn_1();
@@ -38,7 +40,7 @@ public class Stage1Spawn : MonoBehaviour
         }
         spawnEnemy.EnemySpawn_2();
         yield return new WaitForSeconds(8);
-        waveNum++;
+        WaveNumPlus();
         for (int i = 0; i < 8; i++) // 3스테이지
         {
             spawnEnemy.EnemySpawn_1();
@@ -49,7 +51,7 @@ public class Stage1Spawn : MonoBehaviour
             yield return new WaitForSeconds(1f);
         }
         yield return new WaitForSeconds(8);
-        waveNum++;
+        WaveNumPlus();
         for (int i = 0; i < 9; i++) // 4스테이지
         {
             spawnEnemy.EnemySpawn_2();
@@ -59,7 +61,7 @@ public class Stage1Spawn : MonoBehaviour
         yield return new WaitForSeconds(1);
         spawnEnemy.EnemySpawn_3();
         yield return new WaitForSeconds(8);
-        waveNum++;
+        WaveNumPlus();
         for (int i = 0; i < 10; i++) // 5스테이지
         {
             spawnEnemy.EnemySpawn_3();
@@ -76,7 +78,7 @@ public class Stage1Spawn : MonoBehaviour
             }
         }
         yield return new WaitForSeconds(8);
-        waveNum++;
+        WaveNumPlus();
         for (int i = 0; i < 12; i++) // 6스테이지
         {
             spawnEnemy.EnemySpawn_3();
@@ -96,8 +98,8 @@ public class Stage1Spawn : MonoBehaviour
             }
         }
         yield return new WaitForSeconds(8);
-        waveNum++;
-        for (int i = 0; i < 12; i++) // 7스테이지
+        WaveNumPlus();
+        for (int i = 0; i < 15; i++) // 7스테이지
         {
             spawnEnemy.EnemySpawn_3();
             yield return new WaitForSeconds(0.4f);
@@ -106,6 +108,25 @@ public class Stage1Spawn : MonoBehaviour
                 spawnEnemy.EnemySpawn_2();
                 yield return new WaitForSeconds(0.1f);
                 spawnEnemy.EnemySpawn_1(); 
+            }
+            if (i > 9)
+            {
+                yield return new WaitForSeconds(0.2f);
+                spawnEnemy.EnemySpawn_2();
+                yield return new WaitForSeconds(0.1f);
+                spawnEnemy.EnemySpawn_2();
+            }
+        }
+
+        for (int i = 0; i < 12; i++) // 8스테이지
+        {
+            spawnEnemy.EnemySpawn_3();
+            yield return new WaitForSeconds(0.4f);
+            if (i > 3)
+            {
+                spawnEnemy.EnemySpawn_2();
+                yield return new WaitForSeconds(0.1f);
+                spawnEnemy.EnemySpawn_1();
             }
             if (i > 9)
             {
