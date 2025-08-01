@@ -83,9 +83,9 @@ public class TowerUI : MonoBehaviour
         _mirayDamage = _tower.stat.dmg;
         _mirayRange = _tower.stat.range;
         _mirayGcd = _tower.stat.rate;
-        _mirayDamage += _tower.stat.damageUpdate;
-        _mirayRange += _tower.stat.ranageUpdate;
-        _mirayGcd += _tower.stat.gcdUpdate;
+        _mirayDamage += _tower.stat.damageUpgrade;
+        _mirayRange += _tower.stat.ranageUpgrade;
+        _mirayGcd += _tower.stat.rateUpgrade;
 
         _mirayDamamge.text = _mirayDamage.ToString();
         _mirayRange2.text = _mirayRange.ToString();
@@ -104,11 +104,11 @@ public class TowerUI : MonoBehaviour
     
     public void TowerAbilityUpdate(TowerAttack _tower)
     {       
-        _tower.stat.dmg += _tower.stat.damageUpdate;
-        _tower.stat.rate += _tower.stat.gcdUpdate;
-        _tower.stat.range += _tower.stat.ranageUpdate;
-        _tower.stat.upgradeCost += _tower.stat.updateCostUpdate;
-        _tower.stat.sellCost += _tower.stat.sellCostUpdate;        
+        _tower.stat.dmg += _tower.stat.damageUpgrade;
+        _tower.stat.rate += _tower.stat.rateUpgrade;
+        _tower.stat.range += _tower.stat.ranageUpgrade;
+        _tower.stat.upgradeCost += _tower.stat.updateCostUpgrade;
+        _tower.stat.sellCost += _tower.stat.sellCostUpgrade;        
     }
 
     public void UpgradeStart(TowerAttack _tower)

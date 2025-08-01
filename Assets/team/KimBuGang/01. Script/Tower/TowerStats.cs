@@ -17,11 +17,12 @@ public class TowerStats : ScriptableObject
         public float bulletSpeed;
         public int upgradeCost;
         public int sellCost;
-        public int damageUpdate;
-        public float ranageUpdate;
-        public float gcdUpdate;
-        public int updateCostUpdate;
-        public int sellCostUpdate;
+        [Header("AbilityUpgrade")]
+        public int damageUpgrade;
+        public float ranageUpgrade;
+        public float rateUpgrade;
+        public int updateCostUpgrade;
+        public int sellCostUpgrade;
         public GameObject bullet;
     }
     
