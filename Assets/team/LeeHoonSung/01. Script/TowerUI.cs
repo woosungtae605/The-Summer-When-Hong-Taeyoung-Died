@@ -68,14 +68,14 @@ public class TowerUI : MonoBehaviour
 
     public void TowerDamage(TowerAttack _tower)
     {
-       // _textDamage.text = _tower.damage.ToString();
+        _textDamage.text = _tower.stat.dmg.ToString();
     }
 
     public void TowerAbilityMiray(TowerAttack _tower)
     {
-        //_mirayDamage = _tower.damage;
-       // _mirayRange = _tower.range;
-        //_mirayGcd = _tower.rate;
+        _mirayDamage = _tower.stat.dmg;
+        _mirayRange = _tower.stat.range;
+        _mirayGcd = _tower.stat.rate;
         _mirayDamage += _DamageUpdate;
         _mirayRange += _RanageUpdate;
         _mirayGcd += _GcdUpdate;
@@ -87,7 +87,7 @@ public class TowerUI : MonoBehaviour
 
     public void TowerUpdateGCD(TowerAttack _tower)
     {
-        //_textGcd.text = _tower.rate.ToString();
+        _textGcd.text = _tower.stat.rate.ToString();
     }
 
     public void TowerRange(TowerAttack _tower)
@@ -97,13 +97,13 @@ public class TowerUI : MonoBehaviour
     
     public void TowerAbilityUpdate(TowerAttack _tower)
     {
-        /*
-        _tower.damage += _DamageUpdate;
-        _tower.rate += _GcdUpdate;
-        _tower.range += _RanageUpdate;
-        _tower.upgradeCost += _UpdateCostUpdate;
-        _tower.sellCost += _SellCostUpdate;
-        */
+       
+        _tower.stat.dmg += _DamageUpdate;
+        _tower.stat.rate += _GcdUpdate;
+        _tower.stat.range += _RanageUpdate;
+        _tower.stat.upgradeCost += _UpdateCostUpdate;
+        _tower.stat.sellCost += _SellCostUpdate;
+        
     }
 
     public void TowerAbilityMax(TowerAttack _tower)
@@ -113,15 +113,15 @@ public class TowerUI : MonoBehaviour
 
     public void UpgradeStart(TowerAttack _tower)
     {
-        //_upgradeDamage.text = _tower.damage.ToString();
-        //_upgradeRange.text = _tower.range.ToString();
-        //_upgradeGcd.text = _tower.rate.ToString();
+        _upgradeDamage.text = _tower.stat.dmg.ToString();
+        _upgradeRange.text = _tower.stat.range.ToString();
+        _upgradeGcd.text = _tower.stat.rate.ToString();
     }
 
     public void CostStart(TowerAttack _tower)
     {
-        //_textUpdateCost.text = _tower.upgradeCost.ToString(); // 업데이트 Cost
-        //_textSellCost.text = _tower.sellCost.ToString();     // 판매 Cost
+        _textUpdateCost.text = _tower.stat.upgradeCost.ToString(); // 업데이트 Cost
+        _textSellCost.text = _tower.stat.sellCost.ToString();     // 판매 Cost
     }
 
     public void StartTower()
