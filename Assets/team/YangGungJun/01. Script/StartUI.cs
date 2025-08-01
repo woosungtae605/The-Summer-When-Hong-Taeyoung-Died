@@ -200,12 +200,13 @@ public class StartUI : MonoBehaviour
     {
         creditsObject.transform.DOKill();
         creditsObject.transform.position = creditsOriginPos;
-
+        Manager.manager.BGM.SetBGM(2);
         OnecreditsObject.SetActive(true);
         creditsObject.transform.DOMoveY(creditsOriginPos.y + 3000, 30);
     }
     public void Returncredits()
     {
+        Manager.manager.BGM.SetBGM(0);
         creditsObject.transform.DOKill();
         creditsObject.transform.position = creditsOriginPos; 
         OnecreditsObject.SetActive(false); 

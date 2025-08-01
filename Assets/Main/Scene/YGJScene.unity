@@ -4810,7 +4810,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\uCD1D\uAD04 \uC0AC\uC6B4\uB4DC"
+  m_text: "\uB9C8\uC2A4\uD130 \uC0AC\uC6B4\uB4DC"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d05ff9d59d839d04da39101bd6998887, type: 2}
   m_sharedMaterial: {fileID: -4133185462774089151, guid: d05ff9d59d839d04da39101bd6998887, type: 2}
@@ -4875,7 +4875,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: -39.442993, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -5644,13 +5644,13 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 844744344}
   - {fileID: 1118834651}
   - {fileID: 800851788}
   - {fileID: 1977549213}
   - {fileID: 1053527656}
   - {fileID: 758189115}
   - {fileID: 1234459833}
-  - {fileID: 844744344}
   - {fileID: 1257278809}
   m_Father: {fileID: 326526521}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
