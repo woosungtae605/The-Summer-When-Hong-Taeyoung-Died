@@ -1101,7 +1101,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2867541037209678498, guid: e74fd4f6456217246aa62a183088734b, type: 3}
       propertyPath: SFXList.Array.size
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2867541037209678498, guid: e74fd4f6456217246aa62a183088734b, type: 3}
       propertyPath: BGMList.Array.data[1].Id
@@ -1144,6 +1144,10 @@ PrefabInstance:
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2867541037209678498, guid: e74fd4f6456217246aa62a183088734b, type: 3}
+      propertyPath: SFXList.Array.data[5].Id
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2867541037209678498, guid: e74fd4f6456217246aa62a183088734b, type: 3}
       propertyPath: BGMList.Array.data[1].Name
       value: "\uC2A4\uD14C\uC774\uC9C0 \uC120\uD0DD \uBE0C\uAE08"
       objectReference: {fileID: 0}
@@ -1182,6 +1186,10 @@ PrefabInstance:
     - target: {fileID: 2867541037209678498, guid: e74fd4f6456217246aa62a183088734b, type: 3}
       propertyPath: SFXList.Array.data[4].Name
       value: "\uAC74\uBB3C \uC9C0\uC744\uB54C"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2867541037209678498, guid: e74fd4f6456217246aa62a183088734b, type: 3}
+      propertyPath: SFXList.Array.data[5].Name
+      value: "\uCC28 \uD53C\uACA9\uB2F9\uD560\uB54C"
       objectReference: {fileID: 0}
     - target: {fileID: 2867541037209678498, guid: e74fd4f6456217246aa62a183088734b, type: 3}
       propertyPath: BGMList.Array.data[1].audioClip
@@ -1223,6 +1231,10 @@ PrefabInstance:
       propertyPath: SFXList.Array.data[4].audioClip
       value: 
       objectReference: {fileID: 8300000, guid: d2403b5f6afbca94287a68560b021f2b, type: 3}
+    - target: {fileID: 2867541037209678498, guid: e74fd4f6456217246aa62a183088734b, type: 3}
+      propertyPath: SFXList.Array.data[5].audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 4d994cd4ace957d4787af0c0330244cb, type: 3}
     - target: {fileID: 3298695694258383484, guid: e74fd4f6456217246aa62a183088734b, type: 3}
       propertyPath: Loop
       value: 1
