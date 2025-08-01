@@ -205,7 +205,7 @@ MonoBehaviour:
           m_Value0: 3962455218408309718
           m_Value1: 2397157013354350375
         Name: WayPoints
-        m_Value: {fileID: 4425089349206902049, guid: 41e1cff0c4ca3434582d09727dcba5a5, type: 3}
+        m_Value: {fileID: 8944192324936244265, guid: 41e1cff0c4ca3434582d09727dcba5a5, type: 3}
 --- !u!114 &7112757721950775466
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -218,7 +218,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b447bfff25df10c4083a47f54b686147, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bakedData: {fileID: 11400000, guid: 8075e13c9e41fb947ba4b09b3e9f9e11, type: 2}
+  bakedData: {fileID: 11400000, guid: 212390f743d9ddf43b00832dc3a423fd, type: 2}
 --- !u!114 &2182743202924214903
 MonoBehaviour:
   m_ObjectHideFlags: 0
