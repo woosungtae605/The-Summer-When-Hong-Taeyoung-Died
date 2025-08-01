@@ -158,6 +158,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   monsterSO: {fileID: 11400000, guid: 224d0ff067046584c9545f10a5ad36da, type: 2}
+  channelSO: {fileID: 11400000, guid: d23b7cd91e789084a81c18dc53a2e054, type: 2}
   number: 1
   point: []
 --- !u!114 &6381853670805182841

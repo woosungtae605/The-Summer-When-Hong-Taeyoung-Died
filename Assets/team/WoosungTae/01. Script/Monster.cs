@@ -6,7 +6,7 @@ using UnityEngine.InputSystem.iOS;
 public class Monster : MonoBehaviour
 {
     public MonsterSO monsterSO;
-
+    public GoldChannelSO channelSO;
    
     private int WayPointCount;
     private int currentCount;
@@ -14,6 +14,7 @@ public class Monster : MonoBehaviour
     
     [SerializeField] GameObject[] point;
     public int hp { get; private set; }
+    public float speed { get; private set; }
     private void Start()
     {
         Initialize();
@@ -21,6 +22,7 @@ public class Monster : MonoBehaviour
     private void Initialize()
     {
         number = monsterSO.monsterNum;
+        speed = monsterSO.speed;
         hp = monsterSO.hp;
         gold = monsterSO.gold;
     }
@@ -44,10 +46,10 @@ public class Monster : MonoBehaviour
     }
     public void SetSpeed(float slow)
     {
-        
+        speed -= slow;
     }
-    public void SetGold(int manyMoney)
+    public void SetGold(ulong manyMoney)
     {
-        gold += manyMoney;
+        channelSO.ChangeGold(manyMoney,GoldTypeEnum.GET);
     }
 }

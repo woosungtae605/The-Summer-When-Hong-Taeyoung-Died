@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   monsterNum: 4
   hp: 100
-  speed: 4
+  speed: 2
   gold: 1

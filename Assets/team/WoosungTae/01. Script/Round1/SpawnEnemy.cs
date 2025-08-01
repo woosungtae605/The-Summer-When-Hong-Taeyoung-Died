@@ -1,4 +1,5 @@
 using System.Collections;
+using Unity.Behavior;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
@@ -24,6 +25,7 @@ public class SpawnEnemy : MonoBehaviour
             canSpawn = true;
             GameObject enemy = Instantiate(enemies[i]);
             enemy.transform.position = spawnPosition.transform.position;
+
             var pathMovement = enemy.GetComponent<PathMovement>();
             if (pathMovement != null)
             {
