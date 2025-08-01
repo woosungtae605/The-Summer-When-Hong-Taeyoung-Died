@@ -18,10 +18,6 @@ public class StageClearUI : MonoBehaviour
     {
         image.color = new Color(0, 0, 0, 0);
     }
-    private void Start()
-    {
-        PrintText(true);
-    }
     private void Update()
     {
         colorSpeed = Mathf.Clamp01(colorSpeed);
