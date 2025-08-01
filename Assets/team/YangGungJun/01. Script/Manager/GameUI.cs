@@ -35,10 +35,12 @@ public class GameUI : MonoBehaviour
     public void ReStartGame()
     {
         int NowScene = SceneManager.GetActiveScene().buildIndex;
+        Time.timeScale = 1;
         SceneManager.LoadScene(NowScene);
     }
     public void GoMenu()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
+        Time.timeScale = 1;
     }
 }

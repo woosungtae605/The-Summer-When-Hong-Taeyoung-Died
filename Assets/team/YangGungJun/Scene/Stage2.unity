@@ -318,6 +318,18 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2934898477015270710, guid: 4b1d6435f72e0a64391aa6958e7b0f62, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1189807238}
+    - target: {fileID: 2934898477015270710, guid: 4b1d6435f72e0a64391aa6958e7b0f62, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2934898477015270710, guid: 4b1d6435f72e0a64391aa6958e7b0f62, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: GoMenu
+      objectReference: {fileID: 0}
     - target: {fileID: 3386121709675703755, guid: 4b1d6435f72e0a64391aa6958e7b0f62, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -397,6 +409,14 @@ PrefabInstance:
     - target: {fileID: 3386121709675703755, guid: 4b1d6435f72e0a64391aa6958e7b0f62, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6631465006101656800, guid: 4b1d6435f72e0a64391aa6958e7b0f62, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1189807238}
+    - target: {fileID: 6631465006101656800, guid: 4b1d6435f72e0a64391aa6958e7b0f62, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ReStartGame
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7139,6 +7159,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waveText: {fileID: 349506855}
+--- !u!114 &1189807238 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6834668621642049930, guid: a5c951e54b4b35045bfb13d295cb30bf, type: 3}
+  m_PrefabInstance: {fileID: 1087398279}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0893ec9ed71e0534897b31c37167b911, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1464506977
 GameObject:
   m_ObjectHideFlags: 0

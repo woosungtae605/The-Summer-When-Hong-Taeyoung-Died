@@ -51,8 +51,8 @@ public class SpawnTower : MonoBehaviour
                 currentTower = null;
                 currentTowerStat = null;
                 Destroy(mouse.transform.GetChild(0).gameObject);
-                audioSource.clip = Manager.manager.Sound.SetSoundSFX(4);
-                audioSource.Play();
+              //  audioSource.clip = Manager.manager.Sound.SetSoundSFX(4);
+               // audioSource.Play();
             }
         }
         else if (currentTowerStat == null && currentTower == null)
