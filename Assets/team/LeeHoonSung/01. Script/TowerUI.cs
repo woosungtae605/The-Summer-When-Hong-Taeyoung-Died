@@ -1,11 +1,12 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TowerUI : MonoBehaviour
 {
     [Header("publicObject")]
     public TowerAttack _towerAttack;
-    public Sprite _icon;
+    public Image _icon;
 
     [Header("Ability")]  // ´É·ÂÄ¡
     public TextMeshProUGUI _name;
@@ -59,11 +60,12 @@ public class TowerUI : MonoBehaviour
         StartTower();
         UpgradeStart(_towerAttack);
         TowerAbilityMiray(_towerAttack);
+        OnIcon(_towerAttack);
     }
 
     public void OnIcon(TowerAttack _tower)
     {
-        
+       _icon.sprite = _tower.stat.icon;
     }
 
 
@@ -98,7 +100,7 @@ public class TowerUI : MonoBehaviour
 
     public void TowerRange(TowerAttack _tower)
     {
-        //_textRange.text = _tower.range.ToString();
+        _textRange.text = _tower.stat.range.ToString();
     }
     
     public void TowerAbilityUpdate(TowerAttack _tower)
