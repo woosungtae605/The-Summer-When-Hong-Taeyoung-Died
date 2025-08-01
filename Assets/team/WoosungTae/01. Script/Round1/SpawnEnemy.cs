@@ -33,6 +33,7 @@ public class SpawnEnemy : MonoBehaviour
             }
             TargetTrace target = enemy.AddComponent<TargetTrace>();
             TargetManager.Instance.targets.Add(target);
+            Debug.Log("¿€µø");
             yield return new WaitForSeconds(1);
         }
         canSpawn = false;

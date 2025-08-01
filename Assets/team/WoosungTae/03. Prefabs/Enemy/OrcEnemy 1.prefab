@@ -144,7 +144,7 @@ MonoBehaviour:
           m_Value0: 3962455218408309718
           m_Value1: 2397157013354350375
         Name: WayPoints
-        m_Value: {fileID: 0}
+        m_Value: {fileID: 4425089349206902049, guid: 41e1cff0c4ca3434582d09727dcba5a5, type: 3}
 --- !u!114 &1613867496850638598
 MonoBehaviour:
   m_ObjectHideFlags: 0
