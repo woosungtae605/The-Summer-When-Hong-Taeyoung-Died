@@ -31,14 +31,14 @@ public class SpawnEnemy : MonoBehaviour
             {
                 pathMovement.SetReferences(baseTileMap, this.target);
             }
-
-                yield return new WaitForSeconds(1);
+            TargetTrace target = enemy.AddComponent<TargetTrace>();
+            TargetManager.Instance.targets.Add(target);
+            yield return new WaitForSeconds(1);
         }
         canSpawn = false;
     }
        
-        //TargetTrace target = enemy.AddComponent<TargetTrace>();
-        // TargetManager.Instance.targets.Add(target);
+       
 }
 
 
