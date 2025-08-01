@@ -58,6 +58,7 @@ public class TowerUI : MonoBehaviour
         UpgradeStart(_towerAttack);
         TowerAbilityMiray(_towerAttack);
         OnIcon(_towerAttack);
+        InitLevel();
     }
 
     public void OnIcon(TowerAttack _tower)
@@ -102,7 +103,7 @@ public class TowerUI : MonoBehaviour
     public void TowerAbilityUpdate(TowerAttack _tower)
     {       
         _tower.stat.dmg += _tower.stat.damageUpgrade;
-        _tower.stat.rate += _tower.stat.rateUpgrade;
+        _tower.stat.rate /= _tower.stat.rateUpgrade;
         _tower.stat.range += _tower.stat.ranageUpgrade;
         _tower.gameObject.transform.GetChild(0).transform.localScale = new Vector3(_tower.stat.range*2, _tower.stat.range*2, 1);
         _tower.stat.upgradeCost += _tower.stat.updateCostUpgrade;
@@ -130,22 +131,18 @@ public class TowerUI : MonoBehaviour
         CostStart(_towerAttack);
     }
 
-    int _firstLevel = 1; // ���� ����
-    int _lastLevel = 2;  // ���� ����
-
     [Header("LevelText")] 
     public TextMeshProUGUI _textFirstLevel;
     public TextMeshProUGUI _textLastLevel;
 
     public void OnUpdateTower()
     {
-        if ((int)_channel.Gold >= _towerAttack.stat.upgradeCost)
+        if ((int)_channel.Gold >= _towerAttack.stat.upgradeCost && _towerAttack.stat.lvl < _towerAttack.stat._maxiumLevel)
         {
             _channel.ChangeGold((ulong)_towerAttack.stat.upgradeCost, GoldTypeEnum.SPEND);
+            _towerAttack.stat.lvl++;
             if (_towerAttack.stat.lvl < _towerAttack.stat._maxiumLevel)
             {
-                _towerAttack.stat.lvl++;
-
                 if (_towerAttack.stat.lvl + 1 < _towerAttack.stat._maxiumLevel)
                 {
                     _textLastLevel.text = (_towerAttack.stat.lvl + 1).ToString();
@@ -153,14 +150,9 @@ public class TowerUI : MonoBehaviour
                 else
                     _textLastLevel.text = "Max";
 
-                _textFirstLevel.text = _towerAttack.stat.lvl.ToString(); // ������ �����ϰ� ǥ��
-                // ������ �����ϰ� ǥ��
-                TowerAbilityUpdate(_towerAttack);
-                StartTower();
-                UpgradeStart(_towerAttack);
-                TowerAbilityMiray(_towerAttack);
+                _textFirstLevel.text = _towerAttack.stat.lvl.ToString();
             }
-            else if (_towerAttack.stat.lvl == _towerAttack.stat._maxiumLevel)
+            else if (_towerAttack.stat.lvl >= _towerAttack.stat._maxiumLevel)
             {
                 _maxText.gameObject.SetActive(true);
                 _levelText.gameObject.SetActive(false);
@@ -169,13 +161,46 @@ public class TowerUI : MonoBehaviour
                 _maxLevel.gameObject.SetActive(true);
 
             }
+            TowerAbilityUpdate(_towerAttack);
+            UpgradeStart(_towerAttack);
+            StartTower();
+            TowerAbilityMiray(_towerAttack);
+        }
+    }
+
+    private void InitLevel()
+    { 
+        if (_towerAttack.stat.lvl < _towerAttack.stat._maxiumLevel)
+        {
+            _maxText.gameObject.SetActive(false);
+            _levelText.gameObject.SetActive(true);
+            _UiDelete.SetActive(true);
+            _maxLevel.gameObject.SetActive(false); 
+            if (_towerAttack.stat.lvl + 1 < _towerAttack.stat._maxiumLevel)
+            {
+                _textLastLevel.text = (_towerAttack.stat.lvl + 1).ToString();
+            }
+            else
+                _textLastLevel.text = "Max";
+
+            _textFirstLevel.text = _towerAttack.stat.lvl.ToString();
+        }
+        else if (_towerAttack.stat.lvl == _towerAttack.stat._maxiumLevel)
+        {
+            _maxText.gameObject.SetActive(true);
+            _levelText.gameObject.SetActive(false);
+            _textUpdateCost.text = "Max";
+            _UiDelete.SetActive(false);
+            _maxLevel.gameObject.SetActive(true); 
         }
     }
 
     public void Remove()
     {
         _channel.ChangeGold((ulong)_towerAttack.stat.sellCost, GoldTypeEnum.GET);
+        TargetManager.Instance.towers.Remove(_towerAttack);
         Destroy(_TowerPrefab);
+        _towerAttack = null;
         _TowerUI.SetActive(false);
     }    
 }

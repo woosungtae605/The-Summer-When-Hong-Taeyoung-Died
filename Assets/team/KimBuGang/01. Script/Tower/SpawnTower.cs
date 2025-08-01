@@ -33,6 +33,7 @@ public class SpawnTower : MonoBehaviour
             currentTowerStat = towerStats.towers[n];
             currentTower.GetComponent<TowerAttack>().enabled = false; currentTower.GetComponent<MouseFollow>().enabled = true;
             currentTower.transform.GetChild(0).transform.localScale = new Vector2(currentTowerStat.range * 2, currentTowerStat.range * 2);
+            currentTower.tag = "PreView";
         }
     }
 

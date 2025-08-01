@@ -7,6 +7,7 @@ TagManager:
   - Target
   - Tower
   - Road
+  - PreView
   layers:
   - Default
   - TransparentFX
