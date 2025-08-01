@@ -18,12 +18,21 @@ public class TargetManager : MonoBehaviour
 
     private void Update()
     {
+        CleanupDeadTargets();
         SetPriority();
         foreach (TowerAttack tower in towers)
             SetTarget(tower);
         
     }
 
+    private void CleanupDeadTargets()
+    {
+        for (int i = targets.Count - 1; i >= 0; i--)
+        {
+            if (targets[i] == null) // Unity���� �ı��� ��ü�� �񱳽� null�� �򰡵�
+                targets.RemoveAt(i);
+        }
+    }
     private void SetPriority()
     {
         if (targets.Count > 1)
@@ -38,10 +47,18 @@ public class TargetManager : MonoBehaviour
 
     public void SetTarget(TowerAttack tower)
     {
+        if (tower == null || tower.stat == null) return;
+
         List<TargetTrace> targets = new List<TargetTrace>();
         foreach (var target in this.targets)
+        {
+            
             if (math.distance(target.transform.position, tower.transform.position) < tower.stat.range)
                 targets.Add(target);
+         
+        }
+            
+               
         TargetTrace finalTarget = null;
         foreach (var target in targets)
         {

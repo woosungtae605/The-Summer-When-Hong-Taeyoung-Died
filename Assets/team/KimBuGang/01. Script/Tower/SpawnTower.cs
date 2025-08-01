@@ -42,7 +42,7 @@ public class SpawnTower : MonoBehaviour
 
     public void Confirm()
     {
-        if (currentTower != null && currentTowerStat != null )
+        if (currentTower != null && currentTowerStat != null  && !OnMouse.Instance.onTower)
         {
             if ((int)goldChannel.Gold  >= currentTowerStat.purchaseCost)
             {
