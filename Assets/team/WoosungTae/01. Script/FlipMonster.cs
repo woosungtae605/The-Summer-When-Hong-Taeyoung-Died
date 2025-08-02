@@ -6,12 +6,9 @@ public class FlipMonster : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Target"))
         {
+            Debug.Log("¥Í¿Ω");
             SpriteRenderer flip = collision.gameObject.GetComponent<SpriteRenderer>();
-            if(flip.flipX == false)
                 flip.flipX = true;
-
-            if (flip.flipX == true)
-                flip.flipX = false;
         }
     }
 }
