@@ -331,4 +331,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 0
   rigidbody: {fileID: -4797000716201696846}
-  monsterSO: {fileID: 11400000, guid: e3c46b5230836894999e66907e24e2e0, type: 2}
+  monster: {fileID: 1613867496850638598}
