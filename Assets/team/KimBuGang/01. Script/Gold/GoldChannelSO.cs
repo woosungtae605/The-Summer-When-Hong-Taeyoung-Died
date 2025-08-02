@@ -5,19 +5,19 @@ public class GoldChannelSO : ScriptableObject
 {
     [field:SerializeField]public ulong Gold { get; private set; }
 
-    public void ChangeGold(int amount, GoldTypeEnum type)
+    public void ChangeGold(ulong amount, GoldTypeEnum type)
     {
         switch (type)
         {
             case GoldTypeEnum.GET:
-                Gold += (ulong)amount;
+                Gold += amount;
                 break;
             case GoldTypeEnum.SPEND:
-                if (Gold >= (ulong)amount)
-                    Gold = (ulong)((int)Gold - amount);
+                if (Gold >= amount)
+                    Gold = (ulong)((long)Gold - (long)amount);
                 break;
             case GoldTypeEnum.CHEAT:
-                Gold += (ulong)amount;
+                Gold += amount;
                 break;
         }
     }

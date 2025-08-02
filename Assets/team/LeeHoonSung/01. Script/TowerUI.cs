@@ -147,7 +147,7 @@ public class TowerUI : MonoBehaviour
             StartTower();
             TowerAbilityMiray(_towerAttack);
             Debug.Log(1);
-            _channel.ChangeGold(_towerAttack.stat.upgradeCost, GoldTypeEnum.SPEND);
+            _channel.ChangeGold((ulong)_towerAttack.stat.upgradeCost, GoldTypeEnum.SPEND);
             _towerAttack.stat.lvl++;
             if (_towerAttack.stat.lvl < _towerAttack.stat._maxiumLevel)
             {
@@ -207,7 +207,7 @@ public class TowerUI : MonoBehaviour
 
     public void Remove()
     {
-        _channel.ChangeGold(_towerAttack.stat.sellCost, GoldTypeEnum.GET);
+        _channel.ChangeGold((ulong)_towerAttack.stat.sellCost, GoldTypeEnum.GET);
         TargetManager.Instance.towers.Remove(_towerAttack);
         Destroy(_TowerPrefab);
         _towerAttack = null;

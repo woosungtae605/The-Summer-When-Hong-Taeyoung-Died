@@ -46,7 +46,7 @@ public class Monster : MonoBehaviour
     }
     public void SetGold(ulong manyMoney)
     {
-        channelSO.ChangeGold((int)manyMoney,GoldTypeEnum.GET);
+        channelSO.ChangeGold(manyMoney,GoldTypeEnum.GET);
     }
 
     private void OnDestroy()

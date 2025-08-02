@@ -53,7 +53,7 @@ public class SpawnTower : MonoBehaviour
         {
             if ((int)goldChannel.Gold  >= currentTowerStat.purchaseCost && TargetManager.Instance.towers.Count <  maxTowerCount)
             {
-                goldChannel.ChangeGold(currentTowerStat.purchaseCost, GoldTypeEnum.SPEND);
+                goldChannel.ChangeGold((ulong)currentTowerStat.purchaseCost, GoldTypeEnum.SPEND);
                 TargetManager.Instance.AddTower(currentTowerStat);
                 currentTower = null;
                 currentTowerStat = null;
