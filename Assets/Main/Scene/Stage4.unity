@@ -33717,6 +33717,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   towers: []
   targets: []
+  ownStats: {fileID: 11400000, guid: ecb2677befd229f4c90d03346e1539da, type: 2}
 --- !u!4 &1646037787
 Transform:
   m_ObjectHideFlags: 0
