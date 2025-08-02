@@ -17,7 +17,7 @@ MonoBehaviour:
     name: Strawberry
     tower: {fileID: 4405898564516946075, guid: 53234dd4d2895234ab7f88aac93a3ab7, type: 3}
     dmg: 100
-    rate: 2
+    rate: 1
     range: 4
     purchaseCost: 250
     bulletSpeed: 5
