@@ -1206,11 +1206,11 @@ PrefabInstance:
     - target: {fileID: 2867541037209678498, guid: e74fd4f6456217246aa62a183088734b, type: 3}
       propertyPath: BGMList.Array.data[4].audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 4403a970e2cea3b4fac7dc318b11b50c, type: 3}
+      objectReference: {fileID: 8300000, guid: 2d20d4f94e2c2c348be60025dcaba2c4, type: 3}
     - target: {fileID: 2867541037209678498, guid: e74fd4f6456217246aa62a183088734b, type: 3}
       propertyPath: BGMList.Array.data[5].audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 4403a970e2cea3b4fac7dc318b11b50c, type: 3}
+      objectReference: {fileID: 8300000, guid: 14eaa0ed57b5b594db49027ad1085434, type: 3}
     - target: {fileID: 2867541037209678498, guid: e74fd4f6456217246aa62a183088734b, type: 3}
       propertyPath: BGMList.Array.data[6].audioClip
       value: 
