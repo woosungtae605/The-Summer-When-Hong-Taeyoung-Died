@@ -2010,6 +2010,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waveText: {fileID: 797477775}
+  panel: {fileID: 1476138302}
 --- !u!1001 &1476138299
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2149,12 +2150,17 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5135349894050443045, guid: 4b1d6435f72e0a64391aa6958e7b0f62, type: 3}
   m_PrefabInstance: {fileID: 1476138299}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1476138302}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 951dc9cc44044e6488b9ec2ba9421dc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1476138302 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2380116216949886310, guid: 4b1d6435f72e0a64391aa6958e7b0f62, type: 3}
+  m_PrefabInstance: {fileID: 1476138299}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1538036153
 PrefabInstance:
   m_ObjectHideFlags: 0

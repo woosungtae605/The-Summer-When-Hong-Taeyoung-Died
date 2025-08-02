@@ -6,6 +6,7 @@ public class Stage1Spawn : MonoBehaviour
 {
     private SpawnEnemy spawnEnemy;
     [SerializeField] private TextMeshProUGUI waveText;
+    [SerializeField] private GameObject panel;
     private int waveNum = 0;
     private void Awake()
     {
@@ -137,7 +138,11 @@ public class Stage1Spawn : MonoBehaviour
                 spawnEnemy.EnemySpawn_2();
             }
         }
-
+        yield return new WaitForSeconds(10);
+        panel.SetActive(true);
+        StageClearUI clear = panel.GetComponent<StageClearUI>();
+        clear.PrintText(true);
+        Time.timeScale = 0;
 
     }
 }

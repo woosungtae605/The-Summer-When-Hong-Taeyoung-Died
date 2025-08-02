@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: MonsterSOtoad
   m_EditorClassIdentifier: 
   monsterNum: 2
-  hp: 4
+  hp: 2
   speed: 2
   gold: 6

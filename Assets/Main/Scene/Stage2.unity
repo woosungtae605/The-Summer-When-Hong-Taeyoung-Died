@@ -294,6 +294,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b1d6435f72e0a64391aa6958e7b0f62, type: 3}
+--- !u!1 &282624721 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2380116216949886310, guid: 4b1d6435f72e0a64391aa6958e7b0f62, type: 3}
+  m_PrefabInstance: {fileID: 282624720}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &349506853
 GameObject:
   m_ObjectHideFlags: 0
@@ -2428,6 +2433,10 @@ PrefabInstance:
       propertyPath: mouse
       value: 
       objectReference: {fileID: 1779960108}
+    - target: {fileID: 751717133282886702, guid: 597431b64cd5a8741b80fd918e1563e1, type: 3}
+      propertyPath: maxTowerCount
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 1016172242817851537, guid: 597431b64cd5a8741b80fd918e1563e1, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -2779,6 +2788,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waveText: {fileID: 349506855}
+  panel: {fileID: 282624721}
 --- !u!1 &1464506977
 GameObject:
   m_ObjectHideFlags: 0
@@ -4057,7 +4067,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5135349894050443045, guid: 4b1d6435f72e0a64391aa6958e7b0f62, type: 3}
   m_PrefabInstance: {fileID: 282624720}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 282624721}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 951dc9cc44044e6488b9ec2ba9421dc7, type: 3}
