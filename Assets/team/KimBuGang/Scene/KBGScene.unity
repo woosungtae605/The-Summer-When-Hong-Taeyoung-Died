@@ -1049,6 +1049,7 @@ MonoBehaviour:
   targets:
   - {fileID: 1031079396}
   - {fileID: 1300306744}
+  ownStats: {fileID: 11400000, guid: ecb2677befd229f4c90d03346e1539da, type: 2}
 --- !u!4 &1343090877
 Transform:
   m_ObjectHideFlags: 0
