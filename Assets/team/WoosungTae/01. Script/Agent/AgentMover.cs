@@ -5,7 +5,7 @@ public class AgentMover : MonoBehaviour, IComponent
 {
     [SerializeField] private float moveSpeed;
     [SerializeField] private new Rigidbody2D rigidbody;
-    [SerializeField] private MonsterSO monsterSO;
+    [SerializeField] private Monster monster;
     private Agent _owner;
     private Vector2 _movementInput;
 
@@ -29,7 +29,7 @@ public class AgentMover : MonoBehaviour, IComponent
     private void FixedUpdate()
     {
         rigidbody.linearVelocity = _movementInput * moveSpeed;
-        moveSpeed = monsterSO.speed;
+        moveSpeed = monster.speed;
         OnSpeedChange?.Invoke(rigidbody.linearVelocity);
     }
 }

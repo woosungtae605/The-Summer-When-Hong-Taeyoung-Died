@@ -46,7 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 0
   rigidbody: {fileID: 3445011481486901914}
-  monsterSO: {fileID: 11400000, guid: 2574a6e994765dd48b03751fdb2334bc, type: 2}
+  monster: {fileID: 3303709905840936724}
 --- !u!1 &8532992676162648809
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class CameraArea : MonoBehaviour
@@ -17,6 +18,8 @@ public class CameraArea : MonoBehaviour
 
     void LateUpdate()
     {
+        height = Camera.main.orthographicSize;
+        width = height * Screen.width / Screen.height;
         LimitCameraArea();
     }
 
