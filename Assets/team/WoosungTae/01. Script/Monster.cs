@@ -49,6 +49,10 @@ public class Monster : MonoBehaviour
         channelSO.ChangeGold(manyMoney,GoldTypeEnum.GET);
     }
 
+    private void OnDestroy()
+    {
+        SetGold((ulong)gold);
+    }
     private IEnumerator SlowDown(float slow, float time)
     {
         speed = basicSpeed - slow;

@@ -25,6 +25,7 @@ public class StageClearUI : MonoBehaviour
     }
     public void PrintText(bool win)
     {
+        Debug.Log("sadasdsadasd");
         if (win)
         {
             gameObject.SetActive(true); 
