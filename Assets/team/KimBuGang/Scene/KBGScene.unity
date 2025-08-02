@@ -244,6 +244,7 @@ GameObject:
   - component: {fileID: 222560541}
   - component: {fileID: 222560540}
   - component: {fileID: 222560543}
+  - component: {fileID: 222560544}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -369,6 +370,20 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+--- !u!114 &222560544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 222560539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 811a2e7a28aeec849b2c8af363790c62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  center: {x: 0, y: 0}
+  mapSize: {x: 9, y: 5}
 --- !u!1 &323321399 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8527452559314069744, guid: e263d96dc1f1dcc47896111f57a95004, type: 3}
@@ -684,6 +699,14 @@ PrefabInstance:
       propertyPath: UI
       value: 
       objectReference: {fileID: 201462530}
+    - target: {fileID: 1474994382836227916, guid: e263d96dc1f1dcc47896111f57a95004, type: 3}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 222560541}
+    - target: {fileID: 1474994382836227916, guid: e263d96dc1f1dcc47896111f57a95004, type: 3}
+      propertyPath: CamSpeed
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1569630938181099542, guid: e263d96dc1f1dcc47896111f57a95004, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.6
