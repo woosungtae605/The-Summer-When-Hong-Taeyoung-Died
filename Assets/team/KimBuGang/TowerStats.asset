@@ -40,7 +40,7 @@ MonoBehaviour:
     bulletSpeed: 8
     upgradeCost: 250
     sellCost: 150
-    damageUpgrade: 0
+    damageUpgrade: 2
     rateUpgrade: 0
     rangeUpgrade: 0.5
     updateCostUpgrade: 250
