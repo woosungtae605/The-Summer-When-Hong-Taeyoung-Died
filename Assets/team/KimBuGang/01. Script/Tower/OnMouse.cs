@@ -33,6 +33,7 @@ public class OnMouse : MonoBehaviour
         {
             other.transform.GetChild(0).gameObject.SetActive(true);
             onTower = true;
+            Debug.Log(onTower);
             tower = other.GetComponent<TowerAttack>();
         }
         else if (other.tag == "PreView" && !clicked)
