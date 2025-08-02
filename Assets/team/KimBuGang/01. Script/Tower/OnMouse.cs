@@ -7,7 +7,7 @@ public class OnMouse : MonoBehaviour
     public GameObject UI;
     [Header("Cam Setting")]
     public Camera cam;
-    public float CamSpeed;
+    public float CamSpeed = 1;
     private bool clicked => UI.activeSelf;
     public bool onRoad { get; private set; } = false;
     public bool onTower { get; private set; } = false;
@@ -21,6 +21,11 @@ public class OnMouse : MonoBehaviour
         if (Instance == null) 
             Instance = this; 
         else Destroy(gameObject);            
+    }
+
+    private void OnEnable()
+    {
+        cam =  Camera.main;
     }
 
     private void Update()
