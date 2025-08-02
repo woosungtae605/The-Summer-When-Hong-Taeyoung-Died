@@ -62,7 +62,7 @@ public class SpawnTower : MonoBehaviour
                 audioSource.Play();
             }
         }
-        else if (currentTowerStat == null && currentTower == null)
+        else if (currentTowerStat == null && currentTower == null && OnMouse.Instance.onTower)
             OnMouse.Instance.ClickTower();
     }
 }

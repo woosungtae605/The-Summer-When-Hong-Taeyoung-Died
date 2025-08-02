@@ -34,8 +34,8 @@ public class BulletMove : MonoBehaviour
     {
         if (other.TryGetComponent<Monster>(out Monster monsters))
         {
-            Destroy(gameObject);
             sb.Damage(monsters,damage);
+            Destroy(gameObject);
         }
         else if (other.TryGetComponent<Monster>(out Monster monster) && sb.type == SpecialBulletType.Piercing)
             monster.SetHP(damage);

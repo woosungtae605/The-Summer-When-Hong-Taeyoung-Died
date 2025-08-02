@@ -23,8 +23,6 @@ public class TowerUI : MonoBehaviour
     public TextMeshProUGUI _upgradeRange;
     public TextMeshProUGUI _upgradeGcd;
      
-    // �ִ� ���� ����
-
     [Header("Cost")]
     public TextMeshProUGUI _textUpdateCost; // ���׷��̵� Cost
     public TextMeshProUGUI _textSellCost;   // �Ǹ� Cost
@@ -48,13 +46,14 @@ public class TowerUI : MonoBehaviour
     {
         _maxText.gameObject.SetActive(false);
         _maxLevel.gameObject.SetActive(false);
+        StartTower();
     }
 
     private void OnEnable()
     {
+       
         _TowerPrefab = _towerAttack.gameObject;
-        TowerName(_towerAttack); // Ÿ�� �̸�
-        StartTower();
+        TowerName(_towerAttack); 
         UpgradeStart(_towerAttack);
         TowerAbilityMiray(_towerAttack);
         OnIcon(_towerAttack);
@@ -101,7 +100,8 @@ public class TowerUI : MonoBehaviour
     }
     
     public void TowerAbilityUpdate(TowerAttack _tower)
-    {       
+    {
+        Debug.Log(_tower.stat.dmg);
         _tower.stat.dmg += _tower.stat.damageUpgrade;
         _tower.stat.rate /= _tower.stat.rateUpgrade;
         _tower.stat.range += _tower.stat.rangeUpgrade;
@@ -109,6 +109,9 @@ public class TowerUI : MonoBehaviour
         _tower.stat.upgradeCost += _tower.stat.updateCostUpgrade;
         _tower.stat.sellCost += _tower.stat.sellCostUpgrade;        
     }
+
+
+
 
     public void UpgradeStart(TowerAttack _tower)
     {
@@ -137,8 +140,13 @@ public class TowerUI : MonoBehaviour
 
     public void OnUpdateTower()
     {
-        if ((int)_channel.Gold >= _towerAttack.stat.upgradeCost && _towerAttack.stat.lvl < _towerAttack.stat._maxiumLevel)
+        TowerAbilityUpdate(_towerAttack);
+        UpgradeStart(_towerAttack);
+        StartTower();
+        TowerAbilityMiray(_towerAttack);
+        if ((int)_channel.Gold >= _towerAttack.stat.upgradeCost)
         {
+            Debug.Log(1);
             _channel.ChangeGold((ulong)_towerAttack.stat.upgradeCost, GoldTypeEnum.SPEND);
             _towerAttack.stat.lvl++;
             if (_towerAttack.stat.lvl < _towerAttack.stat._maxiumLevel)
@@ -161,17 +169,19 @@ public class TowerUI : MonoBehaviour
                 _maxLevel.gameObject.SetActive(true);
 
             }
-            TowerAbilityUpdate(_towerAttack);
-            UpgradeStart(_towerAttack);
-            StartTower();
-            TowerAbilityMiray(_towerAttack);
+            else if(_towerAttack.stat.lvl == _towerAttack.stat._maxiumLevel)
+            {
+                InitLevel();
+            }
         }
     }
 
     private void InitLevel()
-    { 
+    {     
+        Debug.Log(2);
         if (_towerAttack.stat.lvl < _towerAttack.stat._maxiumLevel)
         {
+            
             _maxText.gameObject.SetActive(false);
             _levelText.gameObject.SetActive(true);
             _UiDelete.SetActive(true);

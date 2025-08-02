@@ -1,9 +1,13 @@
 using System;
+using DG.Tweening;
 using UnityEngine;
 
 public class OnMouse : MonoBehaviour
 {
     public GameObject UI;
+    [Header("Cam Setting")]
+    public Camera cam;
+    public float CamSpeed = 1;
     private bool clicked => UI.activeSelf;
     public bool onRoad { get; private set; } = false;
     public bool onTower { get; private set; } = false;
@@ -17,6 +21,11 @@ public class OnMouse : MonoBehaviour
         if (Instance == null) 
             Instance = this; 
         else Destroy(gameObject);            
+    }
+
+    private void OnEnable()
+    {
+        cam =  Camera.main;
     }
 
     private void Update()
@@ -33,6 +42,7 @@ public class OnMouse : MonoBehaviour
         {
             other.transform.GetChild(0).gameObject.SetActive(true);
             onTower = true;
+            Debug.Log(onTower);
             tower = other.GetComponent<TowerAttack>();
         }
         else if (other.tag == "PreView" && !clicked)
@@ -67,5 +77,33 @@ public class OnMouse : MonoBehaviour
     {
         tower = null;
         onTower = false;
+    }
+
+    private void LateUpdate()
+    {
+        Vector3 pos = Camera.main.WorldToViewportPoint(transform.position);
+        
+        if (pos.x < 0f)
+        {
+            pos.x = 0f;
+            cam.transform.DOMoveX(cam.transform.position.x - CamSpeed, 1);
+        }
+        if (pos.x > 1f)
+        {
+            pos.x = 1f;
+            cam.transform.DOMoveX(cam.transform.position.x + CamSpeed, 1);
+        }
+        if (pos.y < 0f)
+        {
+            pos.y = 0f;
+            cam.transform.DOMoveY(cam.transform.position.y - CamSpeed, 1);
+        }
+        if (pos.y > 1f)
+        {
+            pos.y = 1f;
+            cam.transform.DOMoveY(cam.transform.position.y + CamSpeed, 1);
+        }
+        
+        transform.position = Camera.main.ViewportToWorldPoint(pos);
     }
 }

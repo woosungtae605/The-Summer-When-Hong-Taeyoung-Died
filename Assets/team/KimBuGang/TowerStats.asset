@@ -16,85 +16,85 @@ MonoBehaviour:
   - icon: {fileID: 21300000, guid: 43406ba17006543f7837585831e23475, type: 3}
     name: Strawberry
     tower: {fileID: 4405898564516946075, guid: 53234dd4d2895234ab7f88aac93a3ab7, type: 3}
-    dmg: 1
-    rate: 1
-    range: 8
-    purchaseCost: 100
+    dmg: 10
+    rate: 4
+    range: 4
+    purchaseCost: 250
     bulletSpeed: 5
     upgradeCost: 200
     sellCost: 100
-    damageUpgrade: 100
-    rateUpgrade: 1
-    rangeUpgrade: 100
-    updateCostUpgrade: 10
-    sellCostUpgrade: 10
-    _maxiumLevel: 10
+    damageUpgrade: 10
+    rateUpgrade: 0
+    rangeUpgrade: 1
+    updateCostUpgrade: 100
+    sellCostUpgrade: 50
+    _maxiumLevel: 4
     bullet: {fileID: 1639223553889042308, guid: f90706426a4fed945a02325605d2374a, type: 3}
   - icon: {fileID: 21300000, guid: ccd77b8b34294443d909c84bf8c51c60, type: 3}
     name: IceCream
     tower: {fileID: 2636040404408354085, guid: 89e5b2b864fade042b5dc6326750feeb, type: 3}
-    dmg: 1
-    rate: 0.2
-    range: 5
-    purchaseCost: 100
+    dmg: 5
+    rate: 3
+    range: 4
+    purchaseCost: 300
     bulletSpeed: 8
-    upgradeCost: 0
-    sellCost: 0
+    upgradeCost: 250
+    sellCost: 150
     damageUpgrade: 0
     rateUpgrade: 0
-    rangeUpgrade: 0
-    updateCostUpgrade: 0
-    sellCostUpgrade: 0
-    _maxiumLevel: 10
+    rangeUpgrade: 0.5
+    updateCostUpgrade: 250
+    sellCostUpgrade: 200
+    _maxiumLevel: 3
     bullet: {fileID: 1639223553889042308, guid: b00f6aed69ede654e9cab8bc8dedc7c1, type: 3}
   - icon: {fileID: 4911007776997675480, guid: 9198f4dbb240516489d222a8a2a5c87f, type: 3}
     name: Ramen
     tower: {fileID: 488889409089806986, guid: 727dafe0ff132a549b9f2738d6757717, type: 3}
-    dmg: 12
-    rate: 3
-    range: 4
-    purchaseCost: 100
+    dmg: 25
+    rate: 5
+    range: 2
+    purchaseCost: 400
     bulletSpeed: 3
-    upgradeCost: 0
-    sellCost: 0
-    damageUpgrade: 0
+    upgradeCost: 300
+    sellCost: 100
+    damageUpgrade: 15
     rateUpgrade: 0
-    rangeUpgrade: 0
-    updateCostUpgrade: 0
-    sellCostUpgrade: 0
-    _maxiumLevel: 10
+    rangeUpgrade: 1
+    updateCostUpgrade: 300
+    sellCostUpgrade: 200
+    _maxiumLevel: 4
     bullet: {fileID: 1639223553889042308, guid: 7bd25e93da506644cb0de16f98764c4e, type: 3}
   - icon: {fileID: 21300000, guid: 7d8d9948034ff4a7c9b09b1b70922b8c, type: 3}
     name: Hamburger
     tower: {fileID: 6863428256662897539, guid: 63109cbeec898d04198479bdef804f36, type: 3}
-    dmg: 12
-    rate: 3
-    range: 4
-    purchaseCost: 100
+    dmg: 40
+    rate: 7
+    range: 6
+    purchaseCost: 500
     bulletSpeed: 3
-    upgradeCost: 0
-    sellCost: 0
-    damageUpgrade: 0
+    upgradeCost: 500
+    sellCost: 250
+    damageUpgrade: 15
     rateUpgrade: 0
-    rangeUpgrade: 0
-    updateCostUpgrade: 0
-    sellCostUpgrade: 0
-    _maxiumLevel: 10
+    rangeUpgrade: 2
+    updateCostUpgrade: 300
+    sellCostUpgrade: 150
+    _maxiumLevel: 3
     bullet: {fileID: 1639223553889042308, guid: 485dfdbd067a90649b95bbb5a2ca4f68, type: 3}
   - icon: {fileID: 21300000, guid: 7996dc22879464e52a146dd536d29688, type: 3}
     name: Candy
     tower: {fileID: 1646315373452159817, guid: eaa8c1f8f7adc6d478a1cd8e20eca7df, type: 3}
-    dmg: 12
-    rate: 3
+    dmg: 3
+    rate: 0.2
     range: 4
-    purchaseCost: 100
-    bulletSpeed: 3
-    upgradeCost: 0
-    sellCost: 0
-    damageUpgrade: 0
+    purchaseCost: 300
+    bulletSpeed: 8
+    upgradeCost: 400
+    sellCost: 200
+    damageUpgrade: 3
     rateUpgrade: 0
-    rangeUpgrade: 0
-    updateCostUpgrade: 0
-    sellCostUpgrade: 0
-    _maxiumLevel: 10
+    rangeUpgrade: 1
+    updateCostUpgrade: 300
+    sellCostUpgrade: 150
+    _maxiumLevel: 5
     bullet: {fileID: 1639223553889042308, guid: 91932e9f4ff032e488acf60dcca814ae, type: 3}
