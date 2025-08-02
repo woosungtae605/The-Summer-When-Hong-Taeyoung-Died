@@ -6,6 +6,7 @@ public class TargetManager : MonoBehaviour
 {
     public List<TowerAttack> towers;
     public List<TargetTrace> targets;
+    public TowerOwnStatSO ownStats;
 
     public static TargetManager Instance;
 
@@ -76,9 +77,8 @@ public class TargetManager : MonoBehaviour
             new Vector3(Camera.main.ScreenToWorldPoint(Input.mousePosition).x,
                 Camera.main.ScreenToWorldPoint(Input.mousePosition).y, 0),
             Quaternion.identity);
-        if (tower.GetComponent<TowerAttack>().stat == null)
-            tower.GetComponent<TowerAttack>().stat = Instantiate(Resources.Load<TowerOwnStatSO>("TowerOwnStat"));
-        TowerOwnStatSO towerScript = tower.GetComponent<TowerAttack>().stat;
+        TowerOwnStatSO towerScript  = Instantiate(ownStats);
+        tower.GetComponent<TowerAttack>().stat = towerScript;
         towers.Add(tower.GetComponent<TowerAttack>());
         tower.GetComponent<TowerAttack>().target= null;
         towerScript.icon = towerStat.icon;
