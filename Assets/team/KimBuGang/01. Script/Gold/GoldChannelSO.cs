@@ -13,7 +13,8 @@ public class GoldChannelSO : ScriptableObject
                 Gold += amount;
                 break;
             case GoldTypeEnum.SPEND:
-                Gold -= amount;
+                if (Gold >= amount)
+                    Gold = (ulong)((long)Gold - (long)amount);
                 break;
             case GoldTypeEnum.CHEAT:
                 Gold += amount;
