@@ -26,24 +26,24 @@ MonoBehaviour:
     damageUpgrade: 10
     rateUpgrade: 0
     rangeUpgrade: 1
-    updateCostUpgrade: 200
-    sellCostUpgrade: 100
+    updateCostUpgrade: 100
+    sellCostUpgrade: 50
     _maxiumLevel: 4
     bullet: {fileID: 1639223553889042308, guid: f90706426a4fed945a02325605d2374a, type: 3}
   - icon: {fileID: 21300000, guid: ccd77b8b34294443d909c84bf8c51c60, type: 3}
     name: IceCream
     tower: {fileID: 2636040404408354085, guid: 89e5b2b864fade042b5dc6326750feeb, type: 3}
-    dmg: 20
+    dmg: 5
     rate: 3
     range: 4
     purchaseCost: 300
     bulletSpeed: 8
-    upgradeCost: 300
+    upgradeCost: 250
     sellCost: 150
-    damageUpgrade: 10
+    damageUpgrade: 0
     rateUpgrade: 0
     rangeUpgrade: 0.5
-    updateCostUpgrade: 300
+    updateCostUpgrade: 250
     sellCostUpgrade: 200
     _maxiumLevel: 3
     bullet: {fileID: 1639223553889042308, guid: b00f6aed69ede654e9cab8bc8dedc7c1, type: 3}
@@ -56,11 +56,11 @@ MonoBehaviour:
     purchaseCost: 400
     bulletSpeed: 3
     upgradeCost: 300
-    sellCost: 200
+    sellCost: 100
     damageUpgrade: 15
     rateUpgrade: 0
     rangeUpgrade: 1
-    updateCostUpgrade: 400
+    updateCostUpgrade: 300
     sellCostUpgrade: 200
     _maxiumLevel: 4
     bullet: {fileID: 1639223553889042308, guid: 7bd25e93da506644cb0de16f98764c4e, type: 3}

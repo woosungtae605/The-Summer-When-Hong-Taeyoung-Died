@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: MonsterSOSlime
   m_EditorClassIdentifier: 
   monsterNum: 2
-  hp: 3
+  hp: 15
   speed: 1
-  gold: 20
+  gold: 50
