@@ -33,7 +33,7 @@ MonoBehaviour:
   - icon: {fileID: 21300000, guid: ccd77b8b34294443d909c84bf8c51c60, type: 3}
     name: IceCream
     tower: {fileID: 2636040404408354085, guid: 89e5b2b864fade042b5dc6326750feeb, type: 3}
-    dmg: 15
+    dmg: 10
     rate: 3
     range: 4
     purchaseCost: 300
@@ -50,8 +50,8 @@ MonoBehaviour:
   - icon: {fileID: 4911007776997675480, guid: 9198f4dbb240516489d222a8a2a5c87f, type: 3}
     name: Ramen
     tower: {fileID: 488889409089806986, guid: 727dafe0ff132a549b9f2738d6757717, type: 3}
-    dmg: 40
-    rate: 1.5
+    dmg: 50
+    rate: 0.75
     range: 2
     purchaseCost: 400
     bulletSpeed: 3
@@ -69,29 +69,29 @@ MonoBehaviour:
     tower: {fileID: 6863428256662897539, guid: 63109cbeec898d04198479bdef804f36, type: 3}
     dmg: 30
     rate: 3
-    range: 6
+    range: 8
     purchaseCost: 500
-    bulletSpeed: 3
+    bulletSpeed: 5
     upgradeCost: 450
     sellCost: 250
     damageUpgrade: 15
     rateUpgrade: 1
-    rangeUpgrade: 2
+    rangeUpgrade: 1
     updateCostUpgrade: 250
     sellCostUpgrade: 150
-    _maxiumLevel: 4
+    _maxiumLevel: 3
     bullet: {fileID: 1639223553889042308, guid: 485dfdbd067a90649b95bbb5a2ca4f68, type: 3}
   - icon: {fileID: 21300000, guid: 7996dc22879464e52a146dd536d29688, type: 3}
     name: Candy
     tower: {fileID: 1646315373452159817, guid: eaa8c1f8f7adc6d478a1cd8e20eca7df, type: 3}
-    dmg: 3
+    dmg: 5
     rate: 0.4
     range: 3
     purchaseCost: 300
     bulletSpeed: 8
     upgradeCost: 400
     sellCost: 200
-    damageUpgrade: 3
+    damageUpgrade: 4
     rateUpgrade: 1
     rangeUpgrade: 1.2
     updateCostUpgrade: 300
