@@ -18,14 +18,14 @@ MonoBehaviour:
     tower: {fileID: 4405898564516946075, guid: 53234dd4d2895234ab7f88aac93a3ab7, type: 3}
     dmg: 10
     rate: 4
-    range: 8
+    range: 4
     purchaseCost: 250
     bulletSpeed: 5
     upgradeCost: 200
     sellCost: 100
     damageUpgrade: 10
     rateUpgrade: 0
-    rangeUpgrade: 2
+    rangeUpgrade: 1
     updateCostUpgrade: 200
     sellCostUpgrade: 100
     _maxiumLevel: 4
@@ -52,14 +52,14 @@ MonoBehaviour:
     tower: {fileID: 488889409089806986, guid: 727dafe0ff132a549b9f2738d6757717, type: 3}
     dmg: 25
     rate: 5
-    range: 5
+    range: 2
     purchaseCost: 400
     bulletSpeed: 3
     upgradeCost: 300
     sellCost: 200
     damageUpgrade: 15
     rateUpgrade: 0
-    rangeUpgrade: 2
+    rangeUpgrade: 1
     updateCostUpgrade: 400
     sellCostUpgrade: 200
     _maxiumLevel: 4
@@ -76,7 +76,7 @@ MonoBehaviour:
     sellCost: 250
     damageUpgrade: 15
     rateUpgrade: 0
-    rangeUpgrade: 3
+    rangeUpgrade: 2
     updateCostUpgrade: 300
     sellCostUpgrade: 150
     _maxiumLevel: 3
@@ -86,7 +86,7 @@ MonoBehaviour:
     tower: {fileID: 1646315373452159817, guid: eaa8c1f8f7adc6d478a1cd8e20eca7df, type: 3}
     dmg: 3
     rate: 0.2
-    range: 7
+    range: 4
     purchaseCost: 300
     bulletSpeed: 8
     upgradeCost: 400
