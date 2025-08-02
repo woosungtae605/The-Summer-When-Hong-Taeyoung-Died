@@ -142,12 +142,11 @@ public class TowerUI : MonoBehaviour
     {
         if ((int)_channel.Gold >= _towerAttack.stat.upgradeCost)
         {
+            _channel.ChangeGold((ulong)_towerAttack.stat.upgradeCost, GoldTypeEnum.SPEND);
             TowerAbilityUpdate(_towerAttack);
             UpgradeStart(_towerAttack);
             StartTower();
             TowerAbilityMiray(_towerAttack);
-            Debug.Log(1);
-            _channel.ChangeGold((ulong)_towerAttack.stat.upgradeCost, GoldTypeEnum.SPEND);
             _towerAttack.stat.lvl++;
             if (_towerAttack.stat.lvl < _towerAttack.stat._maxiumLevel)
             {
