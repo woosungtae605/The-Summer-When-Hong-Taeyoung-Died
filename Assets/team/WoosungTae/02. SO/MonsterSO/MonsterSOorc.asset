@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: MonsterSOorc
   m_EditorClassIdentifier: 
   monsterNum: 4
-  hp: 1
-  speed: 2
-  gold: 1
+  hp: 10
+  speed: 1
+  gold: 60

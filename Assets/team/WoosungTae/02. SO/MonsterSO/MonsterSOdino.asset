@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: MonsterSOdino
   m_EditorClassIdentifier: 
   monsterNum: 1
-  hp: 2
-  speed: 5
-  gold: 1
+  hp: 11
+  speed: 3
+  gold: 150
