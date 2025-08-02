@@ -15,4 +15,4 @@ MonoBehaviour:
   monsterNum: 1
   hp: 200
   speed: 2
-  gold: 500
+  gold: 80
