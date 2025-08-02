@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: MonsterSOmushroom
   m_EditorClassIdentifier: 
   monsterNum: 3
-  hp: 23
+  hp: 25
   speed: 1
-  gold: 180
+  gold: 250

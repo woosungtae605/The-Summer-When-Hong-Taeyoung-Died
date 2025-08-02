@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: MonsterSOalien
   m_EditorClassIdentifier: 
   monsterNum: 6
-  hp: 15
+  hp: 120
   speed: 5
   gold: 400
