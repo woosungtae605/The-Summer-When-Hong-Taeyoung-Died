@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Turtia2_0: 9055967281460337666
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
