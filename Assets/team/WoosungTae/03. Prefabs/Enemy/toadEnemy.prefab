@@ -84,7 +84,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 8365485369471376363, guid: 3d46326fa2618c443bc14db05656c58f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -205,7 +205,7 @@ MonoBehaviour:
           m_Value0: 3962455218408309718
           m_Value1: 2397157013354350375
         Name: WayPoints
-        m_Value: {fileID: 0}
+        m_Value: {fileID: 1167360467165769491, guid: 9de649aedd970b74da89fe8edead54fb, type: 3}
 --- !u!114 &7112757721950775466
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -218,7 +218,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b447bfff25df10c4083a47f54b686147, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bakedData: {fileID: 11400000, guid: 8075e13c9e41fb947ba4b09b3e9f9e11, type: 2}
+  bakedData: {fileID: 11400000, guid: 6b72c66b3b393ac4e950e3b1603a4082, type: 2}
 --- !u!114 &2182743202924214903
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: MonsterSOcow
   m_EditorClassIdentifier: 
   monsterNum: 5
-  hp: 10
+  hp: 27
   speed: 1
-  gold: 11
+  gold: 250

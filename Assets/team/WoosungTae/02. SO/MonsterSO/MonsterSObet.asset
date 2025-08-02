@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: MonsterSObet
   m_EditorClassIdentifier: 
   monsterNum: 2
-  hp: 3
-  speed: 5
-  gold: 1
+  hp: 7
+  speed: 4
+  gold: 100

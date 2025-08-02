@@ -20,4 +20,8 @@ public class GoldChannelSO : ScriptableObject
                 break;
         }
     }
+    public void SetGold()
+    {
+        Gold = 500;
+    }
 }
