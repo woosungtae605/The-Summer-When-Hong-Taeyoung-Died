@@ -24,7 +24,7 @@ MonoBehaviour:
     upgradeCost: 200
     sellCost: 100
     damageUpgrade: 10
-    rateUpgrade: 0
+    rateUpgrade: 1
     rangeUpgrade: 1
     updateCostUpgrade: 100
     sellCostUpgrade: 50
@@ -41,7 +41,7 @@ MonoBehaviour:
     upgradeCost: 250
     sellCost: 150
     damageUpgrade: 2
-    rateUpgrade: 0
+    rateUpgrade: 1
     rangeUpgrade: 0.5
     updateCostUpgrade: 250
     sellCostUpgrade: 200
@@ -58,7 +58,7 @@ MonoBehaviour:
     upgradeCost: 300
     sellCost: 100
     damageUpgrade: 15
-    rateUpgrade: 0
+    rateUpgrade: 1
     rangeUpgrade: 1
     updateCostUpgrade: 300
     sellCostUpgrade: 200
@@ -75,7 +75,7 @@ MonoBehaviour:
     upgradeCost: 500
     sellCost: 250
     damageUpgrade: 15
-    rateUpgrade: 0
+    rateUpgrade: 1
     rangeUpgrade: 2
     updateCostUpgrade: 300
     sellCostUpgrade: 150
@@ -92,7 +92,7 @@ MonoBehaviour:
     upgradeCost: 400
     sellCost: 200
     damageUpgrade: 3
-    rateUpgrade: 0
+    rateUpgrade: 1
     rangeUpgrade: 1.2
     updateCostUpgrade: 300
     sellCostUpgrade: 150
