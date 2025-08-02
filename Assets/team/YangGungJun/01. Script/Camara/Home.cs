@@ -1,9 +1,10 @@
 using System;
 using UnityEngine;
+using UnityEngine.Experimental.GlobalIllumination;
 
 public class Home : MonoBehaviour
 {
-    [SerializeField] int Hp = 10;
+    public int Hp = 4;
     [SerializeField] StageClearUI clearUI;
     AudioSource audioSource;
     private void Start()
@@ -14,7 +15,7 @@ public class Home : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Target"))
-        {
+        { 
             Destroy(collision.gameObject);
             GetDmg(1);
         }

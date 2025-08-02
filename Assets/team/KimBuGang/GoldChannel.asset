@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0650fab724e4a6e43a3370750610f488, type: 3}
   m_Name: GoldChannel
   m_EditorClassIdentifier: 
-  <Gold>k__BackingField: 99999999989900
+  <Gold>k__BackingField: 500
