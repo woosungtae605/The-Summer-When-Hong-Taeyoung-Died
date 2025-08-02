@@ -15,16 +15,16 @@ MonoBehaviour:
   icon: {fileID: 0}
   name: Defa
   tower: {fileID: 0}
-  lvl: 0
+  lvl: 4
   dmg: 0
-  rate: 0
+  rate: NaN
   range: 0
   bulletSpeed: 0
   upgradeCost: 0
   sellCost: 0
   damageUpgrade: 0
   rateUpgrade: 0
-  ranageUpgrade: 0
+  rangeUpgrade: 0
   updateCostUpgrade: 0
   sellCostUpgrade: 0
   _maxiumLevel: 10
