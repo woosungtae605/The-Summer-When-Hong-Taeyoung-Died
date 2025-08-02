@@ -16,9 +16,9 @@ MonoBehaviour:
   - icon: {fileID: 21300000, guid: 43406ba17006543f7837585831e23475, type: 3}
     name: Strawberry
     tower: {fileID: 4405898564516946075, guid: 53234dd4d2895234ab7f88aac93a3ab7, type: 3}
-    dmg: 1
-    rate: 1
-    range: 8
+    dmg: 20
+    rate: 10
+    range: 20
     purchaseCost: 0
     bulletSpeed: 5
     upgradeCost: 200
@@ -40,8 +40,8 @@ MonoBehaviour:
     bulletSpeed: 8
     upgradeCost: 0
     sellCost: 0
-    damageUpgrade: 0
-    rateUpgrade: 0
+    damageUpgrade: 20
+    rateUpgrade: 30
     rangeUpgrade: 0
     updateCostUpgrade: 0
     sellCostUpgrade: 0
