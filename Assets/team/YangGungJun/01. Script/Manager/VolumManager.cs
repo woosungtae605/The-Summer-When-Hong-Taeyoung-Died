@@ -96,7 +96,6 @@ public class VolumeManager : MonoBehaviour
         sfxSlider.onValueChanged.RemoveListener(SetSFXVolume);
         BGMSlider.onValueChanged.RemoveListener(SetBGMVolume);
 
-
         masterSlider.value = beforeMaster;
         sfxSlider.value = beforeSFX;
         BGMSlider.value = beforeBGM;
